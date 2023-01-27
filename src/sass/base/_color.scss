@@ -1,0 +1,26 @@
+
+$colors: (
+'yellow': #F3C653,
+'brown': #C79002,
+'border-golden':rgba(243, 198, 83, 0.7),
+'white': #FFFFFF,
+'light-lemon':#FFFDEE,
+'dark-lemon':#F0ECD6,
+'map-link':#E5E5E5,
+'bcg-img':#DADADA,
+'black': #000000,
+'footer-black':#0E0C07,
+'gray1': #B4B4B4,
+'gray2': #494848,
+'background-page': #474747,
+'gray-room':#7A7A7A,
+'gray3': #5F5F5F,
+'gray5': #BABABA,
+'gray4': #828282,
+'input-string': #808080,
+
+);
+
+@function getColor($key) {
+ @return map-get($colors,$key);
+}
