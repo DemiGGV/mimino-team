@@ -1,4 +1,113 @@
-<!-- About our restaurant
+<!-- About our hotel
 У секції немає видимого заголовка. Потрібно зробити прихований заголовок для краулерів.
-В секції представлені зображення ресторану, які необхідно реалізувати як контентні.
+В секції представлені зображення готелю, які необхідно реалізувати як контентні.
 У секції представлений слайдер з контентними зображеннями*. -->
+
+<section class="section rest-gallery">
+    <div class="container">
+        <h2 class="section-title visualy-hidden">About mimino restaurant</h2>
+        <ul class="list first-card">
+            <li class="about-rest-item">
+                <p class="sub-title">Amet minim mollit non</p>
+                <a href="./index.html" class="logo">міміно</a>
+                <p class="text-about">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </li>
+            <li class="pic1-rest-item">
+                <picture>
+                    <source
+                        srcset="./images/main/hero-rest/main/maindesktop.jpg 1x, ./images/main/hero-rest/main/maindesktop@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/maintablet.jpg 1x, ./images/main/hero-rest/main/maintablet@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/mainmobile.jpg 1x, ./images/main/hero-rest/main/mainmobile@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/main/hero-rest/main/mainmobile.jpg" alt="Restaurant interior" width="460"
+                        class="intro-img" />
+                </picture>
+            </li>
+        </ul>
+        <ul class="list second-card">
+            <li class="pic2-rest-item">
+                <picture>
+                    <source
+                        srcset="./images/main/hero-rest/main/main2desktop.jpg 1x, ./images/main/hero-rest/main/main2desktop@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/main2tablet.jpg 1x, ./images/main/hero-rest/main/main2tablet@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/main2mobile.jpg 1x, ./images/main/hero-rest/main/main2mobile@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/main/hero-rest/main/main2mobile.jpg" alt="Restaurant interior" width="460"
+                        class="intro-img" />
+                </picture>
+            </li>
+            <li>
+                <p class="text-rest-accent">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </li>
+        </ul>
+
+        <ul class="list rest-section-slider">
+            <li class="slider-item">
+                <picture>
+                    <source
+                        srcset="./images/main/hero-rest/main/main2desktop.jpg 1x, ./images/main/hero-rest/main/main2desktop@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/main2tablet.jpg 1x, ./images/main/hero-rest/main/main2tablet@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/main2mobile.jpg 1x, ./images/main/hero-rest/main/main2mobile@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/main/hero-rest/main/main2mobile.jpg" alt="Restaurant interior" width="460"
+                        class="intro-img" />
+                </picture>
+            </li>
+            <li class="slider-item">
+                <picture>
+                    <source
+                        srcset="./images/main/hero-rest/main/main2desktop.jpg 1x, ./images/main/hero-rest/main/main2desktop@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/main2tablet.jpg 1x, ./images/main/hero-rest/main/main2tablet@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/main/hero-rest/main/main2mobile.jpg 1x, ./images/main/hero-rest/main/main2mobile@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/main/hero-rest/main/main2mobile.jpg" alt="Restaurant interior" width="460"
+                        class="intro-img" />
+                </picture>
+            </li>
+        </ul>
+        <ul class="list rest slider-controls">
+            <li class="slider-item">
+                <button class="btn slider-btn slider-btn-prev disable" type="button">
+                    <svg class="icon" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="slider-item">
+                <button class="btn slider-btn slider-btn-next" type="button">
+                    <svg class="icon" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
