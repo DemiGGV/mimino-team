@@ -1,0 +1,37 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.contacts-main__logo {
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    color: getColor('gray2');
+}
+    
+
+.contacts__subtext {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: getColor('gray3');
+}
+
+
+
+
