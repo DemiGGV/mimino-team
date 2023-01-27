@@ -1,0 +1,101 @@
+.footer {
+    background-color: getColor('color-footer');
+}
+.footer__container {
+    width: 414px;
+    padding: 40px 15px;
+    margin: 0 auto;
+    background-color: getColor('color-footer');
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width:1024px) {
+        width: 1024px;
+        padding: 80px 15px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    @media screen and (min-width:1280px) {
+        width: 1280px;
+    }
+}
+.footer__logo {
+    font-family: 'FilmP3Bold';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: getColor('akzent-yellow');
+    @media screen and (min-width:1024px) {
+        font-size: 64px;
+        line-height: 1.15;
+    }
+}
+.footer__nav {
+    @media screen and (min-width:1024px) {
+        display: flex;
+    }
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 32px;
+    @media screen and (min-width:1024px) {
+        margin-right: 137px;
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-right: 199px;
+    }
+}
+.footer__link {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: getColor('akzent-yellow');
+}
+.footer__social {
+    display: flex;
+    column-gap: 22px;
+    @media screen and (min-width:1024px) {
+        flex-direction: column-reverse;
+        row-gap: 12px;
+    }
+}
+.footer__social-item {
+    @media screen and (min-width:1024px) {
+        padding: 10px 12px 10px 12px;
+
+        border: 0.5px solid getColor('akzent-yellow');
+        border-radius: 2px;
+    }
+}
+.footer__social-link {
+    @media screen and (min-width:1024px) {
+       display: flex;
+       align-items: center;
+    }
+}
+.footer__social-text {
+    display: none;
+    @media screen and (min-width:1024px) {
+        display: flex;
+        justify-content: space-between;
+        
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: getColor('akzent-yellow');
+    }
+}
+.footer__social-icon {
+    width: 24px;
+    height: 24px;
+}
