@@ -1,0 +1,173 @@
+.hero-main {
+
+    background-color: getColor('white');
+    ;
+    max-width: 414px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    background-image: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 0.65)),
+            to(rgba(0, 0, 0, 0.65))),
+        url(../../../images/main/header/home-mobile.jpg);
+    background-image: linear-gradient((rgba(0, 0, 0, 0.65)), rgba((0, 0, 0, 0.65))),
+        url(../../../images/main/header/home-mobile.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero-main {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(rgba(0, 0, 0, 0.65)),
+                to(rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-mobile@2x.jpg);
+        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-mobile@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1279px) {
+    .hero-main {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(rgba(0, 0, 0, 0.65)),
+                to(rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-tablet.jpg);
+        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1279px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1024px) and (max-width:1279px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1024px) and (max-width:1279px) and (min-resolution: 192dpi),
+screen and (min-width: 1024px) and (max-width:1279px) and (min-resolution: 2dppx) {
+    .hero-main {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(rgba(0, 0, 0, 0.65)),
+                to(rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-tablet@2x.jpg);
+        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero-main {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(rgba(0, 0, 0, 0.65)),
+                to(rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-desktop.jpg);
+        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-desktop.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+screen and (min-width: 1280px) and (min-resolution: 192dpi),
+screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+    .hero-main {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(rgba(0, 0, 0, 0.65)),
+                to(rgba(0, 0, 0, 0.65))),
+            url(../../../images/main/header/home-dekstop@2x.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65),
+                rgba(0, 0, 0, 0.65)),
+            url(../../../images/main/header/home-dekstop@2x.jpg);
+    }
+}
+
+.hero__phrase {
+    text-transform: uppercase;
+    font-family: 'Film P3';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: getColor('white');
+}
+
+.hero__about {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: getColor('white');
+}
+
+.hero__text {
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.15;
+    letter-spacing: 0.05em;
+    color: getColor('white');
+}
+
+@media screen and (max-width:1023px) {
+    .opacity-btn {
+        opacity: 0.4;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .opacity-btn {
+        opacity: 0.4;
+    }
+}
+
+.link__socialsvg {
+    fill: getColor('border-golden');
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .link__socialsvg {
+        height: 24px;
+        width: 24px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .desktop-none {
+        display: none;
+    }
+}
+
+.link__social {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    position: fixed;
+
+}
+
+.location-address {
+    border: 1px solid getColor('border-golden');
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    color: getColor('map-link');
+    padding: 8px;
+    gap: 10px;
+}
