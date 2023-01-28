@@ -66,6 +66,138 @@
   font-display: swap;
   font-style: normal;
 }
+.header__container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  width: 414px;
+  margin: 0 auto;
+  padding: 0px 15px;
+  display: flex;
+}
+@media screen and (min-width: 1024px) {
+  .header__container {
+    width: 1024px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__container {
+    width: 1280px;
+  }
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__logo {
+  padding-top: 16px;
+  margin-right: 52px;
+  font-family: "FilmP3";
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: var(--white);
+  text-transform: uppercase;
+}
+@media screen and (min-width: 1024px) {
+  .header__logo {
+    font-size: 40px;
+    line-height: 1.075;
+    padding-top: 24px;
+    margin-right: 203px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header__logo {
+    margin-right: 135px;
+  }
+}
+
+.header__list {
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding-top: 28px;
+}
+@media screen and (min-width: 1024px) {
+  .header__list {
+    padding-top: 30px;
+    -moz-column-gap: 72px;
+         column-gap: 72px;
+  }
+}
+
+.header__link {
+  display: flex;
+  font-family: "Montserrat";
+  font-style: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow);
+}
+@media screen and (min-width: 1024px) {
+  .header__link {
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__link-box {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    padding: 12px 8px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+  }
+}
+
+.header__icon {
+  margin-left: 6px;
+  width: 24px;
+  height: 24px;
+}
+
+.header__tel {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .header__tel {
+    display: block;
+    margin-left: 8px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+  }
+}
+
+.header__social {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .header__social {
+    display: flex;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    padding-top: 38px;
+    margin-left: 136px;
+  }
+}
+
+.header__social-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .footer {
   background-color: var(--color-footer);
 }
