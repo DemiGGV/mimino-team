@@ -4,46 +4,115 @@
 У секції представлений слайдер з контентними зображеннями*.
 Кнопка “Детальніше” має бути реалізована як посилання, яке веде користувача на сторінку Room Page.
 Кнопка “Переглянути ціни” має відкривати модальне вікно Room Price Modal window. -->
-<section class="room-luxe">
-    <div class="container-room-luxe">
-        <p class="link">Amet minim mollit non</p>
-        <a href="#" class="room-luxe-logo">MIMIHO</a>
-        <h2 class="title">ДВОМІСНИЙ НОМЕР люкс</h2>
-        <p class="link-room">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-        <ul>
-            <li class="item">
-                <img
-                class="room-img"
-                src="/src/images/main/hero-hotel/main/main-mobile.jpg"
-                alt="foto room 1"
-                width="244"
-                height="322">
-            </li>
-             <li class="item">
-                <img
-                class="room-img"
-                src="/src/images/slider/slider mobile/arrangement-pf-bathroom-elements-self-care 1.jpg"
-                alt="foto room 2"
-                width="194"
-                height="194">
-            </li>
-             <li class="item">
-                <img
-                class="room-img"
-                src="/src/images/slider/slider mobile/cup-tea-stands-wooden-windowsill 1.jpg"
-                alt="foto room 3"
-                width="194"
-                height="194">
-            </li>
-        </ul>
-        <ul>
-            <li class="item-btn">
-                <form action="/src/room.html">
-                 <input type="submit" value="Детальніше">
-                </form>
-            </li>
-            <li class="item-btn"><button type="button" class="btn">Переглянути ціни</button></li>
-        </ul>
+<section class="section room-luxe">
+  <div class="container room-luxe">
+    <p class="link">Amet minim mollit non</p>
+    <a href="index.html" class="room-luxe-logo">mimino</a>
+    <h2 class="title">двомісний номер<span class="title-room"> люкс</span></h2>
+    <p class="link-room">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+    <ul class="list">
+      <li class="item">
+        <picture>
+          <source
+            srcset="
+              /src/images/main/hero-hotel/main/main-dekstop.jpg    1x,
+              /src/images/main/hero-hotel/main/main-desktop@2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
 
+          <source
+            srcset="
+              /src/images/main/hero-hotel/main/main-tablet.jpg    1x,
+              /src/images/main/hero-hotel/main/main-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="
+              /src/images/main/hero-hotel/main/main-mobile.jpg    1x,
+              /src/images/main/hero-hotel/main/main-mobile@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+
+          <img
+            class="room-img"
+            src="/src/images/main/hero-hotel/main/main-mobile.jpg"
+            alt="foto room 1"
+            width="244"
+          />
+        </picture>
+      </li>
+
+      <li class="item">
+        <picture>
+          <source
+            srcset="/src/images/slider/slider desktop/arrangement-pf-bathroom-elements-self-care 1.jpg 1x, /src/images/slider/slider desktop/arrangement-pf-bathroom-elements-self-care 1@2x.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+
+          <source
+            srcset="/src/images/slider/slider tablet/arrangement-pf-bathroom-elements-self-care 1.jpg 1x, /src/images/slider/slider tablet/arrangement-pf-bathroom-elements-self-care 1@2x.jpg 2x"
+            media="(min-width: 1024px)"
+          />
+
+          <source
+            srcset="/src/images/slider/slider mobile/arrangement-pf-bathroom-elements-self-care 1.jpg 1x, /src/images/slider/slider mobile/arrangement-pf-bathroom-elements-self-care 1@2x.jpg 2x"
+            media="(max-width: 1023px)"
+          />
+          <img
+            class="room-img"
+            src="/src/images/slider/slider mobile/arrangement-pf-bathroom-elements-self-care 1.jpg"
+            alt="foto room 2"
+            width="194"
+          />
+        </picture>
+      </li>
+
+      <li class="item">
+        <picture>
+          <source
+            srcset="/src/images/slider/slider desktop/cup-tea-stands-wooden-windowsill 1.jpg 1x, /src/images/slider/slider desktop/cup-tea-stands-wooden-windowsill 1@2x.jpg 2x"
+            media="(min-width: 1200px)"
+          />
+
+          <source
+            srcset="/src/images/slider/slider tablet/cup-tea-stands-wooden-windowsill 1.jpg 1x, /src/images/slider/slider tablet/cup-tea-stands-wooden-windowsill 1@2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+
+          <source
+            srcset="/src/images/slider/slider mobile/cup-tea-stands-wooden-windowsill 1.jpg 1x, /src/images/slider/slider mobile/cup-tea-stands-wooden-windowsill 1@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="room-img"
+            src="/src/images/slider/slider mobile/cup-tea-stands-wooden-windowsill 1.jpg"
+            alt="foto room 3"
+            width="194"
+          />
+        </picture>
+      </li>
+    </ul>
+
+    <div class="icon">
+      <svg class="icon-arrow-left" width="32" height="32">
+        <use href="/src/images/sprite.svg#icon-arrow-left"></use>
+      </svg>
+      <svg class="icon-arrow-right" width="32" height="32">
+        <use href="/src/images/sprite.svg#icon-arrow-right"></use>
+      </svg>
     </div>
+
+    <div class="btn-list">
+      <a href="/src/room.html" class="btn-room">Детальніше"</a>
+      <button type="button" class="btn">Переглянути ціни</button>
+    </div>
+  </div>
 </section>
