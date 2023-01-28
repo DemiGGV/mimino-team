@@ -2,7 +2,7 @@
 
     background-color: getColor('white');
     ;
-    max-width: 414px;
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -12,9 +12,9 @@
             left bottom,
             from(rgba(0, 0, 0, 0.65)),
             to(rgba(0, 0, 0, 0.65))),
-        url(../../../images/main/header/home-mobile.jpg);
-    background-image: linear-gradient((rgba(0, 0, 0, 0.65)), rgba((0, 0, 0, 0.65))),
-        url(../../../images/main/header/home-mobile.jpg);
+        url(../images/main/header/home-mobile.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/main/header/home-mobile.jpg);
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -27,9 +27,9 @@
                 left bottom,
                 from(rgba(0, 0, 0, 0.65)),
                 to(rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-mobile@2x.jpg);
-        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-mobile@2x.jpg);
+            url(../images/main/header/home-mobile@2x.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/main/header/home-mobile@2x.jpg);
     }
 }
 
@@ -40,9 +40,9 @@
                 left bottom,
                 from(rgba(0, 0, 0, 0.65)),
                 to(rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-tablet.jpg);
-        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-tablet.jpg);
+            url(../images/main/header/home-tablet.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/main/header/home-tablet.jpg);
     }
 }
 
@@ -56,9 +56,9 @@ screen and (min-width: 1024px) and (max-width:1279px) and (min-resolution: 2dppx
                 left bottom,
                 from(rgba(0, 0, 0, 0.65)),
                 to(rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-tablet@2x.jpg);
-        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-tablet@2x.jpg);
+            url(../images/main/header/home-tablet@2x.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/main/header/home-tablet@2x.jpg);
     }
 }
 
@@ -69,9 +69,9 @@ screen and (min-width: 1024px) and (max-width:1279px) and (min-resolution: 2dppx
                 left bottom,
                 from(rgba(0, 0, 0, 0.65)),
                 to(rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-desktop.jpg);
-        background-image: linear-gradient((rgba(0, 0, 0, 0.65)), (rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-desktop.jpg);
+            url(../images/main/header/home-desktop.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/main/header/home-desktop.jpg);
     }
 }
 
@@ -85,10 +85,10 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
                 left bottom,
                 from(rgba(0, 0, 0, 0.65)),
                 to(rgba(0, 0, 0, 0.65))),
-            url(../../../images/main/header/home-dekstop@2x.jpg);
+            url(../images/main/header/home-dekstop@2x.jpg);
         background-image: linear-gradient(rgba(0, 0, 0, 0.65),
                 rgba(0, 0, 0, 0.65)),
-            url(../../../images/main/header/home-dekstop@2x.jpg);
+            url(../images/main/header/home-dekstop@2x.jpg);
     }
 }
 
@@ -156,7 +156,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
-    position: fixed;
+    position:fixed;
 
 }
 
