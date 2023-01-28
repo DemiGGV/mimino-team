@@ -1,0 +1,149 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.room-luxe {
+    background: #FFFDEE;
+}
+
+.link {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #B4B4B4;
+    margin-bottom: 8px;
+}
+
+.room-luxe-logo {
+
+    text-decoration: none;
+    font-family: 'Film P3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #494848;
+}
+
+.title {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: #000000;
+
+}
+
+.title-room {
+    text-transform: lowercase;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.link-room {
+    display: block;
+    width: 258px;
+    margin-bottom: 32px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+}
+
+.list {
+    list-style: none;
+}
+
+.icon {
+    margin-bottom: 20px;
+}
+
+.icon-arrow-left {
+    margin-left: 15px;
+}
+
+.icon-arrow-right {
+    margin-left: 32px;
+}
+
+.btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.btn-room {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    box-sizing: border-box;
+    background: #000000;
+    border: 2px solid #FFFDEE;
+    border-radius: 25px;
+    padding: 14px 64px;
+}
+
+.btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    min-width: 236px;
+    color: #F3C653;
+    box-sizing: border-box;
+    background: #000000;
+    border: 2px solid #FFFDEE;
+    border-radius: 25px;
+    margin-top: 16px;
+    padding: 14px 37px;
+}
