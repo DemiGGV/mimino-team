@@ -31,18 +31,20 @@ a {
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     @media screen and (min-width:1024px) {
         width: 1024px;
-        padding: 80px 15px;
-        justify-content: space-around;
+        padding: 80px 47px;
         align-items: center;
     }
     @media screen and (min-width:1280px) {
         width: 1280px;
+        padding: 80px 85px;
     }
 }
 .footer__logo {
+    margin-right: 85px;
+
     font-family: 'FilmP3';
     font-size: 40px;
     font-weight: 700;
@@ -51,8 +53,13 @@ a {
     text-transform: uppercase;
     color: var(--akzent-yellow);
     @media screen and (min-width:1024px) {
+        margin-right: 163px;
+
         font-size: 64px;
         line-height: 1.15;
+    }
+    @media screen and (min-width:1280px) {
+        margin-right: 231px;
     }
 }
 .footer__nav {
