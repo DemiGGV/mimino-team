@@ -2,7 +2,7 @@
     background-color: var(--color-footer);
 }
 .footer__container {
-    width: 414px;
+    width: 384px;
     padding: 40px 15px;
     margin: 0 auto;
     background-color: var(--color-footer);
@@ -11,13 +11,13 @@
     align-items: center;
     justify-content: space-between;
     @media screen and (min-width:1024px) {
-        width: 1024px;
+        width: 930px;
         padding: 80px 15px;
         justify-content: space-around;
         align-items: center;
     }
     @media screen and (min-width:1280px) {
-        width: 1280px;
+        width: 1110px;
     }
 }
 .footer__logo {
@@ -98,6 +98,7 @@
 .footer__social-icon {
     width: 24px;
     height: 24px;
+    fill: var(--akzent-yellow);
 }
 .telegram {
     padding-right: 17px;

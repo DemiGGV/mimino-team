@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
   --general-gray-text: #757575;
@@ -66,30 +67,56 @@
   font-display: swap;
   font-style: normal;
 }
+/*=================== Обнуление стилей ======================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*=================== Обнуление стилей ======================*/
 .header__container {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
-  width: 414px;
+  width: 384px;
   margin: 0 auto;
   padding: 0px 15px;
   display: flex;
 }
 @media screen and (min-width: 1024px) {
   .header__container {
-    width: 1024px;
+    width: 930px;
   }
 }
 @media screen and (min-width: 1280px) {
   .header__container {
-    width: 1280px;
+    width: 1110px;
   }
 }
 
 .header__nav {
   display: flex;
+  align-items: center;
 }
 
 .header__logo {
@@ -131,6 +158,10 @@
   }
 }
 
+.header__item {
+  display: flex;
+}
+
 .header__link {
   display: flex;
   font-family: "Montserrat";
@@ -163,6 +194,19 @@
   margin-left: 6px;
   width: 24px;
   height: 24px;
+  fill: var(--akzent-yellow);
+}
+
+.header__link-icon {
+  margin-left: 6px;
+  width: 24px;
+  height: 24px;
+  fill: var(--akzent-yellow);
+}
+@media screen and (min-width: 1024px) {
+  .header__link-icon {
+    display: none;
+  }
 }
 
 .header__tel {
@@ -170,13 +214,15 @@
 }
 @media screen and (min-width: 1024px) {
   .header__tel {
-    display: block;
+    display: flex;
+    align-items: center;
     margin-left: 8px;
     font-family: "Montserrat";
     font-size: 14px;
     font-weight: 400;
     line-height: 1.21;
     letter-spacing: 0.02em;
+    color: var(--white);
   }
 }
 
@@ -196,6 +242,7 @@
 .header__social-icon {
   width: 24px;
   height: 24px;
+  fill: var(--akzent-yellow);
 }
 
 .footer {
@@ -203,7 +250,7 @@
 }
 
 .footer__container {
-  width: 414px;
+  width: 384px;
   padding: 40px 15px;
   margin: 0 auto;
   background-color: var(--color-footer);
@@ -213,7 +260,7 @@
 }
 @media screen and (min-width: 1024px) {
   .footer__container {
-    width: 1024px;
+    width: 930px;
     padding: 80px 15px;
     justify-content: space-around;
     align-items: center;
@@ -221,7 +268,7 @@
 }
 @media screen and (min-width: 1280px) {
   .footer__container {
-    width: 1280px;
+    width: 1110px;
   }
 }
 
@@ -320,6 +367,7 @@
 .footer__social-icon {
   width: 24px;
   height: 24px;
+  fill: var(--akzent-yellow);
 }
 
 .telegram {
