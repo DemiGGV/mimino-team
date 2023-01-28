@@ -73,3 +73,85 @@ ul {
 }
 
 /* ДОДАНІ СТИЛІ */
+
+.room-hero {
+    position: relative;
+
+    max-width: 414px;
+    height: 740px;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: url(../images/room/room3mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.room-hero .container {
+    padding-top: 483px;
+}
+
+.room-loc-link {
+    position: absolute;
+    top: 64px;
+    right: 15px;
+
+    display: flex !important;
+    align-items: center;
+    width: 210px;
+
+    margin-left: auto;
+    padding: 8px 6px;
+
+    border: 1px solid #f3c653b3;
+    border-radius: 2px;
+}
+
+.room-logo-location {
+    fill: var(--akzent-yellow);
+}
+
+.room-loc-descr {
+    width: 179px;
+    margin-left: 8px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #E5E5E5;
+}
+
+.room-hero-title {
+    max-width: 325px;
+    margin-bottom: 14px;
+
+    font-family: 'TimesNewRoman';
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.14;
+
+    color: var(--white);
+}
+
+.room-hero-title>span {
+    text-transform: uppercase;
+}
+
+.room-hero-descr {
+    max-width: 325px;
+
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+
+    color: var(--white);
+}
+
+.room-icon-link {
+    fill: var(--akzent-yellow);
+}
