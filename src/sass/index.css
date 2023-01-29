@@ -215,23 +215,23 @@ address {
 }
 
 .amenities__container {
+  max-width: 414px;
   padding: 32px 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   .amenities__container {
-    padding: 48px 47px;
+    max-width: 1024px;
+    padding: 48px 15px 48px 15px;
   }
 }
 @media screen and (min-width: 1280px) {
   .amenities__container {
-    padding: 48px 85px;
+    max-width: 1280px;
   }
-}
-
-.amenities__body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .amenities__title {
@@ -244,7 +244,6 @@ address {
 }
 
 .amenities__text-subtitle-text {
-  margin-bottom: 16px;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 700;
@@ -279,6 +278,7 @@ address {
 @media screen and (min-width: 1024px) {
   .amenities__text {
     width: 400px;
+    margin-bottom: 0px;
   }
 }
 
@@ -291,10 +291,22 @@ address {
   text-transform: uppercase;
 }
 
+.amenities-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 @media screen and (min-width: 1024px) {
   .amenities-box {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .amenities-box {
+    margin-right: 200px;
   }
 }
 
@@ -314,12 +326,14 @@ address {
 }
 @media screen and (min-width: 1024px) {
   .amenities__button {
+    margin: 40px 0px 32px 0px;
     padding: 18px 37px;
     font-size: 24px;
     width: 434px;
   }
 }
 
+.amenities__button:focus,
 .amenities__button:hover {
   background-color: var(--akzent-yellow);
   color: var(--black);
@@ -328,8 +342,6 @@ address {
 .amenities__return {
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 500;
@@ -339,7 +351,6 @@ address {
 }
 @media screen and (min-width: 1024px) {
   .amenities__return {
-    justify-content: flex-end;
     font-size: 20px;
     line-height: 1.2;
   }

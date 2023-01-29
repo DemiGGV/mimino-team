@@ -2,18 +2,20 @@
     background-color: var(--fon-lemon);
 }
 .amenities__container {
+    max-width: 414px;
     padding: 32px 15px;
-    @media screen and (min-width:1024px) {
-        padding: 48px 47px;
-    }
-    @media screen and (min-width:1280px){
-        padding: 48px 85px;
-    }
-}
-.amenities__body {
+    margin: 0 auto;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+    @media screen and (min-width:1024px) {
+        max-width: 1024px;
+        padding: 48px 15px 48px 15px;
+    }
+    @media screen and (min-width:1280px){
+        max-width: 1280px;
+    }
 }
 .amenities__title {
     margin-bottom: 16px;
@@ -25,8 +27,6 @@
     text-transform: uppercase;
 }
 .amenities__text-subtitle-text {
-    margin-bottom: 16px;
-
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 700;
@@ -54,6 +54,7 @@
     color: var(--general-gray-text);
     @media screen and (min-width:1024px) {
         width: 400px;
+        margin-bottom: 0px;
     }
 }
 .amenities__subtitle {
@@ -66,9 +67,17 @@
     text-transform: uppercase;
 }
 .amenities-box {
-    @media screen and (min-width:1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width:1024px) {  
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
+        margin-left: auto;  
+        margin-right: 47px;    
+    }
+    @media screen and (min-width:1280px) {
+        margin-right: 200px;
     }
 }
 .amenities__button {
@@ -87,11 +96,13 @@
     background-color: var(--black);
     cursor: pointer;
     @media screen and (min-width:1024px) {
+        margin: 40px 0px 32px 0px;
         padding: 18px 37px;
         font-size: 24px;
         width: 434px;
     }
 }
+.amenities__button:focus,
 .amenities__button:hover {
     background-color: var(--akzent-yellow);
     color: var(--black);
@@ -99,8 +110,6 @@
 .amenities__return {
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
 
     font-family: 'Montserrat';
     font-size: 16px;
@@ -110,8 +119,6 @@
 
     color: var(--brown);
     @media screen and (min-width:1024px) {
-        justify-content: flex-end;
-
         font-size: 20px;
         line-height: 1.2;
     }
