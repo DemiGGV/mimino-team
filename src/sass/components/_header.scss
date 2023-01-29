@@ -1,38 +1,19 @@
-/*=================== Обнуление стилей ======================*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-   margin: 0;
-   padding: 0;
-}
-ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-}
-a {
-   text-decoration: none;
-   padding: 0;
-   margin: 0;
-}
-/*=================== Обнуление стилей ======================*/
-.header__container {
+.header {
     background-color: black;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
-
+    height: 64px;
+    @media screen and (min-width:1024px) {
+        height: 100px;
+    }
+}
+.header__container {
     width: 414px;
     margin: 0 auto;
     padding: 0px 15px;
-
-    display: flex;
     @media screen and (min-width:1024px) {
         width: 1024px;
         padding: 0px 47px;
@@ -41,6 +22,9 @@ a {
         width: 1280px;
         padding: 0px 85px;
     }
+}
+.header__body {
+    display: flex;
 }
 .header__nav {
     display: flex;
@@ -70,7 +54,6 @@ a {
 .header__list {
     display: flex;
     column-gap: 20px;
-    padding-top: 28px;
     @media screen and (min-width:1024px){
         padding-top: 30px;
         column-gap: 72px;
@@ -78,6 +61,7 @@ a {
 }
 .header__item {
     display: flex;
+    padding-top: 28px;
 }
 .header__link {
     display: flex;
@@ -96,6 +80,7 @@ a {
     }
 }
 .header__link-box {
+    display: none;
     @media screen and (min-width:1024px) {
         display: flex;
         align-items: center;
