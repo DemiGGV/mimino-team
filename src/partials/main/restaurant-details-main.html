@@ -3,15 +3,14 @@
 У секції представлений слайдер з контентними зображеннями готових блюд ресторану*.
 Кнопка “Забронювати столик” має відкривати модальне вікно Book Table Modal window.
 Кнопка “Переглянути меню” має бути реалізована як посилання, яке веде користувача на сторінку Restaurant Page. -->
-<section>
-    <div class="class container">
+<section class="section-restaurant-details">
+    <div class="container">
         <div class="blok-aside">
-            <h1 class="restaurant-details">mimiho</h1>
+            <p class="restaurant-details">mimiho</p>
             <h2 class="restaurant-details-title">Ресторан</h2>
             <p class="restaurant-details-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
         </div>
         <div>
-            <h3 class="visually-hidden">food-photo</h3>
             <ul class="restaurant-details-list">
                 <li class="restaurant-details-item">
                     <picture>
@@ -50,7 +49,6 @@
                 </li>
             </ul>
         </div>
-        <h3 class="visually-hidden">slider-icon</h3>
         <ul>
             <li>
                 <svg>
@@ -63,7 +61,7 @@
                 </svg>
             </li>
         </ul>
-        <button type="button">Забронювати столик</button>
-        <a href="/src/partials/restaurant/menu-restaurant.html">Переглянути меню</a>
+        <button type="button" class="btn-restaurant">Забронювати столик</button>
+        <a class="btn-main" href="/src/partials/restaurant/menu-restaurant.html">Переглянути меню</a>
     </div>
 </section>
