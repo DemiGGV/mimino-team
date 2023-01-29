@@ -23,19 +23,16 @@ a {
 .footer {
     background-color: var(--color-footer);
 }
-.footer__container {
-    padding: 40px 15px;
-    @media screen and (min-width:1024px) {
-        padding: 80px 47px;
-    }
-    @media screen and (min-width:1280px) {
-        padding: 80px 85px;
-    }
-}
 .footer__body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;  
+    @media screen and (min-width:1024px) {
+        padding-top: 80px;
+        padding-bottom: 80px; 
+    }
 }
 .footer__logo {
     margin-right: 85px;
