@@ -2,347 +2,41 @@
   --transition-dur-and-func: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-  display: inline-block;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .hero-hotel-section {
-  max-width: 1280px;
+  padding-top: 64px;
   padding-bottom: 64px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url(..//..//..//images/hotel/header/hotel-desktop.jpg);
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and(min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .hero-hotel-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(..//..//..//images/hotel/header/hotel-mobile@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .hero-hotel-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(..//..//..//images/hotel/header/hotel-tablet.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and(min-resolution: 192dpi) and (min-width: 1024px),
-  screen and (min-resolution: 2dppx) and (min-width: 1024px) {
-  .hero-hotel-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(..//..//..//images/hotel/header/hotel-tablet@2x.jpg);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .hero-hotel-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(..//..//..//images/hotel/header/hotel-desktop.jpg);
-  }
-}
-
-@media screen and (min-device-pixel-ratio: 2),
-  screen and(min-resolution: 192dpi) and (min-width: 1280px),
-  screen and (min-resolution: 2dppx) and (min-width: 1280px) {
-  .hero-hotel-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(..//..//..//images/hotel/header/hotel-dekstop@2x.jpg);
-  }
-}
-
-.hero-hotel-text-top {
-  font-family: 'FilmP3';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 128px;
-  line-height: 1.07;
-  letter-spacing: 0.3em;
-  color: #ffffff;
-  margin-top: 64px;
-  justify-content: center;
-  display: flex;
-}
-
-.hotel-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-top: 32px;
-  margin-bottom: 249px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.btn-hotel-hero {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hero-hotel-btn {
-  list-style: none;
-  display: flex;
-  gap: 60px;
-  justify-content: flex-end;
-}
-
-.rez {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  background: content-box;
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 14px;
-  padding-right: 14px;
-  cursor: pointer;
-  width: 254px;
-  height: 48px;
-  transition: background-color 250ms var(--transition-dur-and-func);
-}
-
-.rez:hover,
-.rez:focus {
-  background: #ffffff;
-  border: 2px solid #f3c653;
-  border-radius: 25px;
-}
-
-.view-cash {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: #f3c653;
-  background: content-box;
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 14px;
-  padding-right: 14px;
-  cursor: pointer;
-  width: 254px;
-  height: 48px;
-  transition: background-color 250ms var(--transition-dur-and-func);
-}
-
-.view-cash:hover,
-.view-cash:focus {
-  background: #ffffff;
-  border: 2px solid #f3c653;
-  border-radius: 25px;
-}
-.adress-hotel {
-  position: absolute;
-  width: 285px;
-  top: 495px;
-  left: 85px;
-  border: 1px solid rgba(243, 198, 83, 0.7);
-  border-radius: 2px;
-  padding-top: 8px;
-  padding-right: 8px;
-  padding-bottom: 8px;
-  padding-left: 44px;
-  cursor: pointer;
-  align-items: center;
-  display: flex;
-}
-.adress-hotel-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: #e5e5e5;
-}
-.hero-gps {
-  width: 24px;
-  height: 24px;
-  margin-left: -30px;
-  display: flex;
-  position: absolute;
-  fill: #f3c653;
-}
-
-.social-hero {
-  list-style: none;
-  display: none;
-}
-
-.hero-social {
-  width: 24px;
-  height: 24px;
-  fill: #f3c653;
-  display: none;
-}
-
-/*HERO-HOTEL-Mobile*/
-@media screen and (min-width: 414px) and (max-width: 1023px) {
-  .hero-hotel-section {
-    padding-top: 181px;
-    padding-bottom: 181px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
-      url(..//..//..//images/hotel/header/hotel-mobile@2x.jpg);
-  }
-
-  .container {
-    width: 414px;
-  }
 
   .hero-hotel-text-top {
-    font-size: 96px;
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: #ffffff;
+    margin-top: 64px;
     justify-content: center;
     display: flex;
-    margin-top: 70px;
   }
 
   .hotel-text {
-    margin-bottom: 178px;
-  }
-
-  .btn-hotel-hero {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .hero-hotel-btn {
-    list-style: none;
-    display: grid;
-    grid-gap: 24px;
-    justify-content: center;
-  }
-
-  .rez {
-    width: 236px;
-    height: 48px;
-  }
-  .view-cash {
-    width: 236px;
-    height: 48px;
-  }
-  .adress-hotel {
-    width: 210px;
-    left: 189px;
-    top: 64px;
-    padding-top: 8px;
-    padding-right: 3px;
-    padding-bottom: 9px;
-    padding-left: 34px;
-    align-items: center;
-    display: flex;
-  }
-  .adress-hotel-text {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.25;
-    letter-spacing: 0.01em;
-    color: #e5e5e5;
-  }
-  .hero-gps {
-    width: 20px;
-    height: 20px;
-    margin-left: -30px;
-    top: 13px;
-  }
-
-  .social-hero {
-    list-style: none;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-top: 32px;
+    margin-bottom: 250px;
     display: flex;
-    gap: 20px;
-    bottom: -160px;
-    position: relative;
-  }
-
-  .hero-social {
-    width: 24px;
-    height: 24px;
-    fill: #f3c653;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
-  .container {
-    width: 1024px;
-    padding-left: 47px;
-    padding-right: 47px;
-  }
-  .hero-hotel-text-top {
-    font-size: 128px;
     justify-content: center;
-    display: flex;
-    margin-top: 88px;
-  }
-
-  .hotel-text {
-    margin-bottom: 218px;
+    align-items: center;
   }
 
   .btn-hotel-hero {
@@ -353,18 +47,76 @@ ul {
 
   .hero-hotel-btn {
     list-style: none;
-    grid-gap: 40px;  
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
   }
 
   .rez {
-    width: 232px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    background: content-box;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    cursor: pointer;
+    width: 254px;
     height: 48px;
+    transition: background-color 250ms var(--transition-dur-and-func);
   }
+
+  .rez:hover,
+  .rez:focus {
+    background: #ffffff;
+    border: 2px solid #f3c653;
+    border-radius: 25px;
+  }
+
   .view-cash {
-    width: 232px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #f3c653;
+    background: content-box;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 14px;
+    padding-right: 14px;
+    cursor: pointer;
+    width: 254px;
     height: 48px;
+    transition: background-color 250ms var(--transition-dur-and-func);
+  }
+
+  .view-cash:hover,
+  .view-cash:focus {
+    background: #ffffff;
+    border: 2px solid #f3c653;
+    border-radius: 25px;
   }
   .adress-hotel {
+    position: absolute;
+    width: 285px;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 44px;
+    cursor: pointer;
     align-items: center;
     display: flex;
   }
@@ -380,41 +132,248 @@ ul {
   .hero-gps {
     width: 24px;
     height: 24px;
-    margin-left: -35px;
- 
+    top: 15px;
+    margin-left: -30px;
+    display: flex;
+    position: absolute;
+    fill: #f3c653;
   }
 
   .social-hero {
     list-style: none;
-    display: flex;
-    gap: 20px;
-    bottom: 130px;
-    position: absolute;
-    left: 85px;
+    display: none;
   }
 
   .hero-social {
     width: 24px;
     height: 24px;
     fill: #f3c653;
-    display: flex;
+    display: none;
+  }
+
+  /*HERO-HOTEL-Mobile*/
+  @media screen and (max-width: 1023px) {
+    .hero-hotel-section {
+      padding-top: 181px;
+      padding-bottom: 181px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(..//..//..//images/hotel/header/hotel-mobile@2x.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and(min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(..//..//..//images/hotel/header/hotel-mobile@2x.jpg);
+    }
+
+    .hero-hotel-text-top {
+      font-size: 96px;
+      justify-content: center;
+      display: flex;
+      margin-top: 70px;
+    }
+
+    .hotel-text {
+      margin-bottom: 178px;
+    }
+
+    .btn-hotel-hero {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-hotel-btn {
+      list-style: none;
+      display: grid;
+      grid-gap: 24px;
+      justify-content: center;
+    }
+
+    .rez {
+      width: 236px;
+      height: 48px;
+    }
+    .view-cash {
+      width: 236px;
+      height: 48px;
+    }
+    .adress-hotel {
+      width: 210px;
+      right: 15px;
+      top: 64px;
+      padding-top: 8px;
+      padding-right: 3px;
+      padding-bottom: 9px;
+      padding-left: 34px;
+      align-items: center;
+      display: flex;
+    }
+    .adress-hotel-text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.25;
+      letter-spacing: 0.01em;
+      color: #e5e5e5;
+    }
+    .hero-gps {
+      width: 20px;
+      height: 20px;
+      margin-left: -30px;
+      top: 13px;
+    }
+
+    .social-hero {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      bottom: -40px;
+      position: relative;
+    }
+
+    .hero-social {
+      width: 24px;
+      height: 24px;
+      fill: #f3c653;
+      display: flex;
+    }
+  }
+
+  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+      width: 1024px;
+      padding-left: 47px;
+      padding-right: 47px;
+    }
+    .hero-hotel-text-top {
+      font-size: 128px;
+      justify-content: center;
+      display: flex;
+      margin-top: 88px;
+    }
+
+    .hotel-text {
+      margin-bottom: 218px;
+    }
+
+    .btn-hotel-hero {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-hotel-btn {
+      list-style: none;
+      grid-gap: 40px;
+    }
+
+    .rez {
+      width: 232px;
+      height: 48px;
+    }
+    .view-cash {
+      width: 232px;
+      height: 48px;
+    }
+    .adress-hotel {
+      align-items: center;
+      display: flex;
+    }
+    .adress-hotel-text {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      letter-spacing: 0.01em;
+      color: #e5e5e5;
+    }
+    .hero-gps {
+      width: 24px;
+      height: 24px;
+      margin-left: -35px;
+    }
+
+    .social-hero {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      bottom: -35px;
+      position: relative;
+    }
+
+    .hero-social {
+      width: 24px;
+      height: 24px;
+      fill: #f3c653;
+      display: flex;
+    }
+    @media screen and (min-width: 1024px) {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(..//..//..//images/hotel/header/hotel-tablet.jpg);
+    }
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution: 192dpi) and (min-width: 1024px),
+    screen and (min-resolution: 2dppx) and (min-width: 1024px) {
+    .hero-hotel-section {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(..//..//..//images/hotel/header/hotel-tablet@2x.jpg);
+    }
   }
 }
 
 /*HERO-HOTEL-Desktop*/
 @media screen and (min-width: 1280px) {
- .container {
+  .container {
     width: 1280px;
     padding-left: 85px;
     padding-right: 85px;
   }
 
-  .hotel-text{
+  .hotel-text {
     margin-bottom: 242px;
   }
-  .hero-gps{
+  .hero-gps {
     margin-left: -35px;
   }
+  @media screen and (min-width: 1280px) {
+    .hero-hotel-section {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(..//..//..//images/hotel/header/hotel-desktop.jpg);
+    }
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and(min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px) {
+    .hero-hotel-section {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(..//..//..//images/hotel/header/hotel-dekstop@2x.jpg);
+    }
+  }
 }
-
-
