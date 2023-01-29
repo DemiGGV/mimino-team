@@ -1,14 +1,205 @@
 .hero-restaurant {
-    display: flex;
+    position: relative;
+    // max-width: 414px;
+    height: 740px;
+    padding-top: 14px;
     text-align: center;
-    background-image: url(/src/images/restaurant/rest-mobile.jpg);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-mobile.jpg);
+    background-repeat: no-repeat;
 }
 
 .hero-title {
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: calc(103 / 96);
+    letter-spacing: 0.3em;
+    color: var(--white);
+    padding-top: 181px;
+    text-align: center;
+    margin: 0 auto;
 }
 .hero-restaurant-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #FDFBEC;
+    padding-top: 20px;
+    
 }
 .hero-taste {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    letter-spacing: 0.05em;
+    color: #FDFBEC;
+    padding-top: 44px;
+    
 }
 .hero-btn-restaurant {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding-top: 113px;
+    margin: 0 auto;
+    width: max-content;
 }
+
+.hero-btn {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    border-radius: 25px;
+    padding: 14px 24px;
+    cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--white);
+    border-color: #F3C653;
+    
+}
+
+.hero-address {
+    position: absolute;
+    left: 189px;
+    top: 64px;
+    display: inline-block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.01em;
+    
+
+    color: #E5E5E5;
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    width: 215px ;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 11px;
+    padding-right: 3px;
+}
+
+.address-icon {
+    // width: 10px;
+    // height: 10px;
+    display: block;
+    fill: #F3C653;
+    margin-right: 13px;
+    text-align: center;
+}
+
+.second {
+    display: none;
+}
+
+  @media screen and (min-width:  414px) {
+    .hero-restaurant {
+        width: 1024px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet.jpg);
+        background-repeat: no-repeat;
+        }
+        .hero-address {
+            position: absolute;
+            left: 47px;
+            top: 600px;
+            width: 290px;
+            height: 56px;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-size: 16px;
+            line-height: calc(20 / 16);
+            letter-spacing: 0.01em;
+            padding-bottom: 8px;
+            padding-top: 8px;
+        }
+        .address-icon {
+            width: 12px;
+        }
+
+        .hero-title {
+            font-family: 'FilmP3';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 128px;
+            line-height: calc(138 / 128);
+            letter-spacing: 0.3em;
+            padding-top: 188px;
+        }
+
+        .hero-restaurant-title {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            padding-top: 16px;
+            text-align: center;
+        }
+
+        .hero-taste {
+            padding-top: 56px;
+            font-family: 'Times New Roman';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: calc(41 / 36);
+            letter-spacing: 0.05em;
+        }
+
+        .hero-btn-restaurant {
+            display: flex;
+            flex-direction: row;
+            grid-gap: 40px;
+            margin: 0;  
+            margin-left: auto;
+            padding-top: 147px;
+        }
+        .mobile {
+            display: none;
+        }
+        .second {
+            display: block;
+        }
+  }
+
+
+
+  @media screen and (min-width: 1024px) {
+.hero-restaurant {
+    max-width: 1280px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-desktop.jpg);
+    background-repeat: no-repeat;
+}
+.hero-title {
+    font-family: 'FilmP3';
+font-style: normal;
+font-weight: 700;
+font-size: 128px;
+line-height: calc(138 / 128);
+letter-spacing: 0.3em;
+}
+  }
+
