@@ -1,59 +1,97 @@
-/*HERO-HOTEL-Desktop*/
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-.hero-hotel-section {
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.hero-hotel-text-top {
-  font-family: 'Film P3';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 128px;
-  line-height: 1.07;
-  letter-spacing: 0.3em;
-  color: black;
-}
+/*HERO-HOTEL-Desktop*/
+@media screen and (min-width: 1280px) {
+  //.hero-hotel-section {}
 
-.hotel-text {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #000000;
+  .container {
+    width: 1280px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+
+  //.hero-hotel-text-top {}
+
+  //.hotel-text {}
 }
 
 /*HERO-HOTEL-Mobile*/
-@media screen and (min-width: 414px) and (max-width: 1024px) {
-  .body {
-    background: greenyellow;
-  }
-
+@media screen and (min-width: 414px) and (max-width: 1023px) {
   .hero-hotel-section {
     padding-top: 181px;
     padding-bottom: 181px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(..//..//..//images/hotel/header/hotel-mobile@2x.jpg);
   }
 
   .container {
     width: 414px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
   }
 
   .hero-hotel-text-top {
-    font-family: 'Film P3';
+    font-family: 'FilmP3';
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
     line-height: 1.07;
     letter-spacing: 0.3em;
-    color: black;
+    color: #ffffff;
     margin-top: 70px;
     margin-bottom: 32px;
+    justify-content: center;
+    display: flex;
   }
 
   .hotel-text {
@@ -63,7 +101,7 @@
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #000000;
+    color: #ffffff;
     margin-top: 32px;
     margin-bottom: 178px;
     display: flex;
@@ -79,6 +117,8 @@
 
   .hero-hotel-btn {
     list-style: none;
+    display: grid;
+    grid-gap: 24px;
   }
 
   .rez {
@@ -97,6 +137,8 @@
     padding-left: 14px;
     padding-right: 14px;
     cursor: pointer;
+    width: 236px;
+    height: 48px
   }
   .view-cash {
     font-family: 'Montserrat';
@@ -114,20 +156,25 @@
     padding-left: 14px;
     padding-right: 14px;
     cursor: pointer;
+    width: 236px;
+    height: 48px
   }
   .adress-hotel {
     position: absolute;
     width: 210px;
     left: 189px;
     top: 64px;
-    border: 1px solid rgba(243,198,83,.7);
+    border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
     padding-top: 8px;
     padding-right: 3px;
     padding-bottom: 9px;
     padding-left: 34px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
   }
-  .adress-hotel-text{
+  .adress-hotel-text {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -135,9 +182,34 @@
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: #e5e5e5;
-
+  }
+  .hero-gps {
+    width: 20px;
+    height: 20px;
+    margin-left: -30px;
+    display: flex;
+    position: absolute;
+    top: 13px;
+    fill: #f3c653;
   }
 
+.social-hero{
+  list-style: none;
+}
+
+  .hero-social {
+    width: 24px;
+    height: 24px;
+    fill: #f3c653;
+  }
 }
 
 /*HERO-HOTEL-Tablet*/
+
+@media screen and (min-width: 1024px) and (max-width: 1279) {
+  .container {
+    width: 1024px;
+    padding-left: 47px;
+    padding-right: 47px;
+  }
+}
