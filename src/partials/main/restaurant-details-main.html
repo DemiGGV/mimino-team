@@ -3,3 +3,67 @@
 У секції представлений слайдер з контентними зображеннями готових блюд ресторану*.
 Кнопка “Забронювати столик” має відкривати модальне вікно Book Table Modal window.
 Кнопка “Переглянути меню” має бути реалізована як посилання, яке веде користувача на сторінку Restaurant Page. -->
+<section>
+    <div class="class container">
+        <div class="blok-aside">
+            <h1 class="restaurant-details">mimiho</h1>
+            <h2 class="restaurant-details-title">Ресторан</h2>
+            <p class="restaurant-details-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+        </div>
+        <div>
+            <h3 class="visually-hidden">food-photo</h3>
+            <ul class="restaurant-details-list">
+                <li class="restaurant-details-item">
+                    <picture>
+                        <source 
+                        srcset="/src/images/slider/main-hero-slider/slider1rest.jpg 1x,
+                        /src/images/slider/main-hero-slider/slider1rest@2x.jpg 2x">
+                        <img 
+                        class="restaurant-img"
+                        src="./images/slider/main-hero-slider/slider2rest.jpg" 
+                        alt="restaurant-details-photo1"
+                        width="270">
+                    </picture>
+                </li>
+                <li class="restaurant-details-item">
+                    <picture>
+                        <source 
+                        srcset="/src/images/slider/main-hero-slider/slider2rest.jpg 1x,
+                        /src/images/slider/main-hero-slider/slider2rest@2x.jpg 2x">
+                        <img 
+                        class="restaurant-img"
+                        src="./images/slider/main-hero-slider/slider2rest.jpg" 
+                        alt="restaurant-details-photo2"
+                        width="162">
+                    </picture>
+                </li>
+                <li class="restaurant-details-item">
+                    <picture>
+                        <source srcset="/src/images/slider/main-hero-slider/slider3rest.jpg 1x,
+                        /src/images/slider/main-hero-slider/slider3rest@2x.jpg 2x">
+                        <img 
+                        class="restaurant-img"
+                        src="./images/slider/main-hero-slider/slider3rest.jpg" 
+                        alt="restaurant-details-photo3"
+                        width="162">
+                    </picture>
+                </li>
+            </ul>
+        </div>
+        <h3 class="visually-hidden">slider-icon</h3>
+        <ul>
+            <li>
+                <svg>
+                    <use href="/src/images/sprite.svg#icon-arrow-left"></use>
+                </svg>
+            </li>
+            <li>
+                <svg>
+                    <use href="/src/images/sprite.svg#icon-arrow-right"></use>
+                </svg>
+            </li>
+        </ul>
+        <button type="button">Забронювати столик</button>
+        <a href="/src/partials/restaurant/menu-restaurant.html">Переглянути меню</a>
+    </div>
+</section>
