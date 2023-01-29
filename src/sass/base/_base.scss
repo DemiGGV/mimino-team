@@ -18,17 +18,9 @@ ul {
     box-sizing: border-box;
 }
 
-a,
-a:link,
-a:visited {
-    text-decoration: none;
-    display: inline-block;
-}
-
 a:not([class]) {
     text-decoration-skip-ink: auto;
 }
-
 
 img {
     display: block;
@@ -38,6 +30,13 @@ img {
 
 address {
     font-style: normal;
+}
+
+.link,
+.link:link,
+.link:visited {
+    display: inline-block;
+    text-decoration: none;
 }
 
 .list {
