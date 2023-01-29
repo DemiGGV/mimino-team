@@ -101,7 +101,8 @@
     top: 64px;
     right: 15px;
 
-    display: flex !important;
+    display: flex;
+    text-decoration: none;
     align-items: center;
     width: 210px;
 
@@ -227,7 +228,8 @@
 }
 
 .room-icon-link {
-    display: flex !important;
+    display: flex;
+    text-decoration: none;
     fill: var(--akzent-yellow);
 }
 
