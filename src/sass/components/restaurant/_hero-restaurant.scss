@@ -1,6 +1,6 @@
 .hero-restaurant {
     position: relative;
-    // max-width: 414px;
+    width: 100%;
     height: 740px;
     padding-top: 14px;
     text-align: center;
@@ -29,6 +29,7 @@
     letter-spacing: 0.02em;
     color: #FDFBEC;
     padding-top: 20px;
+
     
 }
 .hero-taste {
@@ -40,6 +41,7 @@
     letter-spacing: 0.05em;
     color: #FDFBEC;
     padding-top: 44px;
+    text-align: center;
     
 }
 .hero-btn-restaurant {
@@ -64,7 +66,10 @@
     border-radius: 25px;
     padding: 14px 24px;
     cursor: pointer;
+    
 }
+
+
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -75,9 +80,9 @@
 
 .hero-address {
     position: absolute;
-    left: 189px;
-    top: 64px;
-    display: inline-block;
+    right: 34px;
+    top: 8px;
+    display: flex;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -89,7 +94,7 @@
     color: #E5E5E5;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
-    width: 215px ;
+    width: 210px ;
     display: flex;
     margin-left: auto;
     align-items: center;
@@ -98,20 +103,38 @@
     padding-top: 8px;
     padding-bottom: 9px;
     padding-left: 11px;
-    padding-right: 3px;
+    // padding-right: 3px;
+}
+
+.hero-address.link {
+    display: flex;
+}
+
+.address-map {
+    color: var(--white);
 }
 
 .address-icon {
-    // width: 10px;
-    // height: 10px;
+
     display: block;
     fill: #F3C653;
-    margin-right: 13px;
+    margin-right: 8px;
     text-align: center;
 }
 
 .second {
     display: none;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-restaurant {
+    background-size: 414px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-mobile@2x.jpg);
+
+}
 }
 
   @media screen and (min-width:  414px) {
@@ -120,11 +143,23 @@
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet.jpg);
         background-repeat: no-repeat;
         }
+
+        @media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-restaurant {
+    background-size: 1024px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet@2x.jpg);
+
+}
+}
+        
         .hero-address {
-            position: absolute;
-            left: 47px;
-            top: 600px;
-            width: 290px;
+            position: initial;
+            display: flex;
+            flex-direction: row;
+            width: 285px;
             height: 56px;
             font-family: 'Montserrat';
             font-style: normal;
@@ -133,6 +168,7 @@
             letter-spacing: 0.01em;
             padding-bottom: 8px;
             padding-top: 8px;
+            margin-right: 101px;
         }
         .address-icon {
             width: 12px;
@@ -172,9 +208,10 @@
         .hero-btn-restaurant {
             display: flex;
             flex-direction: row;
+            justify-content: space-between;
             grid-gap: 40px;
             margin: 0;  
-            margin-left: auto;
+            // margin-left: auto;
             padding-top: 147px;
         }
         .mobile {
@@ -189,7 +226,7 @@
 
   @media screen and (min-width: 1024px) {
 .hero-restaurant {
-    max-width: 1280px;
+    width: 1280px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-desktop.jpg);
     background-repeat: no-repeat;
 }
@@ -201,5 +238,27 @@ font-size: 128px;
 line-height: calc(138 / 128);
 letter-spacing: 0.3em;
 }
+
+.hero-btn-restaurant {
+    margin: 0px;
+    grid-gap: 60px;
+}
+
+
+.hero-address {
+    margin-right: 204px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero-restaurant {
+    background-size: 1280px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-dekstop@2x.jpg);
+
+}
+}
   }
+
 
