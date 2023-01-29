@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
   --general-gray-text: #757575;
@@ -145,13 +146,6 @@ ul {
   box-sizing: border-box;
 }
 
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-  display: inline-block;
-}
-
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
@@ -165,6 +159,13 @@ img {
 
 address {
   font-style: normal;
+}
+
+.link,
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .list {
@@ -210,6 +211,31 @@ address {
   }
 }
 
+/*=================== Обнуление стилей ======================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*=================== Обнуление стилей ======================*/
 .footer {
   background-color: var(--color-footer);
 }
@@ -236,11 +262,6 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media screen and (min-width: 1024px) {
-  .footer__body {
-    align-items: center;
-  }
 }
 
 .footer__logo {
@@ -313,7 +334,7 @@ address {
 
 @media screen and (min-width: 1024px) {
   .footer__social-item {
-    padding: 10px 12px 10px 12px;
+    padding: 10px 12px;
     border: 0.5px solid var(--akzent-yellow);
     border-radius: 2px;
   }
@@ -322,7 +343,6 @@ address {
 @media screen and (min-width: 1024px) {
   .footer__social-link {
     display: flex;
-    align-items: center;
   }
 }
 
