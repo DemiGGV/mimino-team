@@ -15,8 +15,8 @@
                 <li class="restaurant-details-item">
                     <picture>
                         <source 
-                        srcset="/src/images/slider/main-hero-slider/slider1rest.jpg 1x,
-                        /src/images/slider/main-hero-slider/slider1rest@2x.jpg 2x">
+                        srcset="./images/slider/main-hero-slider/slider1rest@2x.jpg 1x,
+                        ./images/slider/main-hero-slider/slider2rest@2x.jpg 2x">
                         <img 
                         class="restaurant-img"
                         src="./images/slider/main-hero-slider/slider2rest.jpg" 
@@ -27,8 +27,8 @@
                 <li class="restaurant-details-item">
                     <picture>
                         <source 
-                        srcset="/src/images/slider/main-hero-slider/slider2rest.jpg 1x,
-                        /src/images/slider/main-hero-slider/slider2rest@2x.jpg 2x">
+                        srcset="./images/slider/main-hero-slider/slider2rest.jpg 1x,
+                        ./images/slider/main-hero-slider/slider2rest@2x.jpg 2x">
                         <img 
                         class="restaurant-img"
                         src="./images/slider/main-hero-slider/slider2rest.jpg" 
@@ -38,8 +38,8 @@
                 </li>
                 <li class="restaurant-details-item">
                     <picture>
-                        <source srcset="/src/images/slider/main-hero-slider/slider3rest.jpg 1x,
-                        /src/images/slider/main-hero-slider/slider3rest@2x.jpg 2x">
+                        <source srcset="./images/slider/main-hero-slider/slider3rest.jpg 1x,
+                        ./images/slider/main-hero-slider/slider3rest@2x.jpg 2x">
                         <img 
                         class="restaurant-img"
                         src="./images/slider/main-hero-slider/slider3rest.jpg" 
@@ -49,19 +49,21 @@
                 </li>
             </ul>
         </div>
-        <ul>
-            <li>
-                <svg>
-                    <use href="/src/images/sprite.svg#icon-arrow-left"></use>
-                </svg>
-            </li>
-            <li>
-                <svg>
-                    <use href="/src/images/sprite.svg#icon-arrow-right"></use>
-                </svg>
-            </li>
-        </ul>
-        <button type="button" class="btn-restaurant">Забронювати столик</button>
-        <a class="btn-main" href="/src/partials/restaurant/menu-restaurant.html">Переглянути меню</a>
+        <div class="icon">
+            <ul>
+                <li>
+                    <svg class="icon-arrow" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </li>
+                <li>
+                    <svg class="icon-arrow" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="btn-mains">Забронювати столик</button>
+        <a class="btn-restaurant" href="/src/partials/restaurant/menu-restaurant.html">Переглянути меню</a>
     </div>
 </section>
