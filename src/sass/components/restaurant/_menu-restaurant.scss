@@ -1,18 +1,36 @@
+.menu-section {
+    background-color: var(--fon-lemon);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+
 .menu-title {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 32px;
     line-height: 1.16;
-    color:black;
+    color: black;
     text-transform: uppercase;
+    margin-bottom: 32px;
+    
 }
 
 .title-table {
-    font-family: 'Times New Roman', sans-serif;
+    font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     color: #000000;
+    margin-bottom: 16px;
+    
+    text-align: left;
+
+}
+
+.menu-table:not(:last-child) {
+    margin-bottom: 16px;
 }
 
 .name-menu {
@@ -25,13 +43,37 @@
 }
 
 .composition {
-    font-family: 'Montserrat',sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 10px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #000000;
+    padding-top: 4px;
+    padding-bottom: 8px;
 }
+
+.dessert-drink {
+    padding-bottom: 8px;
+    
+}
+
+.dessert {
+    padding-right: 100px;
+}
+
+
+.drink {
+    padding-right: 35px;
+}
+
+
+
+.weight {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
 
 .weight {
     font-family: 'Montserrat', sans-serif;
@@ -52,10 +94,112 @@
 }
 
 .menu-modal-btn {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #F3C653;
+    margin-top: 32px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.backdrop {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.table-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 414px;
+    height: 668px;
+    background-color: #FFFDEE;
+
+}
+
+.table-modal-close-btn {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+}
+
+.close-btn-icon {
+    display: flex;
+    fill: black;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .menu-section {
+            padding-top: 58px;
+            padding-bottom: 40px;
+        }
+.menu-tables {
+    column-count: 2;
+    column-gap: 88px;
+}
+
+table {
+    break-inside: avoid;
+}
+.menu-modal-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 24px;
+    text-align: center;
+
+}
+
+.dessert {
+    padding-right: 100px;
+}
+.drink {
+    padding-right: 40px;
+}
+.weight {
+    padding-right: 50px;
+    padding-left: 50px;
+}
+}
+
+
+@media screen and (min-width: 1280px) {
+    .menu-section {
+        padding-bottom: 60px;
+    }
+    
+.menu-tables {
+        column-count: 2;
+        column-gap: 140px;
+    }
+
+        .dessert {
+            padding-right: 165px;
+        }
+    
+        .drink {
+            padding-right: 105px;
+        }
+
 }
