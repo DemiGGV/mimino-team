@@ -132,11 +132,18 @@ img {
 .icon {
     margin-bottom: 20px;
 }
+.icon-arrow-left:hover,
+.icon-arrow-left:focus {
+    color: #F3C653;
+}
 
 .icon-arrow-right {
     margin-left: 32px;
 }
-
+.icon-arrow-right:hover,
+.icon-arrow-right:focus {
+   color: #F3C653;
+}
 .btn-list {
     display: flex;
     flex-wrap: wrap;
