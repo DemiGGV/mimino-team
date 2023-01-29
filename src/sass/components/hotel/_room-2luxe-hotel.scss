@@ -18,8 +18,32 @@ img {
     padding-left: 15px;
     padding-right: 15px;
 }
+@media screen and (min-width: 414px) {
+ .container {
+    width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+ .container {
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+ .container {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+}
 
 .section {
+    
     margin-left: auto;
     margin-right: auto;
     padding-top: 32px;
@@ -41,7 +65,7 @@ img {
 }
 
 .room-luxe-logo {
-
+    text-transform: uppercase;
     text-decoration: none;
     font-family: 'Film P3';
     font-style: normal;
@@ -89,9 +113,19 @@ img {
     letter-spacing: 0.02em;
     color: #7A7A7A;
 }
+.room-images {
+    margin-left: 155px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+}
 
-.list {
-    list-style: none;
+.item {
+    width: 194px;
+    margin-left: 15px;
+    background: #DADADA;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 }
 
 .icon {
@@ -130,6 +164,12 @@ img {
     border-radius: 25px;
     padding: 14px 64px;
 }
+.btn-room:hover,
+.btn-room:focus {
+    background: #FFFFFF;
+    border: 2px solid #F3C653;
+    border-radius: 25px;
+}
 
 .btn {
     font-family: 'Montserrat';
@@ -146,4 +186,115 @@ img {
     border-radius: 25px;
     margin-top: 16px;
     padding: 14px 37px;
+}
+.btn:hover,
+.btn:focus {
+    background: #FFFFFF;
+    border: 2px solid #F3C653;
+    border-radius: 25px;
+}
+@media screen and (max-width: 1023px) {
+.list {
+    position: relative;
+    right: 130px;
+    display: flex;
+    list-style: none;
+    margin-bottom: 20px;
+    margin-top: 32px;
+ }
+}
+
+
+// tablet 
+
+@media screen and (min-width: 1024px) {
+ .section {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 62px;
+    padding-bottom: 104px;
+}
+ .container {
+    position: relative;
+ }
+
+ .room-luxe-logo {
+    font-size: 64px;
+    margin-top: 4px;
+    margin-bottom: 62px;
+}
+ .title {
+    font-size: 30px;
+}
+ .title-room{
+    font-size: 30px;
+}
+ .link-room {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 1.25;
+    width: 439px;
+ }
+ .room-images {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(0%, 0%);
+    margin-left: 0;
+    width: 400px;
+    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+ }
+ .list {
+    display: flex;
+    list-style: none;
+    margin-top: 176px;
+    margin-bottom: 32px;
+    
+ }
+ .item {
+    margin-left: 40px;
+ }
+ .item:first-child {
+    margin-left: 0;
+ }
+ .icon {
+   margin-bottom: 0;
+   
+ }
+ .icon-arrow-left {
+   margin-left: 377px;
+ }
+ .btn-list {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: flex-end;
+}
+
+}
+
+
+// desktop
+
+
+@media screen and (min-width: 1280px) {
+.section {
+    padding-top: 62px;
+    padding-bottom: 104px;
+}
+.title {
+    font-size: 36px;
+    line-height: 1.13;
+}
+
+.title-room {
+    font-size: 36px;
+    line-height: 1.13;
+}
+.room-images {
+    width: 460px;
+    border-radius: 2px;
+}
+.item {
+    width: 254px;
+}
 }
