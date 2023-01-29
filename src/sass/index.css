@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 :root {
   --general-gray-text: #757575;
@@ -66,6 +67,31 @@
   font-display: swap;
   font-style: normal;
 }
+/*=================== Обнуление стилей ======================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*=================== Обнуление стилей ======================*/
 .footer {
   background-color: var(--color-footer);
 }
@@ -74,26 +100,26 @@
   width: 414px;
   padding: 40px 15px;
   margin: 0 auto;
-  background-color: var(--color-footer);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   .footer__container {
     width: 1024px;
-    padding: 80px 15px;
-    justify-content: space-around;
+    padding: 80px 47px;
     align-items: center;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__container {
     width: 1280px;
+    padding: 80px 85px;
   }
 }
 
 .footer__logo {
+  margin-right: 85px;
   font-family: "FilmP3";
   font-size: 40px;
   font-weight: 700;
@@ -104,8 +130,14 @@
 }
 @media screen and (min-width: 1024px) {
   .footer__logo {
+    margin-right: 163px;
     font-size: 64px;
     line-height: 1.15;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    margin-right: 231px;
   }
 }
 
@@ -188,6 +220,7 @@
 .footer__social-icon {
   width: 24px;
   height: 24px;
+  fill: var(--akzent-yellow);
 }
 
 .telegram {
