@@ -89,8 +89,26 @@ ul {
     background-position: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .room-hero {
+        background-image: url(../images/room/room3mobile@2x.jpg);
+    }
+}
+
 .room-hero .container {
     padding-top: 483px;
+}
+
+.room-hero-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 414px;
+    height: 143px;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
 }
 
 .room-loc-link {
@@ -143,6 +161,7 @@ ul {
 
 .room-hero-descr {
     max-width: 325px;
+    margin-bottom: 17px;
 
     font-family: 'Montserrat';
     font-weight: 700;
@@ -152,6 +171,80 @@ ul {
     color: var(--white);
 }
 
+.room-icon-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.room-icon-list>li {
+    display: flex;
+}
+
+.room-icon-list>li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
 .room-icon-link {
+    display: flex !important;
     fill: var(--akzent-yellow);
+}
+
+.room-hero-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 73px;
+
+    padding: 14px 35px;
+
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid var(--white);
+    border-radius: 25px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--akzent-yellow);
+}
+
+.room-hero-btn:hover,
+.room-hero-btn:active,
+.room-hero-btn:focus {
+    background: var(--white);
+    border: 2px solid var(--akzent-yellow);
+}
+
+.room-hero-btn:disabled {
+    background: #00000066;
+    
+    border: 2px solid var(--white);
+}
+
+.room-slider-btn {
+    width: 40px;
+    height: 40px;
+    padding-left: 1px;
+    padding-right: 1px;
+
+    border: none;
+    background: #000000a6;
+}
+
+.room-slider-btn>svg {
+    fill: var(--akzent-yellow);
+}
+
+.room-btn-left {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+
+.room-btn-right {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
 }
