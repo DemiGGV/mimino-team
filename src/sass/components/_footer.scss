@@ -24,15 +24,11 @@ a {
     background-color: var(--color-footer);
 }
 .footer__container {
-    width: 414px;
     padding: 40px 15px;
-    margin: 0 auto;
     @media screen and (min-width:1024px) {
-        width: 1024px;
         padding: 80px 47px;
     }
     @media screen and (min-width:1280px) {
-        width: 1280px;
         padding: 80px 85px;
     }
 }
