@@ -100,21 +100,28 @@ a {
   width: 414px;
   padding: 40px 15px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 @media screen and (min-width: 1024px) {
   .footer__container {
     width: 1024px;
     padding: 80px 47px;
-    align-items: center;
   }
 }
 @media screen and (min-width: 1280px) {
   .footer__container {
     width: 1280px;
     padding: 80px 85px;
+  }
+}
+
+.footer__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .footer__body {
+    align-items: center;
   }
 }
 
