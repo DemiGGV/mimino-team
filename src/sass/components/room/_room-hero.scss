@@ -47,7 +47,7 @@
 
 @media screen and (min-width: 1024px) {
     .room-hero .container {
-        padding-top: 468px;
+        padding-top: 340px;
     }
 }
 
@@ -72,6 +72,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 93px;
+}
+
+@media screen and (min-width: 1024px) {
+    .room-hero-slider {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 88px;
+    }
 }
 
 .room-slider-btn {
