@@ -48,16 +48,30 @@
     text-align: center;
 }
 
-// Ховер і фокус основних кнопок
-
+// Ховер і фокус основних кнопок та disable
 .btn-main:hover,
-.btn-main:focus {
+.btn-main:focus,
+.btn-disabled:hover,
+.btn-disabled:focus {
     background: getColor('white');
     border: 2px solid getColor('yellow');
 }
 
-.btn-main.disabled {
+// Стиль кнопки disabled
+.btn-disabled {
     background: rgba(0, 0, 0, 0.4);
+    border: 2px solid getColor('white');
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: getColor('yellow');
+    width: 236px;
+    height: 48px;
+    text-align: center;
 }
 
 // Кнопка бронювання кімнати
