@@ -9,6 +9,7 @@
 
     margin-left: auto;
     margin-right: auto;
+    padding-top: 344px;
     
     background-image: url(../images/room/room3mobile.jpg);
     background-repeat: no-repeat;
@@ -26,8 +27,8 @@
 
 @media screen and (min-width: 1024px) {
     .room-hero {
-        max-width: 1024px;
         height: 719px;
+        padding-top: 340px;
 
         background-image: url(../images/room/room3tablet.jpg);
     }
@@ -38,16 +39,6 @@
 (min-resolution: 2dppx) {
     .room-hero {
         background-image: url(../images/room/room3tablet@2x.jpg);
-    }
-}
-
-.room-hero .container {
-    padding-top: 344px;
-}
-
-@media screen and (min-width: 1024px) {
-    .room-hero .container {
-        padding-top: 340px;
     }
 }
 
@@ -68,14 +59,14 @@
     }
 }
 
-.room-hero-slider {
+.room-hero-controls {
     display: flex;
     justify-content: space-between;
     margin-bottom: 93px;
 }
 
 @media screen and (min-width: 1024px) {
-    .room-hero-slider {
+    .room-hero-controls {
         display: flex;
         justify-content: space-between;
         margin-bottom: 88px;
