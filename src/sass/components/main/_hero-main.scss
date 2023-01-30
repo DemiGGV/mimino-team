@@ -101,6 +101,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     letter-spacing: 0.3em;
     color: getColor('white');
     margin-bottom: 24px;
+    margin-left: calc(96 * 0.3);
 
 
     @media screen and (min-width: 1024px) {
@@ -132,6 +133,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     line-height: 1.15;
     letter-spacing: 0.05em;
     color: getColor('white');
+
 
     @media screen and (min-width:1024px) {
         font-size: 36px;
@@ -204,11 +206,14 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     text-decoration: none;
     font-style: normal;
 
-    @media screen and (min-width:1024px) {
-        position: static;
-        bottom: 64px;
-
+    @media screen and (min-width:1024px) and (max-width:1279px) {
         justify-content: flex-start;
+        position: relative;
+        top: -15px;
+    }
+
+    @media screen and (min-width:1280px) {
+        position: static;
     }
 }
 
@@ -232,4 +237,29 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     margin-right: auto;
     bottom: 102px;
     position: relative;
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        flex-direction: row;
+        gap: 40px;
+        bottom: 64px;
+        justify-content: flex-end;
+
+    }
+
+    @media screen and (min-width:1280px) {
+        flex-direction: row;
+        gap: 60px;
+        position: static;
+        margin: 0;
+    }
+}
+
+.hero_bottom {
+    @media screen and(min-width:1280px) {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 64px;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
 }
