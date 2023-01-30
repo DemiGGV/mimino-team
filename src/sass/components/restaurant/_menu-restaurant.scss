@@ -2,6 +2,17 @@
     background-color: var(--fon-lemon);
     padding-top: 32px;
     padding-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+    
+        background-color: var(--dark-lemon);
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {  
+        padding-bottom: 60px;
+    }
 }
 
 
@@ -58,20 +69,42 @@
     
 }
 
-.dessert {
-    padding-right: 100px;
+.hot-meals {
+    width: 255px;
+    @media screen and (min-width: 1024px) {
+        width: 267px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 310px;
+    }
 }
 
+.composition-hot {
+    width: 220px;
+
+}
+
+.dessert {
+    width: 255px;
+    @media screen and (min-width: 1024px) {
+        width: 275px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 320px;
+    }
+}
 
 .drink {
-    padding-right: 35px;
-}
+    width: 245px;
+    @media screen and (min-width: 1024px) {
+        width: 270px;
+    }
 
-
-
-.weight {
-    padding-right: 32px;
-    padding-left: 32px;
+    @media screen and (min-width: 1280px) {
+        width: 320px;
+    }
 }
 
 
@@ -82,6 +115,7 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
     color: #000000;
+    padding-right: 32px;
 }
 
 .price {
@@ -103,6 +137,15 @@
     margin-right: auto;
     text-align: center;
     align-items: center;
+
+    @media screen and (min-width: 1024px) {
+    
+        justify-content: flex-end;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 24px;
+    
+        }
     
 }
 
@@ -145,13 +188,11 @@
     fill: black;
 }
 
+// TABLET____________
 
 @media screen and (min-width: 1024px) {
 
-    .menu-section {
-            padding-top: 58px;
-            padding-bottom: 40px;
-        }
+
 .menu-tables {
     column-count: 2;
     column-gap: 88px;
@@ -160,46 +201,29 @@
 table {
     break-inside: avoid;
 }
-.menu-modal-btn {
-    display: flex;
-    justify-content: flex-end;
-    margin-left: auto;
-    margin-right: 0;
-    padding-left: 0;
-    padding-right: 24px;
-    text-align: center;
 
+.appetizers {
+    width: 240px;
 }
 
-.dessert {
-    padding-right: 100px;
-}
-.drink {
-    padding-right: 40px;
-}
+
 .weight {
-    padding-right: 50px;
     padding-left: 50px;
 }
 }
 
+// DESKTOP___________________
+
 
 @media screen and (min-width: 1280px) {
-    .menu-section {
-        padding-bottom: 60px;
-    }
     
-.menu-tables {
+    .menu-tables {
         column-count: 2;
         column-gap: 140px;
     }
 
-        .dessert {
-            padding-right: 165px;
-        }
-    
-        .drink {
-            padding-right: 105px;
-        }
+    .appetizers {
+        width: 300px;
+    }
 
 }
