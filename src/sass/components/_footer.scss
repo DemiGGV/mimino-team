@@ -1,0 +1,133 @@
+.footer {
+    width: 414px;
+    height: 240px;
+    background-color: getColor(footer-black);
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+.footer-title {
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    color:#F3C653;
+    margin-left: 59px;
+    margin-right: 85px;
+}
+
+.footer-nav {
+    display: flex;
+    row-gap: 16px;
+    flex-direction: column;
+}
+
+.nav-item {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: calc(24 /20);
+letter-spacing: 0.02em;
+color: #F3C653;
+
+}
+
+.footer-soc {
+    display: flex;
+    fill: #F3C653;
+    grid-gap: 30px;
+    margin-top: 33px;
+}
+
+.link-text {
+    display: none;
+}
+
+.footer-link {
+    margin-right: 33px;
+}
+
+
+@media screen and (min-width:414px) {
+    .footer {
+        width: 1024px;
+    }
+
+    .footer-title {
+        margin-left: 154px;
+        margin-right: 163px;
+        font-family: 'FilmP3';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: calc(69 / 64);
+        letter-spacing: 0.3em;
+    }
+
+    .footer-link {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-nav {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24 / 20);
+        letter-spacing: 0.02em;
+        margin-right: 137px;
+    }
+    .footer-soc {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0;
+        grid-gap: 12px;
+        text-align: center;
+        justify-content: center;
+
+    }
+    .link-text {
+        display: block;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.02em;
+        color: #F3C653;
+
+    }
+    .soc-item.link {
+        display: flex;
+        flex-direction: row;
+        border: 0.5px solid #F3C653;
+        border-radius: 2px;
+        padding: 10px 0px 10px 12px;
+    }
+
+    .footer-icon {
+        margin-left: 19px;
+        margin-right: 13px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .footer {
+        width: 1280px;
+    }
+
+    .footer-title {
+        margin-left: 261px;
+        margin-right: 231px;
+    }
+
+    .footer-nav {
+        margin-right: 231px;
+    }
+}
