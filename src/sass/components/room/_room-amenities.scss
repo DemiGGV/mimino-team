@@ -1,22 +1,35 @@
 .amenities {
     background-color: var(--fon-lemon);
-}
-.amenities__container {
-    max-width: 414px;
-    padding: 32px 15px;
+
     margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     @media screen and (min-width:1024px) {
-        max-width: 1024px;
-        padding: 48px 15px 48px 15px;
+        padding-top: 50px;
+        padding-bottom: 40px;
     }
-    @media screen and (min-width:1280px){
-        max-width: 1280px;
+    
+    @media screen and (min-width:1280px) {
+        padding-top: 48px;
+        padding-bottom: 48px;
     }
 }
+// .amenities__container {
+//     max-width: 414px;
+
+//     @media screen and (min-width:1024px) {
+//         max-width: 1024px;
+//         padding: 48px 15px 48px 15px;
+//     }
+//     @media screen and (min-width:1280px){
+//         max-width: 1280px;
+//     }
+// }
 .amenities__title {
     margin-bottom: 16px;
 
@@ -71,13 +84,11 @@
     flex-direction: column;
     align-items: center;
     @media screen and (min-width:1024px) {  
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;  
-        margin-right: 47px;    
+        align-items: flex-end;  
     }
+
     @media screen and (min-width:1280px) {
-        margin-right: 200px;
+        margin-right: 113px;
     }
 }
 .amenities__button {
@@ -110,6 +121,7 @@
 .amenities__return {
     display: flex;
     align-items: center;
+    text-decoration: none;
 
     font-family: 'Montserrat';
     font-size: 16px;
