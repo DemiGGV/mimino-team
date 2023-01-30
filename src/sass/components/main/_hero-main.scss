@@ -196,11 +196,13 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     color: getColor('map-link');
     padding: 8px;
     gap: 10px;
-    display: flex;
+    display: inline-flex;
     position: absolute;
     top: 64px;
     right: 15px;
     align-items: center;
+    text-decoration: none;
+    font-style: normal;
 
     @media screen and (min-width:1024px) {
         position: static;
@@ -217,7 +219,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 113px;
+    margin-bottom: 335px;
     justify-content: center;
 }
 
@@ -228,4 +230,6 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    bottom: 102px;
+    position: relative;
 }
