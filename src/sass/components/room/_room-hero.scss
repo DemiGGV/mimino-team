@@ -27,6 +27,7 @@
 
 @media screen and (min-width: 1024px) {
     .room-hero {
+        max-width: 1024px;
         height: 719px;
         padding-top: 340px;
 
@@ -39,6 +40,24 @@
 (min-resolution: 2dppx) {
     .room-hero {
         background-image: url(../images/room/room3tablet@2x.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .room-hero {
+        max-width: 1280px;
+        height: 720px;
+        padding-top: 412px;
+
+        background-image: url(../images/room/room3desk.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .room-hero {
+        background-image: url(../images/room/room3desk@2x.jpg);
     }
 }
 
