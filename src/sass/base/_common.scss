@@ -40,7 +40,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 1.25;
     letter-spacing: 0.02em;
     color: getColor('yellow');
     width: 236px;
@@ -48,11 +48,61 @@
     text-align: center;
 }
 
-// Ховер і фокус основних кнопок
-
+// Ховер і фокус основних кнопок та disable
 .btn-main:hover,
-.btn-main:focus {
+.btn-main:focus,
+.btn-disabled:hover,
+.btn-disabled:focus {
     background: getColor('white');
     border: 2px solid getColor('yellow');
+}
+
+// Стиль кнопки disabled
+.btn-disabled {
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid getColor('white');
     border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: getColor('yellow');
+    width: 236px;
+    height: 48px;
+    text-align: center;
+}
+
+// Кнопка бронювання кімнати
+
+.btn-book {
+    background: getColor('black');
+    border: 1px solid var(--akzent-yellow);
+    border-radius: 25px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--white);
+    width: 434px;
+    height: 65px;
+    text-align: center;
+
+    @media screen and (max-width: 1023px) {
+        font-size: 20px;
+        width: 384px;
+        height: 64px;
+    }
+}
+
+// Ховер і фокус
+
+.btn-book:hover,
+.btn-book:focus {
+    color: var(--black);
+    background: var(--akzent-yellow);
+    border: 1px solid var(--akzent-yellow);
 }
