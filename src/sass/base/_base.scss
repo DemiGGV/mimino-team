@@ -1,0 +1,78 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.link,
+.link:link,
+.link:visited {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    list-style: none;
+}
+
+.icon {
+    fill: currentColor;
+    stroke: currentColor;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 414px) {
+            width: 414px;
+    }
+    @media screen and (min-width: 1024px) {
+            width: 1024px;
+            padding-left: 47px;
+            padding-right: 47px;
+    }
+    @media screen and (min-width: 1280px) {
+            width: 1280px;
+            padding-left: 85px;
+            padding-right: 85px;
+    }
+
+}
