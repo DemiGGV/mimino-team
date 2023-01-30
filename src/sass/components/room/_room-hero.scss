@@ -78,6 +78,13 @@
     }
 }
 
+@media screen and (min-width: 1024px) {
+    .room-hero-shadow {
+        width: 1280px;
+        height: 147px;
+    }
+}
+
 .room-hero-controls {
     display: flex;
     justify-content: space-between;
@@ -86,9 +93,13 @@
 
 @media screen and (min-width: 1024px) {
     .room-hero-controls {
-        display: flex;
-        justify-content: space-between;
         margin-bottom: 88px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .room-hero-controls {
+        margin-bottom: 72px;
     }
 }
 
@@ -129,6 +140,12 @@
         right: 692px;
         
         padding: 8px 8px 8px 10px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .room-loc-link {
+        display: none;
     }
 }
 
@@ -185,6 +202,12 @@
     }
 }
 
+@media screen and (min-width: 1280px) {
+    .room-hero-title {
+        font-size: 36px;
+    }
+}
+
 .room-hero-title>span {
     text-transform: uppercase;
 }
@@ -219,6 +242,12 @@
     .room-icon-list {
         flex-direction: row;
         margin-left: 325px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .room-icon-list {
+        display: none;
     }
 }
 
@@ -260,6 +289,20 @@
     font-size: 16px;
     line-height: 1.25;
     color: var(--akzent-yellow);
+}
+
+@media screen and (min-width: 1024px) {
+    .room-hero-btn {
+        bottom: 62px;
+        right: 47px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .room-hero-btn {
+        bottom: 66px;
+        right: 85px;
+    }
 }
 
 .room-hero-btn:hover,
