@@ -1,68 +1,21 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin: 0;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-@media screen and (min-width: 414px) {
-    .container {
-        width: 414px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .container {
-        width: 960px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .container {
-        width: 1140px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+/* //////////// mobil //////// */
 
 .section {
-
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 32px;
     padding-bottom: 32px;
 }
 
 .room-luxe {
-    background: #FFFDEE;
+    background: getColor('light-lemon');
 }
 
 .text-room {
-    font-family: 'Times New Roman';
+    font-family: 'TimesNewRoman';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 1.15;
-    color: #B4B4B4;
-    margin-bottom: 8px;
+    color: getColor('gray1');
 }
 
 .room-luxe-logo {
@@ -74,12 +27,12 @@ img {
     font-size: 40px;
     line-height: 1.07;
     letter-spacing: 0.3em;
-    color: #494848;
+    color: getColor('gray2');
+    margin-top: 8px;
+    margin-bottom: 32px;
 }
 
 .title-room-lux {
-    margin-top: 32px;
-    margin-bottom: 12px;
     text-transform: uppercase;
     font-family: 'Times New Roman';
     font-style: normal;
@@ -87,8 +40,8 @@ img {
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.05em;
-    color: #000000;
-
+    color: getColor('black');
+    margin-bottom: 12px;
 }
 
 .title-room {
@@ -99,7 +52,7 @@ img {
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.05em;
-    color: #000000;
+    color: getColor('black');
 }
 
 .link-room {
@@ -112,14 +65,13 @@ img {
     font-size: 12px;
     line-height: 15px;
     letter-spacing: 0.02em;
-    color: #7A7A7A;
+    color: getColor('gray-room');
 }
 
 .room-images {
-    background: #DADADA;
+    background: getColor('bcg-img');
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
-
 }
 
 .room-img {
@@ -129,34 +81,26 @@ img {
 .item-room {
     width: 194px;
     margin-left: 15px;
-    background: #DADADA;
+    background: getColor('bcg-img');
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
 }
 
-.icon-room {
+.icon-room-list {
+    display: flex;
     margin-bottom: 20px;
+    column-gap: 32px;
 }
 
-.icon-arrow-left:hover,
-.icon-arrow-left:focus {
-    color: #F3C653;
-}
-
-.icon-arrow-right {
-    margin-left: 32px;
-}
-
-.icon-arrow-right:hover,
-.icon-arrow-right:focus {
-    color: #F3C653;
+.icon-room-list-item:hover,
+.iicon-room-list-item:focus {
+    color: getColor('yellow');
 }
 
 .btn-list-room {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: auto;
     margin-left: auto;
 
 }
@@ -169,18 +113,18 @@ img {
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.02em;
-    color: #F3C653;
+    color: getColor('yellow');
     box-sizing: border-box;
-    background: #000000;
-    border: 2px solid #FFFDEE;
+    background: getColor('black');
+    border: 2px solid getColor('light-lemon');
     border-radius: 25px;
     padding: 14px 64px;
 }
 
 .btn-room:hover,
 .btn-room:focus {
-    background: #FFFFFF;
-    border: 2px solid #F3C653;
+    background: getColor('white');
+    border: 2px solid getColor('yellow');
     border-radius: 25px;
 }
 
@@ -192,10 +136,10 @@ img {
     line-height: 1.25;
     letter-spacing: 0.02em;
     min-width: 236px;
-    color: #F3C653;
+    color: getColor('yellow');
     box-sizing: border-box;
-    background: #000000;
-    border: 2px solid #FFFDEE;
+    background: getColor('black');
+    border: 2px solid getColor('dark-lemon');
     border-radius: 25px;
     margin-top: 16px;
     padding: 14px 37px;
@@ -204,12 +148,16 @@ img {
 
 .btn-room-lux:hover,
 .btn-room-lux:focus {
-    background: #FFFFFF;
-    border: 2px solid #F3C653;
+    background: getColor('white');
+    border: 2px solid getColor('yellow');
     border-radius: 25px;
 }
 
 @media screen and (max-width: 1023px) {
+    .container {
+        overflow: hidden;
+    }
+
     .list-room {
         position: relative;
         right: 130px;
@@ -220,19 +168,14 @@ img {
     }
 }
 
-
-// tablet 
+/* ////////////   tablet   ////////*/
 
 @media screen and (min-width: 1024px) {
     .section {
         position: relative;
-        margin-left: auto;
-        margin-right: auto;
         padding-top: 62px;
         padding-bottom: 40px;
     }
-
-    .container {}
 
     .room-luxe-logo {
         font-size: 64px;
@@ -242,6 +185,7 @@ img {
 
     .title-room-lux {
         font-size: 30px;
+        margin-bottom: 16px;
     }
 
     .title-room {
@@ -250,9 +194,9 @@ img {
 
     .link-room {
         font-size: 16px;
-        line-height: 20px;
-        margin-top: 1.25;
+        line-height: 1.25;
         width: 439px;
+        margin-bottom: 0;
     }
 
     .room-images {
@@ -266,8 +210,8 @@ img {
 
     .box-room {
         display: flex;
-        margin-top: 176px;
         flex-wrap: wrap;
+        margin-top: 176px;
     }
 
     .list-room {
@@ -284,8 +228,7 @@ img {
         margin-left: 0;
     }
 
-    .icon-room {
-        display: flex;
+    .icon-room-list {
         margin-bottom: 0;
         order: 3;
         width: 428px;
@@ -297,14 +240,11 @@ img {
         margin-right: 0;
         display: flex;
         flex-direction: column;
-
-
     }
-
 }
 
 
-// desktop
+/* /////// desktop ////// */
 
 
 @media screen and (min-width: 1280px) {
@@ -320,6 +260,7 @@ img {
     .title-room-lux {
         font-size: 36px;
         line-height: 1.13;
+        margin-bottom: 24px;
     }
 
     .title-room {
@@ -327,14 +268,9 @@ img {
         line-height: 1.13;
     }
 
-    .link-room {
-        margin-top: 24px;
-    }
-
     .room-images {
         width: 460px;
         border-radius: 2px;
-        transform: translate(4%, 0%);
     }
 
     .box-room {
@@ -349,7 +285,7 @@ img {
         width: 254px;
     }
 
-    .icon-room {
+    .icon-room-list {
         width: 548px;
     }
 
