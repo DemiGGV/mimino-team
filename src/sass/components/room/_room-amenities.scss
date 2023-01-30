@@ -92,25 +92,11 @@
     }
 }
 .amenities__button {
-    padding: 20px 42px;
     margin: 16px 0px 20px 0px;
-
-    font-family: 'Montserrat';
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    color: var(--white);
-    text-transform: uppercase;
-
-    border: 1px solid var(--akzent-yellow);
-    border-radius: 25px;
-    background-color: var(--black);
     cursor: pointer;
+    
     @media screen and (min-width:1024px) {
         margin: 40px 0px 32px 0px;
-        padding: 18px 37px;
-        font-size: 24px;
-        width: 434px;
     }
 }
 .amenities__button:focus,
