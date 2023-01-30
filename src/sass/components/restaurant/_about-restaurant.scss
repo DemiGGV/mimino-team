@@ -1,0 +1,211 @@
+.sub-title {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--gray1);
+    margin-bottom: 12px;
+}
+
+.logo-rest-about {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: var(--gray2);
+    margin-bottom: 12px;
+    
+}
+
+.text-about-restaurant {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color:var(--gray-room);
+    width: 258px;
+    margin-bottom: 28px;
+}
+
+.text-restaurant-accent {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--brown);
+    
+}
+
+.about-restaurant-section {
+    background-color: var(--fon-lemon);
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+.img1-restaurant-about-item {
+    display: flex;
+    margin-left: auto;
+    width: 244px;
+    margin-bottom: 32px;
+}
+
+.img2-restaurant-about-item {
+    width: 200px;
+    margin-right: 20px;
+
+}
+
+.text-rest-accent-item {
+    display: flex;
+    align-items: center;
+    width: 163px;
+}
+
+.second-card {
+    display: flex;
+    margin-bottom: 32px;
+}
+
+
+.slider-restaurant-list {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    margin-left: 60px;
+    margin-bottom: 20px;
+
+}
+
+.img1-slider {
+    min-width: 245px;
+}
+
+
+.slider-restaurant-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.slider-arrow-list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slider-arrow-item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.slider-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// tablet
+
+@media screen and (min-width: 1024px) {
+    .about-restaurant-section {
+        padding-top: 120px;
+        padding-bottom: 32px;
+        position: relative;
+    }
+
+    .sub-title {
+        font-size: 32px;
+        line-height: 1.15;
+        margin-bottom: 4px;
+    }
+
+    .logo-rest-about {
+        font-size: 64px;
+        line-height: 1.07;
+        margin-bottom: 24px;
+    
+    }
+
+    .text-about-restaurant {
+        font-size: 16px;
+        width: 439px;
+        margin-bottom: 142px;
+    }
+
+    .img1-restaurant-about-item {
+        position: absolute;
+        width: 400px;
+        top: -32px;
+        right: 112px;
+    }
+
+    .img2-restaurant-about-item {
+        width: 350px;
+        margin-right: 48px;
+    }
+
+    .text-restaurant-accent {
+        font-size: 16px;
+    }
+
+    .text-rest-accent-item {
+        width: 312px;
+    }
+
+    .second-card {
+        margin-bottom: -25px;
+    }
+
+    .img1-slider {
+        min-width: 194px;
+    }
+
+    .slider-restaurant-list {
+        justify-content: flex-end;
+        margin-bottom: 32px;
+    }
+}
+
+// desktop
+
+@media screen and (min-width: 1280px) {
+    .text-about-restaurant {
+        width: 518px;
+        margin-bottom: 162px;
+    }
+
+    .img1-restaurant-about-item {
+        width: 460px;
+        top: -33px;
+        right: 180px;
+    }
+
+    .img2-restaurant-about-item {
+        width: 460px;
+        margin-right: 32px;
+    }
+
+    .second-card {
+        margin-bottom: -150px;
+    }
+
+    .img1-slider {
+        min-width: 254px;
+    }
+
+    .slider-restaurant-list {
+        margin-bottom: 40px;
+    }
+
+    .text-rest-accent-item {
+        align-items: flex-start;
+        margin-top: 189px;
+        width: 312px;
+    }
+
+}
+
