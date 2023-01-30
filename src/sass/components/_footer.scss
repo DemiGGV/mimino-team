@@ -119,7 +119,7 @@ color: #F3C653;
 
 @media screen and (min-width:1024px) {
     .footer {
-        width: 1280px;
+        min-width: 1280px;
     }
 
     .footer-title {
