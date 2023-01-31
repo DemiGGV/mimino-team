@@ -2,40 +2,50 @@
 У секції немає видимого заголовка. Потрібно зробити прихований заголовок для краулерів.
 Включає список контактних телефонів закладу для зворотнього зв’язку та його адресу з контентним зображенням мапи. -->
 <section class="contacts-main">
-    <div class="container">
-      <div class="location-date">
-        <ul>
-          <li>
-            <h2 class="visually-hidden">Contacts</h2>
-            <span class="contacts-main__logo">mimino</span>
-            <h3 class="contacts__subtext">Ресторанно-готельний комплекс</h3>
+  <div class="container contacts-flex">
+    <ul class="location-date">
+      <li>
+        <h2 class="visually-hidden">Contacts</h2>
+        <span class="contacts-main__logo">mimino</span>
+        <h3 class="contacts__subtext">Ресторанно-готельний комплекс</h3>
+      </li>
+      <li>
+        <ul class="contacts-number-flex">
+          <li><a href="./hotel.html" class="link__page link">Ресторан</a></li>
+          <li class="link__box-mobile link__box-mobile-one">
+            <a href="tel:+380955559533" class="link__phonebox">
+              <svg class="svg-phone-contacts">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>095 555 95 33</a>
           </li>
-          <li><ul>
-            <li><a href="./hotel.html" class="link__page">Ресторан</a></li>
-            <li class="link__box"><a href="tel:+380955559533" class="link__phonebox bordered_btn">
-                <svg class="svg-phone" width="24" height="24"><use href="./images/sprite.svg#icon-phone"></use>
-            </svg>095 555 95 33</a></li>
-          </ul></li>
-
-          <li><ul>
-            <li><a href="./restaurant.html" class="link__page">Готель</a></li>
-            <li class="box-twomobile">
-                <svg class="svg-phone" width="24" height="24"><use href="./images/sprite.svg#icon-phone">
-                </use></svg>
-                <span><a href="tel:+380668491089" class="link__phonebox">066 849 10 89   </a></span>
-                <span><a href="tel:+380672758540" class="link__phonebox">067 275 85 40 </a></span>
-                </li>
-          </ul></li>
-          <li><address><a         
-            href="https://goo.gl/maps/GWKGg2BgH6eGkUKo9"
-            class="hero__maps bordered_btn"
-            target="_blank"
-            rel="nofollow noopener norefferer">
-            <svg class="svg-location" height="24" width="24">
-              <use href="./images/sprite.svg#icon-location"></use></svg>
-          Україна, м. Полтава, вул. Маршала Бірюзова, 15</a></address></li>
         </ul>
-        <iframe class="shadow-big" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8417.85350209058!2d34.52404147041643!3d49.59841709090114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0LLRg9C70LjRhtGPINCc0LDRgNGI0LDQu9CwINCR0ZbRgNGO0LfQvtCy0LAsIDE1LCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDM2MDAw!5e1!3m2!1suk!2sua!4v1674689135559!5m2!1suk!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </section>
+      </li>
+
+      <li>
+        <ul class="contacts-number-flex">
+          <li><a href="./restaurant.html" class="link__page link">Готель</a></li>
+          <li class="link__box-mobile ">
+            <svg class="svg-phone-contacts">
+              <use href="./images/sprite.svg#icon-phone">
+              </use>
+            </svg>
+            <span><a href="tel:+380668491089" class="link__phonebox ">066 849 10 89 </a></span>
+            <span><a href="tel:+380672758540" class="link__phonebox "> 067 275 85 40</a></span>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <address><a href="https://goo.gl/maps/GWKGg2BgH6eGkUKo9" class="hero__maps" target="_blank"
+            rel="nofollow noopener norefferer">
+            <svg class="svg-phone-contacts">
+              <use href="./images/sprite.svg#icon-location"></use>
+            </svg>
+            Україна, м. Полтава,<br> вул. Маршала Бірюзова, 15</a></address>
+      </li>
+
+    </ul>
+    <iframe class="shadow-big iframemap"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8417.85350209058!2d34.52404147041643!3d49.59841709090114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d82601f3347a5f%3A0x36f3f9aeec44a6a!2z0LLRg9C70LjRhtGPINCc0LDRgNGI0LDQu9CwINCR0ZbRgNGO0LfQvtCy0LAsIDE1LCDQn9C-0LvRgtCw0LLQsCwg0J_QvtC70YLQsNCy0YHRjNC60LAg0L7QsdC70LDRgdGC0YwsIDM2MDAw!5e1!3m2!1suk!2sua!4v1674689135559!5m2!1suk!2sua"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
