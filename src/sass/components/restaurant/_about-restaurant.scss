@@ -5,6 +5,12 @@
     line-height: 1.15;
     color: var(--gray1);
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 32px;
+        line-height: 1.15;
+        margin-bottom: 4px;
+    }
 }
 
 .logo-rest-about {
@@ -19,6 +25,11 @@
     color: var(--gray2);
     margin-bottom: 12px;
     
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        line-height: 1.07;
+        margin-bottom: 24px;
+    }
 }
 
 .text-about-restaurant {
@@ -30,6 +41,18 @@
     color:var(--gray-room);
     width: 258px;
     margin-bottom: 28px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        width: 439px;
+        margin-bottom: 142px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 518px;
+        margin-bottom: 162px;
+
+    }
 }
 
 .text-restaurant-accent {
@@ -40,6 +63,10 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--brown);
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+    }
     
 }
 
@@ -54,11 +81,34 @@
     margin-left: auto;
     width: 244px;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        width: 400px;
+        top: -32px;
+        right: 112px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 460px;
+        top: -33px;
+        right: 180px;
+    }
 }
 
 .img2-restaurant-about-item {
     width: 200px;
     margin-right: 20px;
+
+    @media screen and (min-width: 1024px) {
+        width: 350px;
+        margin-right: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 460px;
+        margin-right: 32px;
+    }
 
 }
 
@@ -66,11 +116,29 @@
     display: flex;
     align-items: center;
     width: 163px;
+
+    @media screen and (min-width: 1024px) {
+        width: 312px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        align-items: flex-start;
+        margin-top: 189px;
+        width: 312px;
+    }
 }
 
 .second-card {
     display: flex;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: -25px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: -150px;
+    }
 }
 
 
@@ -81,10 +149,27 @@
     margin-left: 60px;
     margin-bottom: 20px;
 
+    @media screen and (min-width: 1024px) {
+        justify-content: flex-end;
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+
 }
 
 .img1-slider {
     min-width: 245px;
+
+    @media screen and (min-width: 1024px) {
+        min-width: 194px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        min-width: 254px;
+    }
 }
 
 
@@ -111,101 +196,12 @@
 // tablet
 
 @media screen and (min-width: 1024px) {
-    .about-restaurant-section {
+    .container-about-rest {
         padding-top: 120px;
         padding-bottom: 32px;
         position: relative;
     }
 
-    .sub-title {
-        font-size: 32px;
-        line-height: 1.15;
-        margin-bottom: 4px;
-    }
-
-    .logo-rest-about {
-        font-size: 64px;
-        line-height: 1.07;
-        margin-bottom: 24px;
-    
-    }
-
-    .text-about-restaurant {
-        font-size: 16px;
-        width: 439px;
-        margin-bottom: 142px;
-    }
-
-    .img1-restaurant-about-item {
-        position: absolute;
-        width: 400px;
-        top: -32px;
-        right: 112px;
-    }
-
-    .img2-restaurant-about-item {
-        width: 350px;
-        margin-right: 48px;
-    }
-
-    .text-restaurant-accent {
-        font-size: 16px;
-    }
-
-    .text-rest-accent-item {
-        width: 312px;
-    }
-
-    .second-card {
-        margin-bottom: -25px;
-    }
-
-    .img1-slider {
-        min-width: 194px;
-    }
-
-    .slider-restaurant-list {
-        justify-content: flex-end;
-        margin-bottom: 32px;
-    }
 }
 
-// desktop
-
-@media screen and (min-width: 1280px) {
-    .text-about-restaurant {
-        width: 518px;
-        margin-bottom: 162px;
-    }
-
-    .img1-restaurant-about-item {
-        width: 460px;
-        top: -33px;
-        right: 180px;
-    }
-
-    .img2-restaurant-about-item {
-        width: 460px;
-        margin-right: 32px;
-    }
-
-    .second-card {
-        margin-bottom: -150px;
-    }
-
-    .img1-slider {
-        min-width: 254px;
-    }
-
-    .slider-restaurant-list {
-        margin-bottom: 40px;
-    }
-
-    .text-rest-accent-item {
-        align-items: flex-start;
-        margin-top: 189px;
-        width: 312px;
-    }
-
-}
 
