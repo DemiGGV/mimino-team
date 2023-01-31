@@ -28,15 +28,26 @@
     
 }
 
+td {
+    padding: 0;
+    
+}
+
+
+
 .title-table {
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
     color: #000000;
-    margin-bottom: 16px;
-    
+    margin-bottom: 17px;
     text-align: left;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
+            
+    }
 
 }
 
@@ -51,6 +62,12 @@
     line-height: 1.21;
     letter-spacing: 0.02em;
     color: #000000;
+    width: 256px;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        width: 290px;
+    }
 }
 
 .composition {
@@ -60,51 +77,18 @@
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #000000;
-    padding-top: 4px;
-    padding-bottom: 8px;
+    margin-top: 4px; 
+    margin-bottom: 8px;
+    width: 225px;
+
+    @media screen and (min-width: 1280px) {
+        width: 250px;
+    }
 }
 
 .dessert-drink {
     padding-bottom: 8px;
     
-}
-
-.hot-meals {
-    width: 255px;
-    @media screen and (min-width: 1024px) {
-        width: 267px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 310px;
-    }
-}
-
-.composition-hot {
-    width: 220px;
-
-}
-
-.dessert {
-    width: 255px;
-    @media screen and (min-width: 1024px) {
-        width: 275px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 320px;
-    }
-}
-
-.drink {
-    width: 245px;
-    @media screen and (min-width: 1024px) {
-        width: 270px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 320px;
-    }
 }
 
 
@@ -116,6 +100,17 @@
     letter-spacing: 0.02em;
     color: #000000;
     padding-right: 32px;
+
+    @media screen and (min-width: 1024px) {
+        padding-right: 47px;
+        padding-left: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    
 }
 
 .price {
@@ -144,49 +139,11 @@
         margin-right: 0;
         padding-left: 0;
         padding-right: 24px;
-    
         }
     
 }
 
-.backdrop {
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
 
-.table-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 414px;
-    height: 668px;
-    background-color: #FFFDEE;
-
-}
-
-.table-modal-close-btn {
-    padding: 0;
-    width: 24px;
-    height: 24px;
-    background-color: transparent;
-    
-    cursor: pointer;
-    position: absolute;
-    top: 16px;
-    right: 16px;
-
-}
-
-.close-btn-icon {
-    display: flex;
-    fill: black;
-}
 
 // TABLET____________
 
@@ -202,14 +159,6 @@ table {
     break-inside: avoid;
 }
 
-.appetizers {
-    width: 240px;
-}
-
-
-.weight {
-    padding-left: 50px;
-}
 }
 
 // DESKTOP___________________
@@ -220,10 +169,6 @@ table {
     .menu-tables {
         column-count: 2;
         column-gap: 140px;
-    }
-
-    .appetizers {
-        width: 300px;
     }
 
 }
