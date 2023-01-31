@@ -28,7 +28,8 @@ a {
     align-items: center;
     justify-content: center;
     padding-top: 40px;
-    padding-bottom: 40px;  
+    padding-bottom: 40px;
+
     @media screen and (min-width:1024px) {
         padding-top: 80px;
         padding-bottom: 80px; 
@@ -69,7 +70,7 @@ a {
         margin-bottom: 0px;
     }
     @media screen and (min-width:1280px) {
-        margin-right: 199px;
+        margin-right: 200px;
     }
 }
 .footer__link {
@@ -90,7 +91,8 @@ a {
 }
 .footer__social-item {
     @media screen and (min-width:1024px) {
-        padding: 10px 12px;
+        width: 144px;
+        padding: 7px 12px;
 
         border: 0.5px solid var(--akzent-yellow);
         border-radius: 2px;
@@ -99,6 +101,8 @@ a {
 .footer__social-link {
     @media screen and (min-width:1024px) {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 .footer__social-text {
@@ -119,13 +123,4 @@ a {
     width: 24px;
     height: 24px;
     fill: var(--akzent-yellow);
-}
-.telegram {
-    padding-right: 17px;
-}
-.facebook {
-    padding-right: 15px;
-}
-.instagram {
-    padding-right: 11px;
 }
