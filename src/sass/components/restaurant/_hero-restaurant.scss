@@ -1,11 +1,53 @@
 .hero-restaurant {
     position: relative;
-    width: 100vw;
+    width: 414px;
     height: 740px;
     padding-top: 14px;
     text-align: center;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-mobile.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+
+    background-size: cover;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-mobile@2x.jpg);
+
+}
+
+    @media screen and (min-width:  414px) {
+        
+            width: 1024px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet.jpg);
+            
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-size: cover;
+                background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet@2x.jpg);
+              
+            }
+    }
+
+    @media screen and (min-width: 1024px) {
+            width: 1280px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-desktop.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-size: cover;
+              background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-dekstop@2x.jpg);
+            
+            }
+        }
 }
 
 .hero-title {
@@ -18,7 +60,28 @@
     color: var(--white);
     padding-top: 181px;
     text-align: center;
-    margin: 0 auto;
+    margin-left: calc(96 * 0.3);
+
+    @media screen and (min-width:  414px) {
+        font-family: 'FilmP3';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 128px;
+        line-height: calc(138 / 128);
+        letter-spacing: 0.3em;
+        padding-top: 188px;
+        margin-left: calc(128 * 0.3);
+    }
+
+    @media screen and (min-width:  1024px) {
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 128px;
+    line-height: calc(138 / 128);
+    letter-spacing: 0.3em;
+    margin-left: calc(128 * 0.3);
+    }
 }
 .hero-restaurant-title {
     font-family: 'Montserrat';
@@ -30,7 +93,16 @@
     color: #FDFBEC;
     padding-top: 20px;
 
-    
+    @media screen and (min-width:  414px) {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        padding-top: 16px;
+        text-align: center;
+    }
 }
 .hero-taste {
     font-family: 'Times New Roman';
@@ -43,6 +115,15 @@
     padding-top: 44px;
     text-align: center;
     
+    @media screen and (min-width:  414px) {
+        padding-top: 56px;
+        font-family: 'Times New Roman';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: calc(41 / 36);
+        letter-spacing: 0.05em;
+    }
 }
 .hero-btn-restaurant {
     display: flex;
@@ -51,8 +132,35 @@
     padding-top: 113px;
     margin: 0 auto;
     width: max-content;
+
+    @media screen and (min-width:  414px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-gap: 40px;
+        margin: 0;  
+        // margin-left: auto;
+        padding-top: 147px;
+    }
+    @media screen and (min-width:  1024px){
+        margin: 0px;
+        grid-gap: 60px;
+    }
 }
 
+.mobile {
+    display: block;
+    @media screen and (min-width: 414px) {
+        display: none;
+    }
+}
+
+.second {
+    display: none;
+    @media screen and (min-width: 414px) {
+        display: block;
+    }
+}
 
 .hero-btn:hover,
 .hero-btn:focus {
@@ -86,7 +194,27 @@
     padding-top: 8px;
     padding-bottom: 9px;
     padding-left: 11px;
-    // padding-right: 3px;
+    padding-right: 3px;
+
+    @media screen and (min-width:  414px) {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        width: 285px;
+        height: 56px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        letter-spacing: 0.01em;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        margin-right: 101px;
+    }
+
+    @media screen and (min-width:  1024px) {
+        margin-right: 204px;
+    }
 }
 
 .hero-address.link {
@@ -105,140 +233,10 @@
     text-align: center;
 }
 
-.second {
-    display: none;
-}
-
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.hero-restaurant {
-    background-size: 414px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-mobile@2x.jpg);
-
-}
-}
-
-  @media screen and (min-width:  414px) {
-    .hero-restaurant {
-        width: 1024px;
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet.jpg);
-        background-repeat: no-repeat;
-        }
-
-        @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.hero-restaurant {
-    background-size: 1024px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet@2x.jpg);
-
-}
-}
-        
-        .hero-address {
-            position: initial;
-            display: flex;
-            flex-direction: row;
-            width: 285px;
-            height: 56px;
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-size: 16px;
-            line-height: calc(20 / 16);
-            letter-spacing: 0.01em;
-            padding-bottom: 8px;
-            padding-top: 8px;
-            margin-right: 101px;
-        }
-
-        .hero-title {
-            font-family: 'FilmP3';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 128px;
-            line-height: calc(138 / 128);
-            letter-spacing: 0.3em;
-            padding-top: 188px;
-        }
-
-        .hero-restaurant-title {
-            font-family: 'Montserrat';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 24px;
-            letter-spacing: 0.02em;
-            padding-top: 16px;
-            text-align: center;
-        }
-
-        .hero-taste {
-            padding-top: 56px;
-            font-family: 'Times New Roman';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: calc(41 / 36);
-            letter-spacing: 0.05em;
-        }
-
-        .hero-btn-restaurant {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            grid-gap: 40px;
-            margin: 0;  
-            // margin-left: auto;
-            padding-top: 147px;
-        }
-        .mobile {
-            display: none;
-        }
-        .second {
-            display: block;
-        }
-  }
-
-
-
-  @media screen and (min-width: 1024px) {
-.hero-restaurant {
-    width: 1280px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-desktop.jpg);
-    background-repeat: no-repeat;
-}
-.hero-title {
-    font-family: 'FilmP3';
-font-style: normal;
-font-weight: 700;
-font-size: 128px;
-line-height: calc(138 / 128);
-letter-spacing: 0.3em;
-}
-
-.hero-btn-restaurant {
-    margin: 0px;
-    grid-gap: 60px;
+.footer-icon {
+    fill: #F3C653;
 }
 
 
-.hero-address {
-    margin-right: 204px;
-}
-
-@media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.hero-restaurant {
-    background-size: 1280px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-dekstop@2x.jpg);
-
-}
-}
-  }
 
 
