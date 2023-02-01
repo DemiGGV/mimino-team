@@ -48,7 +48,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: getColor('yellow');
-    width: 236px;
+    width: 232px;
     height: 48px;
     text-align: center;
 }
@@ -74,13 +74,17 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: getColor('yellow');
-    width: 236px;
+    width: 232px;
     height: 48px;
     text-align: center;
 }
 
-// Кнопка бронювання кімнати
+// Ліва кнопка, розміром 236 пікс
+.btn-big {
+    width: 236px;
+}
 
+// Кнопка бронювання кімнати
 .btn-book {
     background: getColor('black');
     border: 1px solid var(--akzent-yellow);
