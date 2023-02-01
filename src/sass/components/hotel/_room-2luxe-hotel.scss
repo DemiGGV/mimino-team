@@ -128,7 +128,7 @@
 .room-images {
     @media screen and (min-width: 1024px) {
         position: absolute;
-        top: -105px;
+        top: -95px;
         left: 50%;
         margin-left: 0;
         width: 400px;
@@ -136,6 +136,7 @@
     }
 
     @media screen and (min-width: 1280px) {
+        top: -105px;
         width: 460px;
         border-radius: 2px;
     }
