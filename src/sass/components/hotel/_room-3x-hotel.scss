@@ -226,6 +226,11 @@
     cursor: pointer;
 }
 
+.btn-svg-l-r:hover,
+.btn-svg-l-r:focus {
+    color: getColor('yellow');
+}
+
 .svg-arrows-room3 {
     outline: none;
 }

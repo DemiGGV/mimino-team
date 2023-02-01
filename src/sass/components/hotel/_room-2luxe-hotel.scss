@@ -232,6 +232,10 @@
     }
 }
 
+.icon-room-list-item {
+    cursor: pointer;
+}
+
 .icon-room-list-item:hover,
 .iicon-room-list-item:focus {
     color: getColor('yellow');
