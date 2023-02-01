@@ -236,6 +236,7 @@ a {
 }
 
 /*=================== Обнуление стилей ======================*/
+
 .header {
   background-color: black;
   position: absolute;
@@ -329,9 +330,108 @@ a {
     margin-left: 32px;
     padding: 8px 12px;
     border: 1px solid rgba(243, 198, 83, 0.7);
+
+.footer {
+  background-color: var(--color-footer);
+}
+
+.footer__container {
+  padding: 40px 15px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__container {
+    padding: 80px 47px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__container {
+    padding: 80px 85px;
+  }
+}
+
+.footer__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  margin-right: 85px;
+  font-family: "FilmP3";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--akzent-yellow);
+}
+@media screen and (min-width: 1024px) {
+  .footer__logo {
+    margin-right: 163px;
+    font-size: 64px;
+    line-height: 1.15;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__logo {
+    margin-right: 231px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__nav {
+    display: flex;
+  }
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    margin-right: 137px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer__list {
+    margin-right: 199px;
+  }
+}
+
+.footer__link {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--akzent-yellow);
+}
+
+.footer__social {
+  display: flex;
+  -moz-column-gap: 22px;
+       column-gap: 22px;
+}
+@media screen and (min-width: 1024px) {
+  .footer__social {
+    flex-direction: column-reverse;
+    row-gap: 12px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__social-item {
+    padding: 10px 12px;
+    border: 0.5px solid var(--akzent-yellow);
+
     border-radius: 2px;
   }
 }
+
 
 .header__icon {
   margin-right: 8px;
@@ -387,4 +487,44 @@ a {
   width: 24px;
   height: 24px;
   fill: var(--akzent-yellow);
-}/*# sourceMappingURL=index.css.map */
+=======
+@media screen and (min-width: 1024px) {
+  .footer__social-link {
+    display: flex;
+  }
+}
+
+.footer__social-text {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .footer__social-text {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--akzent-yellow);
+  }
+}
+
+.footer__social-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--akzent-yellow);
+}
+
+.telegram {
+  padding-right: 17px;
+}
+
+.facebook {
+  padding-right: 15px;
+}
+
+.instagram {
+  padding-right: 11px;
+}
+/*# sourceMappingURL=index.css.map */
