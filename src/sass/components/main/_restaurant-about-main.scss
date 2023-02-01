@@ -244,3 +244,8 @@
     cursor: pointer;
     color: var(--black);
 }
+
+.slider-btn:hover,
+.slider-btn:focus {
+    color: var(--akzent-yellow);
+}

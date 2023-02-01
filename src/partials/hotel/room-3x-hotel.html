@@ -1,6 +1,99 @@
-<!-- 1 room for 3 adult
-“ТРЬОХМІСНИЙ НОМЕР” - заголовок секції.
-В секції представлені зображення готельного номеру, які необхідно реалізувати як контентні.
-У секції представлений слайдер з контентними зображеннями*.
-Кнопка “Детальніше” має бути реалізована як посилання, яке веде користувача на сторінку Room Page.
-Кнопка “Переглянути ціни” має відкривати модальне вікно Room Price Modal window. -->
+<!-- Секція трьохмісний номер -->
+<section class="section-room3">
+    <div class="room3 container">
+        <p class="text-up">Amet minim mollit non</p>
+        <p class="logo-in-room3">mimiho</p>
+        <h2 class="item-in-room3">трьохмісний номер</h2>
+        <p class="about-item-in-room3">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim
+            velit mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+        <!-- Велике фото секції-->
+        <div>
+            <picture>
+                <source srcset="
+                ./images/main/hero-hotel/main/main-dekstop.jpg 1x,
+                ./images/main/hero-hotel/main/main-desktop@2x.jpg 2x" media="(min-width:1280px)">
+                <source srcset="
+                ./images/main/hero-hotel/main/main-tablet.jpg 1x,
+                ./images/main/hero-hotel/main/main-tablet@2x.jpg 2x" media="(min-width:1024px)">
+                <source srcset="
+                ./images/main/hero-hotel/main/main-mobile.jpg 1x,
+                ./images/main/hero-hotel/main/main-mobile@2x.jpg 2x" media="(max-width:1024px)">
+                <img class="photo-main-room3 shadow-big" src="./images/main/hero-hotel/main/main-mobile.jpg"
+                    alt="Photo room-3x hotel">
+            </picture>
+        </div>
+        <div class="block-tablet">
+            <!-- Блок фото малі слайдер -->
+            <div class="block-slider">
+                <ul class="list slider-photo-mini">
+                    <li class="size-photo-mini ">
+                        <picture class="photo-mini-item shadow-little">
+                            <source srcset="
+                        ./images/slider/slider-desktop/arrangement-pf-bathroom-elements-self-care.jpg 1x,
+                        ./images/slider/slider-desktop/arrangement-pf-bathroom-elements-self-care@2x.jpg 2x"
+                                media="(min-width:1280px)">
+                            <source srcset="
+                        ./images/slider/slider-tablet/arrangement-pf-bathroom-elements-self-care.jpg 1x,
+                        ./images/slider/slider-tablet/arrangement-pf-bathroom-elements-self-care@2x.jpg 2x"
+                                media="(min-width:1024px)">
+                            <source srcset="
+                        ./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1.jpg 1x,
+                        ./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1@2x.jpg 2x"
+                                media="(max-width:1024px)">
+                            <img src="./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1.jpg"
+                                alt="Photo bathroom elements room-3x hotel" class="photo-slider-room3">
+                        </picture>
+                    </li>
+                    <li class="size-photo-mini">
+                        <picture class="photo-mini-item shadow-little photo-cut">
+                            <source srcset="
+                        ./images/slider/slider-desktop/cup-tea-stands-wooden-windowsill.jpg 1x,
+                        ./images/slider/slider-desktop/cup-tea-stands-wooden-windowsill@2x.jpg 2x"
+                                media="(min-width:1280px)">
+                            <source srcset="
+                        ./images/slider/slider-tablet/cup-tea-stands-wooden-windowsill.jpg 1x,
+                        ./images/slider/slider-tablet/cup-tea-stands-wooden-windowsill@2x.jpg 2x"
+                                media="(min-width:1024px)">
+                            <source srcset="
+                        ./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1.jpg 1x,
+                        ./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1@2x.jpg 2x"
+                                media="(max-width:1024px)">
+                            <img src="./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1.jpg"
+                                alt="Photo view from the window room-3x hotel" class="photo-slider-room3">
+                        </picture>
+                    </li>
+                </ul>
+                <!-- Список стрілок -->
+                <ul class="list-svg-l-r">
+                    <li>
+                        <button class="btn-svg-l-r" type="button">
+                            <svg class="svg-arrows-room3 icon" width="32px" height="32px">
+                                <use href="./images/sprite.svg#icon-arrow-left"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn-svg-l-r" type="button">
+                            <svg class="svg-arrows-room3 icon" width="32px" height="32px">
+                                <use href="./images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <!-- Список кнопок -->
+            <div class="block-btns-menu">
+                <ul class="btns-menu-list">
+                    <li>
+                        <a class="btn-more-details btn-main" href="./room.html">Детальніше</a>
+                    </li>
+                    <li>
+                        <button class="btn-main" type="button">Переглянути ціни</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

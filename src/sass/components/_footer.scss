@@ -1,0 +1,116 @@
+ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+a {
+   text-decoration: none;
+   padding: 0;
+   margin: 0;
+}
+
+.footer {
+    background-color: var(--color-footer);
+}
+.footer__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media screen and (min-width:1024px) {
+        padding-top: 80px;
+        padding-bottom: 80px; 
+    }
+}
+.footer__logo {
+    margin-right: 85px;
+
+    font-family: 'FilmP3';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--akzent-yellow);
+    @media screen and (min-width:1024px) {
+        margin-right: 163px;
+
+        font-size: 64px;
+        line-height: 1.15;
+    }
+    @media screen and (min-width:1280px) {
+        margin-right: 231px;
+    }
+}
+.footer__nav {
+    @media screen and (min-width:1024px) {
+        display: flex;
+    }
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 32px;
+    @media screen and (min-width:1024px) {
+        margin-right: 137px;
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-right: 200px;
+    }
+}
+.footer__link {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--akzent-yellow);
+}
+.footer__social {
+    display: flex;
+    column-gap: 22px;
+    @media screen and (min-width:1024px) {
+        flex-direction: column-reverse;
+        row-gap: 12px;
+    }
+}
+.footer__social-item {
+    @media screen and (min-width:1024px) {
+        width: 144px;
+        padding: 7px 12px;
+
+        border: 0.5px solid var(--akzent-yellow);
+        border-radius: 2px;
+    }
+}
+.footer__social-link {
+    @media screen and (min-width:1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.footer__social-text {
+    display: none;
+    @media screen and (min-width:1024px) {
+        display: flex;
+        justify-content: space-between;
+        
+        font-family: 'Montserrat';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: var(--akzent-yellow);
+    }
+}
+.footer__social-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--akzent-yellow);
+}
