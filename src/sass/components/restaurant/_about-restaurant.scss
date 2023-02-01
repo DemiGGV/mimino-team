@@ -74,6 +74,13 @@
     background-color: var(--fon-lemon);
     padding-top: 16px;
     padding-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 120px;
+        padding-bottom: 32px;
+            
+    }
+
 }
 
 .img1-restaurant-about-item {
@@ -85,29 +92,27 @@
     @media screen and (min-width: 1024px) {
         position: absolute;
         width: 400px;
-        top: -32px;
+        top: -152px;
         right: 112px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 460px;
-        top: -33px;
+        top: -153px;
         right: 180px;
     }
 }
 
 .img2-restaurant-about-item {
     width: 200px;
-    margin-right: 20px;
+    
 
     @media screen and (min-width: 1024px) {
         width: 350px;
-        margin-right: 48px;
     }
 
     @media screen and (min-width: 1280px) {
         width: 460px;
-        margin-right: 32px;
     }
 
 }
@@ -131,13 +136,16 @@
 .second-card {
     display: flex;
     margin-bottom: 32px;
+    column-gap: 20px;
 
     @media screen and (min-width: 1024px) {
         margin-bottom: -25px;
+        column-gap: 48px;
     }
 
     @media screen and (min-width: 1280px) {
         margin-bottom: -150px;
+        column-gap: 32px;
     }
 }
 
@@ -172,19 +180,22 @@
     }
 }
 
+.slider-restaurant-list {
+    column-gap: 24px;
+    @media screen and (min-width: 1024px) {
+        column-gap: 40px;
+        
+    }
 
-.slider-restaurant-item:not(:last-child) {
-    margin-right: 24px;
 }
+
 
 .slider-arrow-list {
     display: flex;
     justify-content: flex-end;
+    column-gap: 32px;
 }
 
-.slider-arrow-item:not(:last-child) {
-    margin-right: 32px;
-}
 
 .slider-btn {
     padding: 0;
@@ -197,8 +208,6 @@
 
 @media screen and (min-width: 1024px) {
     .container-about-rest {
-        padding-top: 120px;
-        padding-bottom: 32px;
         position: relative;
     }
 
