@@ -1,0 +1,287 @@
+.hotel-abt-section {
+    padding-top: 16px;
+    padding-bottom: 20px;
+    background-color: getColor('light-lemon');
+    
+    @media screen and (max-width: 1023px) {
+        overflow: hidden;
+        }
+    
+    @media screen and (min-width: 1024px) {
+        padding-top: 120px;
+        padding-bottom: 32px;
+        }
+    
+    @media screen and (min-width: 1280px) {
+        padding-bottom: 50px;
+        }
+    }
+.hotel-abt-container {
+    position: relative;
+}
+.right-side {
+    max-width: 258px;
+    margin-left: auto;
+    @media screen and (min-width: 1024px) {
+        max-width: 440px;
+        margin-bottom: 338px;
+        }
+    
+    @media screen and (min-width: 1280px) {
+        max-width: 520px;
+        }
+}
+
+.hotel-abt-text {
+    font-family: 'TimesNewRoman';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    color: getColor('gray1');
+    
+    @media screen and (min-width: 1024px) {
+        font-size: 32px;
+        margin-bottom: 6px;
+        }
+}
+
+.mimino-text {
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    margin-bottom: 12px;
+    color: getColor('gray2');
+        
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        margin-bottom: 24px;
+        }
+}
+
+.hotel-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    margin-bottom: 28px;
+    color: getColor(gray3);
+    
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        margin-bottom: 0;
+        }
+    
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 348px;
+        }
+        
+}
+
+.left-side {
+    margin-bottom: 32px;
+    
+    @media screen and (min-width: 1024px) {
+        margin: 0;
+        position: absolute;
+        left: 112px;
+        top: -152px;
+        }
+    
+    @media screen and (min-width: 1280px) {
+        margin: 0;
+        position: absolute;
+        left: 180px;
+        top: -153px;
+        }
+}
+.hotel-room-img {
+    margin-right: auto;
+    width: 100%;
+    max-width: 244px;
+    
+    @media screen and (min-width: 1024px) {
+        max-width: 400px;
+        }
+    
+    @media screen and (min-width: 1280px) {
+        max-width: 460px;
+        }
+}
+/* problems */
+
+.card-2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    
+    @media screen and (min-width: 1024px) {
+            position: relative;
+            margin-bottom: 154px;
+        }
+    
+    @media screen and (min-width: 1280px) {
+            margin-bottom: 119px;
+        }
+}
+
+.mimino-description {
+    letter-spacing: .02em;
+    color: getColor('brown');
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    @media screen and (min-width: 1024px) {
+            font-size: 16px;
+            line-height: 1.25;
+        }
+}
+
+.text-left {
+    position: relative;
+    left: -170px;
+    margin-right: 20px;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 398px;
+        max-width: 312px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-right: 492px;
+    }
+}
+
+
+
+.picture-right {
+    width: 100%;
+    min-width: 200px;
+    position: 
+    
+        @media screen and (min-width: 1024px) {
+            width: 100%;
+            max-width: 350px;
+            position: absolute;
+            top: -195px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 100%;
+            max-width: 460px;
+            top: -186px;
+        }
+}
+.hotel-hall-img {
+
+    margin-left: auto;
+}
+
+/* slider images */
+.slider-images {
+margin-top: 32px;
+    margin-bottom: 20px;
+    list-style: none;
+    display: flex;
+    position: relative;
+    left: -15px;
+    column-gap: 24px;
+        @media screen and (min-width: 1024px) {
+            margin-top: 0;
+            left: 0;
+            margin-bottom: 32px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 40px;
+        }
+    }
+
+.slider-img {
+    width: 194px;
+        margin-left: 15px;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    
+        @media screen and (min-width: 1024px) {
+            margin-left: 40px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 254px;
+        }
+    }
+
+.slider-img:first-child {
+    margin-left: 0;
+    max-width: 74px;
+    min-height: 245px;
+    overflow: hidden;
+
+    @media screen and (min-width: 1024px) {
+        width: 194px;
+        overflow: visible;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 254px;
+    }
+}
+.slider-picture.towel {
+    display: block;
+    left: -120px;
+        position: relative;
+        width: 194px;
+    
+        @media screen and (min-width: 1024px) {
+            left: 0;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            width: 254px;
+        }
+    }
+
+
+
+/*----- icons -----*/
+.icons-list {
+display: flex;
+column-gap: 32px;
+justify-content: flex-start;
+    
+@media screen and (min-width: 1024px) {
+    margin-left: 13px;
+    
+        }
+    
+        @media screen and (min-width: 1280px) {
+            margin-left: 0;
+        }
+}
+.arrow-item {
+    line-height: 0;
+}
+/* -------- button functions ----------- */
+.slider-btn {
+padding: 0;
+line-height: 0;
+background-color: transparent;
+border: 0;
+cursor: pointer;
+color: getColor('black');
+    
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+    color: getColor('akzent-yellow');
+}
