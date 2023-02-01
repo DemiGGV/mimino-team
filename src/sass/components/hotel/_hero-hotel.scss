@@ -47,7 +47,11 @@
   gap: 60px;
   justify-content: flex-end;
 }
-
+.btn-big {
+  @media screen and (min-width: 1280px) {
+    width: 254px;
+  }
+}
 .adress-hotel {
   width: 285px;
   border: 1px solid rgba(243, 198, 83, 0.7);
