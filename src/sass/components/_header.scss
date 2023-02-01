@@ -1,29 +1,31 @@
 .header {
-    background-color: transparent;
+    background-color: black;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 20;
-    height: 64px;
+    max-height: 64px;
 
     @media screen and (min-width:1024px) {
-        height: 100px;
+        max-height: 100px;
     }
 }
 
 .header__body {
-    display: flex;
+    @media screen and (min-width:1280px) {
+        display: flex;
+    }
 }
 
 .header__nav {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
     padding-top: 16px;
-    margin-right: 52px;
+    padding-bottom: 9px;
     text-decoration: none;
     font-family: 'FilmP3';
     font-size: 36px;
@@ -37,7 +39,7 @@
         font-size: 40px;
         line-height: 1.075;
         padding-top: 24px;
-        margin-right: 87px;
+
     }
 
     @media screen and (min-width:1280px) {
@@ -56,7 +58,7 @@
 
 .header__item {
     display: flex;
-    padding-top: 28px;
+    gap: 6px;
 
     @media screen and (min-width:1024px) {
         gap: 32px;
@@ -67,22 +69,29 @@
     display: flex;
     text-decoration: none;
     font-family: 'Montserrat';
-    font-style: 16px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: var(--akzent-yellow);
+    padding-bottom: 16px;
+    padding-top: 28px;
 
 
     @media screen and (min-width:1024px) {
         align-items: center;
-
+        padding-top: 36px;
+        padding-bottom: 40px;
         font-size: 20px;
         line-height: 1.2;
     }
 }
 
-.header__link-box {
+.header__position-tel {
+    padding-top: 28px;
+}
+
+.header__mob-number {
     display: none;
 
     @media screen and (min-width:1024px) {
@@ -109,13 +118,12 @@
 }
 
 .header__tel {
-    display: none;
     text-decoration: none;
+    display: inline-block;
 
     @media screen and (min-width:1024px) {
         display: flex;
         align-items: center;
-        flex-direction: row-reverse;
 
         font-family: 'Montserrat';
         font-size: 14px;
@@ -137,8 +145,8 @@
 
     @media screen and (min-width:1280px) {
         display: flex;
-        column-gap: 20px;
-        padding-top: 38px;
+        gap: 20px;
+        align-items: center;
         margin-left: auto;
     }
 }
