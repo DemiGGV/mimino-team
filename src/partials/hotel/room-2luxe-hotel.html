@@ -5,134 +5,98 @@
 Кнопка “Детальніше” має бути реалізована як посилання, яке веде користувача на сторінку Room Page.
 Кнопка “Переглянути ціни” має відкривати модальне вікно Room Price Modal window. -->
 <section class="section room-luxe">
-  <div class="container room-luxe-cont">
-    <p class="text-room">Amet minim mollit non</p>
-    <p class="room-luxe-logo">mimiho</p>
-    <h2 class="title-room-lux">двомісний номер<span class="title-room"> люкс</span></h2>
-    <p class="link-room">
-      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
-      Velit officia consequat duis enim velit mollit. Exercitation veniam
-      consequat sunt nostrud amet.
-    </p>
-    
+    <div class="container room-luxe-cont">
+        <p class="text-room">Amet minim mollit non</p>
+        <p class="room-luxe-logo">mimiho</p>
+        <h2 class="title-room-lux">двомісний номер<span class="title-room"> люкс</span></h2>
+        <p class="link-room">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+            Velit officia consequat duis enim velit mollit. Exercitation veniam
+            consequat sunt nostrud amet.
+        </p>
+
         <picture class="room-images">
-          <source
-            srcset="
+            <source srcset="
               ./images/main/hero-hotel/main/main-dekstop.jpg    1x,
               ./images/main/hero-hotel/main/main-desktop@2x.jpg 2x
-            "
-            media="(min-width: 1280px)"
-          />
+            " media="(min-width: 1280px)" />
 
-          <source
-            srcset="
+            <source srcset="
               ./images/main/hero-hotel/main/main-tablet.jpg    1x,
               ./images/main/hero-hotel/main/main-tablet@2x.jpg 2x
-            "
-            media="(min-width: 1024px)"
-          />
+            " media="(min-width: 1024px)" />
 
-          <source
-            srcset="
+            <source srcset="
               ./images/main/hero-hotel/main/main-mobile.jpg    1x,
               ./images/main/hero-hotel/main/main-mobile@2x.jpg 2x
-            "
-            media="(max-width: 1023px)"
-          />
+            " media="(max-width: 1023px)" />
 
-          <img
-            class="room-img"
-            src="./images/main/hero-hotel/main/main-mobile.jpg"
-            alt="foto room 1"
-            
-          />
+            <img class="room-img shadow-little" src="./images/main/hero-hotel/main/main-mobile.jpg" alt="foto room 1" />
         </picture>
-     <div class="box-room">
-    <ul class="list-room-photo">
-      <li class="item-room">
-        <picture class="item-room-slider-first">
-          <source
-            srcset="
+        <div class="box-room">
+            <ul class="list-room-photo">
+                <li class="item-room">
+                    <picture class="item-room-slider-first">
+                        <source srcset="
              ./images/slider/slider-desktop/arrangement-pf-bathroom-elements-self-care.jpg 1x,
              ./images/slider/slider-desktop/arrangement-pf-bathroom-elements-self-care@2x.jpg 2x"
-            media="(min-width: 1280px)"
-          />
+                            media="(min-width: 1280px)" />
 
-          <source
-            srcset="
+                        <source srcset="
             ./images/slider/slider-tablet/arrangement-pf-bathroom-elements-self-care.jpg 1x, 
             ./images/slider/slider-tablet/arrangement-pf-bathroom-elements-self-care@2x.jpg 2x"
-            media="(min-width: 1024px)"
-          />
+                            media="(min-width: 1024px)" />
 
-          <source
-            srcset="
+                        <source srcset="
             ./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1.jpg 1x, 
             ./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1@2x.jpg 2x"
-            media="(max-width: 1023px)"
-          />
-          <img
-            class="room-img"
-            src="./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1.jpg"
-            alt="foto room 2"
-            
-          />
-        </picture>
-      </li>
+                            media="(max-width: 1023px)" />
+                        <img class="room-img"
+                            src="./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1.jpg"
+                            alt="foto room 2" />
+                    </picture>
+                </li>
 
-      <li class="item-room">
-        <picture class="item-room-slider">
-          <source
-            srcset="
+                <li class="item-room">
+                    <picture class="item-room-slider">
+                        <source srcset="
             ./images/slider/slider-desktop/cup-tea-stands-wooden-windowsill.jpg 1x, 
-            ./images/slider/slider-desktop/cup-tea-stands-wooden-windowsill@2x.jpg 2x"
-            media="(min-width: 1280px)"
-          />
+            ./images/slider/slider-desktop/cup-tea-stands-wooden-windowsill@2x.jpg 2x" media="(min-width: 1280px)" />
 
-          <source
-            srcset="
+                        <source srcset="
             ./images/slider/slider-tablet/cup-tea-stands-wooden-windowsill.jpg 1x, 
-            ./images/slider/slider-tablet/cup-tea-stands-wooden-windowsill@2x.jpg 2x"
-            media="(min-width: 1024px)"
-          />
+            ./images/slider/slider-tablet/cup-tea-stands-wooden-windowsill@2x.jpg 2x" media="(min-width: 1024px)" />
 
-          <source
-            srcset="
+                        <source srcset="
             ./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1.jpg 1x, 
-            ./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1@2x.jpg 2x"
-            media="(max-width: 1023px)"
-          />
-          <img
-            class="room-img"
-            src="./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1.jpg"
-            alt="foto room 3"
-            
-          />
-        </picture>
-      </li>
-    </ul>
-    
-    <ul class="icon-room-list">
-      <li class="icon-room-list-item">
-      <button type="button" class="icon-room-left"> 
-      <svg class="icon-arrow-left" width="32" height="32">
-        <use href="./images/sprite.svg#icon-arrow-left"></use>
-      </svg>
-      </button> 
-      </li>
-      <button type="button" class="icon-room-right"> 
-      <li class="icon-room-list-item">
-      <svg class="icon-arrow-right" width="32" height="32">
-        <use href="./images/sprite.svg#icon-arrow-right"></use>
-      </svg>
-      </button>
-    </li>
-    </ul>
+            ./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1@2x.jpg 2x" media="(max-width: 1023px)" />
+                        <img class="room-img" src="./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1.jpg"
+                            alt="foto room 3" />
+                    </picture>
+                </li>
+            </ul>
 
-    <div class="btn-list-room">
-      <a href="./room.html" class="btn-room btn-main">Детальніше</a>
-      <button type="button" class="btn-room-lux btn-main">Переглянути ціни</button>
+            <ul class="icon-room-list">
+                <li class="icon-room-list-item">
+                    <button type="button" class="icon-room-left">
+                        <svg class="icon-arrow-left" width="32" height="32">
+                            <use href="./images/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="icon-room-list-item">
+                    <button type="button" class="icon-room-right">
+                        <svg class="icon-arrow-right" width="32" height="32">
+                            <use href="./images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="btn-list-room">
+                <a href="./room.html" class="btn-room btn-main">Детальніше</a>
+                <button type="button" class="btn-room-lux btn-main">Переглянути ціни</button>
+            </div>
+        </div>
     </div>
-  </div>
-  </div>
 </section>
