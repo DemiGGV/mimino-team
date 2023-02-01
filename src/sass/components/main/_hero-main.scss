@@ -191,7 +191,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     border: 1px solid getColor('border-golden');
     border-radius: 2px;
     font-family: 'Montserrat';
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.25;
     letter-spacing: 0.01em;
     color: getColor('map-link');
@@ -207,6 +207,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
 
     @media screen and (min-width:1024px) {
         position: static
+        font-size: 16px;
     }
 
     @media screen and (min-width:1280px) {
