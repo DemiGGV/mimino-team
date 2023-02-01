@@ -25,6 +25,12 @@
     color: black;
     text-transform: uppercase;
     margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 41px;
+    }
+
+
     
 }
 
@@ -41,8 +47,12 @@ td {
     font-size: 20px;
     line-height: 1.15;
     color: #000000;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     text-align: left;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 19px;
+    }
 
     @media screen and (min-width: 1280px) {
         font-size: 24px;
@@ -51,8 +61,15 @@ td {
 
 }
 
+.menu-table {
+    border-collapse: collapse;
+}
+
 .menu-table:not(:last-child) {
     margin-bottom: 16px;
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 12px;
+    }
 }
 
 .name-menu {
@@ -63,12 +80,17 @@ td {
     letter-spacing: 0.02em;
     color: #000000;
     width: 256px;
+    
 
     @media screen and (min-width: 1280px) {
         font-size: 16px;
+        line-height: 1.25;
         width: 290px;
     }
 }
+
+
+
 
 .composition {
     font-family: 'Montserrat', sans-serif;
@@ -81,10 +103,17 @@ td {
     margin-bottom: 8px;
     width: 225px;
 
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 8px;
+        line-height: 1.1;
+    }
+
     @media screen and (min-width: 1280px) {
         width: 250px;
     }
 }
+
+
 
 .dessert-drink {
     padding-bottom: 8px;
@@ -120,26 +149,27 @@ td {
     line-height: 1.21;
     letter-spacing: 0.02em;
     color: #000000;
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
 .menu-modal-btn {
-    margin-top: 32px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 24px;
-    display: flex;
+    
+   
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    align-items: center;
+    margin-top: 32px;
+    
 
     @media screen and (min-width: 1024px) {
-    
-        justify-content: flex-end;
         margin-right: 0;
-        padding-left: 0;
-        padding-right: 24px;
+        margin-top: 41px;
         }
+    @media screen and (min-width: 1280px) {
+        margin-top: 24px;
+    }
     
 }
 
