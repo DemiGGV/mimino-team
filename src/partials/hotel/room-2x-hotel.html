@@ -48,9 +48,9 @@
           />
         </picture>
      <div class="box-room">
-    <ul class="list-room">
+    <ul class="list-room-photo">
       <li class="item-room">
-        <picture>
+        <picture class="item-room-slider-first">
           <source
             srcset="
              ./images/slider/slider-desktop/arrangement-pf-bathroom-elements-self-care.jpg 1x,
@@ -72,7 +72,7 @@
             media="(max-width: 1023px)"
           />
           <img
-            class="room-img"
+            class="room-img-slider-first"
             src="./images/slider/slider-mobile/arrangement-pf-bathroom-elements-self-care1.jpg"
             alt="foto room 2"
             
@@ -81,7 +81,7 @@
       </li>
 
       <li class="item-room">
-        <picture>
+        <picture  class="item-room-slider">
           <source
             srcset="
             ./images/slider/slider-desktop/cup-tea-stands-wooden-windowsill.jpg 1x, 
@@ -103,7 +103,7 @@
             media="(max-width: 1023px)"
           />
           <img
-            class="room-img"
+            class="room-img-slider"
             src="./images/slider/slider-mobile/cup-tea-stands-wooden-windowsill1.jpg"
             alt="foto room 3"
             
@@ -112,19 +112,30 @@
       </li>
     </ul>
     
-    <div class="icon-room">
-      <svg class="icon-arrow-left" width="32" height="32">
-        <use href="./images/sprite.svg#icon-arrow-left"></use>
-      </svg>
-      <svg class="icon-arrow-right" width="32" height="32">
-        <use href="./images/sprite.svg#icon-arrow-right"></use>
-      </svg>
-    </div>
+      <ul class="icon-room-list">
+        <li class="icon-room-list-item">
+           <button type="button" class="icon-room-left"> 
+          <svg class="icon-arrow-left" width="32" height="32">
+            <use href="./images/sprite.svg#icon-arrow-left"></use>
+          </svg>
+           </button>
+        </li>
+        <li class="icon-room-list-item">
+          <button type="button" class="icon-room-right"> 
+          <svg class="icon-arrow-right" width="32" height="32">
+            <use href="./images/sprite.svg#icon-arrow-right"></use>
+          </svg>
+          </button>
+        </li>
+      </ul>
 
     <div class="btn-list-room">
-      <a href="./room.html" class="btn-room">Детальніше</a>
-      <button type="button" class="btn-room-lux">Переглянути ціни</button>
+      <a href="./room.html" class="btn-room btn-main">Детальніше</a>
+      <button type="button" class="btn-room-lux btn-main">Переглянути ціни</button>
     </div>
   </div>
   </div>
 </section>
+
+
+
