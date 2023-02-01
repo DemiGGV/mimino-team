@@ -1,19 +1,13 @@
-.section {
+.room-luxe {
+    background: getColor('light-lemon');
     padding-top: 32px;
     padding-bottom: 32px;
 @media screen and (min-width: 1024px) {
-    position: relative;
     padding-top: 62px;
     padding-bottom: 40px;}
-@media screen and (min-width: 1280px) {   
+@media screen and (min-width: 1280px) {
     padding-top: 62px;
     padding-bottom: 40px;}
-}
-
-.room-luxe {
-    background: getColor('light-lemon');
- @media screen and (max-width: 1023px) {
-    overflow: hidden;}
  }
 
 .text-room {
@@ -109,7 +103,7 @@
 }
 
  
-    .room-images {
+.room-images {
 @media screen and (min-width: 1024px) {
     position: absolute;
     top: -33px;
@@ -119,8 +113,7 @@
     box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);}    
 @media screen and (min-width: 1280px) {
     width: 460px;
-    border-radius: 2px;
-    }
+    border-radius: 2px;}
 }
 .box-room {
     flex-direction: column;
