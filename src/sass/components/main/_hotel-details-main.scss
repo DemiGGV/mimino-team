@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
-
+    overflow: hidden;
     background-image: -webkit-gradient(linear,
             left top,
             left bottom,
@@ -87,6 +87,7 @@
 
 .hdm__container {
     position: relative;
+    overflow: hidden;
 }
 
 .hdm__textbox {
@@ -94,6 +95,17 @@
     flex-direction: column;
     max-width: 243px;
     display: flex;
+    margin-left: 32px;
+
+    @media screen and (min-width:1024px) {
+        margin-left: 145px;
+        max-width: 549px;
+    }
+
+    @media screen and (min-width:1280px) {
+        max-width: 595px;
+        margin-left: 257px;
+    }
 }
 
 .hdm__logo {
@@ -111,8 +123,6 @@
         line-height: 1.078;
         margin-bottom: 16px;
     }
-
-    @media scree and (min-width:1280px) {}
 }
 
 .hdm__phrase {
@@ -129,8 +139,6 @@
         line-height: 1.21;
         margin-bottom: 8px;
     }
-
-    @media scree and (min-width:1280px) {}
 }
 
 .hdm__text {
@@ -146,8 +154,6 @@
         font-size: 16px;
         margin-bottom: 40px;
     }
-
-    @media scree and (min-width:1280px) {}
 }
 
 .hdm_imgslider {
@@ -157,9 +163,15 @@
     margin-bottom: 16px;
     position: relative;
 
-    @media screen and (min-width:1024px) {}
+    @media screen and (min-width:1024px) {
+        position: static;
+        margin-bottom: 24px;
+        gap: 34px;
+    }
 
-    @media scree and (min-width:1280px) {}
+    @media screen and (min-width:1280px) {
+        flex-direction: row-reverse;
+    }
 
 }
 
@@ -168,6 +180,8 @@
 
     @media screen and (min-width:1024px) {
         display: block;
+        min-height: 270px;
+        min-width: 270px;
     }
 
     @media scree and (min-width:1280px) {}
@@ -181,7 +195,17 @@
     min-width: 270px;
 }
 
-.hdm__sliderbutt {}
+.hdm__sliderbutt {
+    @media screen and (min-width:1024px) {
+        display: flex;
+        position: relative;
+        right: 113px;
+    }
+
+    @media screen and (min-width:1280px) {
+        right: -68px;
+    }
+}
 
 
 .hdm__slider {
@@ -189,10 +213,9 @@
     right: 40px;
 
     @media screen and (min-width:1024px) {
-        margin-bottom: 24px;
+        position: static;
+        margin-right: 36px;
     }
-
-    @media scree and (min-width:1280px) {}
 }
 
 .hdm__btnslider {
@@ -200,6 +223,10 @@
     margin-bottom: 32px;
     display: flex;
     justify-content: flex-end;
+
+    @media screen and (min-width:1024px) {
+        margin-bottom: 0;
+    }
 }
 
 .hdm__btn-svg {
@@ -215,6 +242,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    display: block;
 }
 
 .hdm__svgarrow:hover,
@@ -227,6 +255,11 @@
     gap: 16px;
     flex-direction: column;
     align-items: center;
+
+    @media screen and (min-width:1024px) {
+        justify-content: end;
+        padding-bottom: 60px;
+    }
 }
 
 .black-btn {
@@ -241,11 +274,3 @@
 .btn__mainbox-link {
     color: getColor('yellow');
 }
-
-
-
-
-
-@media screen and (min-width:1024px) {}
-
-@media scree and (min-width:1280px) {}
