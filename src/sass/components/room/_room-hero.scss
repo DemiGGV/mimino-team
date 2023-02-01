@@ -3,13 +3,11 @@
 
 .room-hero {
     position: relative;
-
-    max-width: 414px;
-    height: 740px;
-
+    
     margin-left: auto;
     margin-right: auto;
     padding-top: 344px;
+    padding-bottom: 14px;
     
     background-image: url(../images/room/room3mobile.jpg);
     background-repeat: no-repeat;
@@ -23,9 +21,8 @@
     }
 
     @media screen and (min-width: 1024px) {
-        max-width: 1024px;
-        height: 719px;
         padding-top: 340px;
+        padding-bottom: 36px;
     
         background-image: url(../images/room/room3tablet.jpg);
     }
@@ -37,9 +34,8 @@
     }
 
     @media screen and (min-width: 1280px) {
-        max-width: 1280px;
-        height: 720px;
         padding-top: 412px;
+        padding-bottom: 48px;
     
         background-image: url(../images/room/room3desk.jpg);
     }
@@ -57,19 +53,22 @@
     top: 0;
     left: 0;
 
-    width: 414px;
+    width: 100%;
+    min-width: 414px;
     height: 143px;
     background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.55) 54.17%, rgba(0, 0, 0, 0) 100%);
 
     @media screen and (min-width: 1024px) {
-        width: 1024px;
         height: 116px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 1280px;
         height: 147px;
     }
+}
+
+.room-hero-position {
+    position: relative;
 }
 
 .room-hero-controls {
@@ -84,6 +83,10 @@
     @media screen and (min-width: 1280px) {
         margin-bottom: 72px;
     }
+}
+
+.hero-controls-arrows {
+    display: contents;
 }
 
 .room-slider-btn {
@@ -102,7 +105,7 @@
 
 .room-loc-link {
     position: absolute;
-    top: 64px;
+    top: -286px;
     right: 15px;
 
     display: flex;
@@ -117,7 +120,7 @@
 
     @media screen and (min-width: 1024px) {
         width: 285px;
-        top: 640px;
+        top: 300px;
         right: 692px;
     
         padding: 8px 8px 8px 10px;
@@ -200,6 +203,10 @@
     
         font-size: 16px;
     }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+    }
 }
 
 
@@ -239,7 +246,7 @@
 
 .room-hero-btn {
     position: absolute;
-    bottom: 40px;
+    bottom: 26px;
     right: 73px;
 
     padding: 14px 35px;
@@ -256,12 +263,11 @@
     color: var(--akzent-yellow);
 
     @media screen and (min-width: 1024px) {
-        bottom: 62px;
         right: 47px;
     }
     
     @media screen and (min-width: 1280px) {
-        bottom: 66px;
+        bottom: 18px;
         right: 85px;
     }
 }
