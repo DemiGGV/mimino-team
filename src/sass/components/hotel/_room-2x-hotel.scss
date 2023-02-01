@@ -128,10 +128,8 @@
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;}
-@media screen and (min-width: 1280px) {
-    
 }
-}
+
 .list-room-photo {  
     display: flex;
     list-style: none;
@@ -139,8 +137,7 @@
     margin-top: 32px;
 @media screen and (min-width: 1024px) {
     margin-top: 0;
-    margin-bottom: 32px;
-    left: 0;}
+    margin-bottom: 32px;}
 @media screen and (min-width: 1280px) {
     margin-bottom: 40px;}    
 }
