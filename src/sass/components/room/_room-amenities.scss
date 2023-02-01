@@ -1,3 +1,4 @@
+// Room aminities styles
 .amenities {
     background-color: var(--fon-lemon);
 
@@ -19,17 +20,7 @@
         padding-bottom: 48px;
     }
 }
-// .amenities__container {
-//     max-width: 414px;
 
-//     @media screen and (min-width:1024px) {
-//         max-width: 1024px;
-//         padding: 48px 15px 48px 15px;
-//     }
-//     @media screen and (min-width:1280px){
-//         max-width: 1280px;
-//     }
-// }
 .amenities__title {
     margin-bottom: 16px;
 
@@ -125,5 +116,8 @@
     margin-left: 12px;
     width: 24px;
     height: 24px;
-    fill: var(--brown);
+}
+.amenities__return:hover,
+.amenities__return:focus {
+    color: var(--akzent-yellow);
 }
