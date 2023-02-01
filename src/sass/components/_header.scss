@@ -1,10 +1,8 @@
 .header {
-    background-color: black;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 20;
     max-height: 64px;
 
     @media screen and (min-width:1024px) {
@@ -44,6 +42,7 @@
 
     @media screen and (min-width:1280px) {
         margin-right: 135px;
+        padding-bottom: 33px;
     }
 }
 
@@ -150,7 +149,9 @@
         margin-left: auto;
     }
 }
-
+.header__social-item {
+    line-height: 0;
+}
 .header__social-icon {
     width: 24px;
     height: 24px;
