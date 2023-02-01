@@ -1,5 +1,38 @@
 <!-- Room Price Modal window
 “ЦІНИ НА НОМЕР” - заголовок секції.
 Форма містить в собі такі елементи як <input> і <select>(яким необхідно додати мінімальну валідацію даних для введення
-    за допомогою атрибуту pattern) та кнопку Забронювати номер”.
-    Кнопка “Забронювати номер” типу submit закриває модальне вікно. -->
+за допомогою атрибуту pattern) та кнопку Забронювати номер”.
+Кнопка “Забронювати номер” типу submit закриває модальне вікно. -->
+
+
+<div class="modal price-room-mobile" data-modal="1">
+    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+    <form name="price room" class="room-price-form model-box">
+        <strong class="room-price-title">ЦІНИ НА НОМЕР</strong>
+        <strong class="category-room">Двомісний люкс</strong>
+        <span class="form-text">Категорія номеру</span>
+        <div class="flex-box">
+            <label class="price-lable-first">
+                <select class="price-room-input" name="night">
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                  </select>
+                <svg class="model-icon-chek" width="20" height="12">
+                    <use href="./images/sprite.svg#icon-Vector-1"></use>
+                </svg>
+                <span class="form-text-lable">Кількість ночей</span>
+            </label>
+            <label class="price-lable-second">
+                <input class="price-room-input" type="number" name="price" placeholder="1000">
+                <span class="form-text-lable">грн</span>
+            </label>
+        </div>
+        <button type="submit " class="price-btn">ЗАБРОНЮВАТИ НОМЕР</button>
+    </form>
+</div>
+<div class="overlay js-overlay-modal"></div>
