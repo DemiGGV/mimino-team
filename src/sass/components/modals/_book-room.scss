@@ -1,0 +1,181 @@
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    transition: 0.3s all;
+}
+
+.booking-room-mobile {
+    width: 100vw;
+    height: 100vh;
+    background: var(--fon-lemon);
+    border-radius: 2px;
+    padding: 60px 15px;
+    z-index: 30;
+}
+
+.booking-room-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.booking-room-input {
+    width: 100%;
+    height: 54px;
+    padding: 0 12px;
+    background-color: transparent;
+    outline: transparent;
+    border: 1px solid var(--brown);
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--input-string);
+    margin-bottom: 8px;
+    appearance: none;
+}
+
+.booking-text-lable {
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--brown);
+}
+
+.booking-btn {
+    background: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    height: 64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #FFFFFF;
+}
+
+.booking-btn:hover,
+.booking-bth:focus {
+    background: #F3C653;
+    color: #000000;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-box-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-lable {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.last {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.model-box {
+    max-width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.model-icon {
+    position: absolute;
+    top: 26px;
+    right: 31px;    
+    fill: var(--brown);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .booking-room-mobile {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 712px;
+        height: 638px;
+        padding: 60px;
+        border: 1px solid var(--akzent-yellow);
+     
+    }
+
+    .booking-room-title {
+        font-size: 40px;
+        margin-bottom: 36px;
+    }
+
+    .model-box {
+        max-width: 592px;
+    }
+
+    .booking-lable {
+        width: 288px;
+        margin-bottom: 28px;
+    }
+
+    .booking-room-input {
+        height: 64px;
+    }
+
+    .flex-box-wrap {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .last {
+        margin-bottom: 40px;
+    }
+
+    .booking-btn {
+        font-size: 24px;
+    }
+
+    .box {
+        display: inline;
+        width: 288px;
+    }
+}
+
+
