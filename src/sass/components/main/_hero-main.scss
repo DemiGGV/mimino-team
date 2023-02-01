@@ -170,6 +170,10 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     }
 }
 
+.desktop-none {
+    line-height: 0;
+}
+
 @media screen and (min-width:1280px) {
     .desktop-none {
         display: none;
@@ -196,7 +200,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     display: inline-flex;
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: 15px;
     align-items: center;
     text-decoration: none;
     font-style: normal;
