@@ -1,6 +1,10 @@
+.relative-one {
+  position: relative;
+}
+
 .hero-hotel-section {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 20px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -12,14 +16,9 @@
   font-family: 'FilmP3';
   font-style: normal;
   font-weight: 700;
-  font-size: 128px;
   line-height: 1.07;
   letter-spacing: 0.3em;
   color: #ffffff;
-  margin-top: 64px;
-  justify-content: center;
-  display: flex;
-  margin-left: calc(128 * 0.3);
 }
 
 .hotel-text {
@@ -31,7 +30,6 @@
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-top: 32px;
-  margin-bottom: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +106,7 @@
 @media screen and (max-width: 1023px) {
   .hero-hotel-section {
     padding-top: 64px;
-    padding-bottom: 64px;
+    // padding-bottom: 64px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -147,6 +145,7 @@
     display: grid;
     grid-gap: 24px;
     justify-content: center;
+    margin-bottom: 58px;
   }
 }
 
@@ -187,7 +186,6 @@
     width: 20px;
     height: 20px;
     margin-left: -30px;
-    top: 80px;
   }
 }
 
@@ -196,10 +194,6 @@
     list-style: none;
     display: flex;
     gap: 20px;
-    bottom: -40px;
-    position: relative;
-    padding-bottom: 20px;
-    margin-left: 15px;
   }
 }
 
@@ -225,6 +219,8 @@
 
 @media screen and (min-width: 1024px) {
   .hero-hotel-section {
+    padding-top: 188px;
+    padding-bottom: 65px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(..//..//..//images/hotel/header/hotel-tablet.jpg);
   }
@@ -238,19 +234,19 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px){
   .hero-hotel-text-top {
     font-size: 128px;
     justify-content: center;
     display: flex;
-    margin-top: 88px;
+    margin-top: 0px;
     margin-left: calc(128 * 0.3);
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .hotel-text {
-    margin-bottom: 218px;
+    margin-bottom: 226px;
   }
 }
 
@@ -275,11 +271,11 @@
     height: 48px;
   }
 }
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px){
   .adress-hotel {
     align-items: center;
     display: flex;
-    bottom: 30px;
+    bottom: 0px;
     position: absolute;
   }
 }
@@ -304,13 +300,13 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1279px) {
+@media screen and (min-width: 1024px){
   .social-hero {
     list-style: none;
     display: flex;
     gap: 20px;
-    bottom: -35px;
-    position: relative;
+    bottom: -50px;
+    position: absolute;
   }
 }
 
@@ -335,6 +331,7 @@
 }
 @media screen and (min-width: 1280px) {
   .hero-hotel-section {
+    padding-top: 164px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
       url(..//..//..//images/hotel/header/hotel-desktop.jpg);
   }
@@ -348,7 +345,7 @@
 }
 @media screen and (min-width: 1280px) {
   .hotel-text {
-    margin-bottom: 242px;
+    margin-bottom: 249px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -359,6 +356,6 @@
 @media screen and (min-width: 1280px) {
   .adress-hotel {
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
   }
 }
