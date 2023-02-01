@@ -232,27 +232,19 @@
     }
 }
 
-.icon-room-list-item {
-    cursor: pointer;
-}
-
-.icon-room-list-item:hover,
-.iicon-room-list-item:focus {
-    color: getColor('yellow');
-}
 
 .btn-list-room {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: auto;
-
+    
     @media screen and (min-width: 1024px) {
         padding-bottom: 32px;
         margin-right: 0;
         flex-direction: column;
     }
-
+    
     @media screen and (min-width: 1280px) {
         padding-bottom: 40px;
     }
@@ -261,7 +253,7 @@
 .btn-room {
     text-decoration: none;
     padding: 14px 64px;
-
+    
     @media screen and (min-width: 1024px) {
         display: flex;
         flex-wrap: wrap;
@@ -279,4 +271,15 @@
     border: none;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
+}
+
+.icon-room-left:hover,
+.icon-room-left:focus {
+    color: getColor('yellow');
+}
+
+.icon-room-right:hover,
+.icon-room-right:focus {
+    color: getColor('yellow');
 }
