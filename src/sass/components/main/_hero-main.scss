@@ -1,13 +1,11 @@
 .hero-main {
-
     background-color: getColor('white');
-
-    position: relative;
-    z-index: 10;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
+    padding-top: 64px;
+    padding-bottom: 20px;
     background-image: -webkit-gradient(linear,
             left top,
             left bottom,
@@ -36,6 +34,8 @@
 
 @media screen and (min-width: 1024px) and (max-width:1279px) {
     .hero-main {
+        padding-top: 100px;
+        padding-bottom: 15px;
         background-image: -webkit-gradient(linear,
                 left top,
                 left bottom,
@@ -65,6 +65,8 @@ screen and (min-width: 1024px) and (max-width:1279px) and (min-resolution: 2dppx
 
 @media screen and (min-width: 1280px) {
     .hero-main {
+        padding-top: 100px;
+        padding-bottom: 64px;
         background-image: -webkit-gradient(linear,
                 left top,
                 left bottom,
@@ -93,6 +95,10 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     }
 }
 
+.hmc_position {
+    position: relative;
+}
+
 .hero__phrase {
     text-transform: uppercase;
     font-family: 'FilmP3';
@@ -103,11 +109,18 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     color: getColor('white');
     margin-bottom: 24px;
     margin-left: calc(96 * 0.3);
-
+    margin-top: 117px;
 
     @media screen and (min-width: 1024px) {
         font-size: 128px;
         line-height: 1.078;
+        margin-top: 81px;
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-top: 64px;
+        margin-bottom: 32px;
     }
 }
 
@@ -123,6 +136,11 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     @media screen and (min-width:1024px) {
         font-size: 20px;
         line-height: 1.2;
+        margin-bottom: 56px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-bottom: 64px;
     }
 }
 
@@ -135,23 +153,9 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     letter-spacing: 0.05em;
     color: getColor('white');
 
-
     @media screen and (min-width:1024px) {
         font-size: 36px;
         line-height: 1.138;
-
-    }
-}
-
-@media screen and (max-width:1023px) {
-    .opacity-btn {
-        opacity: 0.4;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .opacity-btn {
-        opacity: 0.4;
     }
 }
 
@@ -160,10 +164,7 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     height: 20px;
     width: 20px;
 
-}
-
-@media screen and (min-width:1024px) and (max-width:1279px) {
-    .link__socialsvg {
+    @media screen and (min-width:1024px) {
         height: 24px;
         width: 24px;
     }
@@ -176,17 +177,10 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
 }
 
 .link__social {
-    display: flex;
+    display: inline-flex;
     align-items: flex-start;
     flex-direction: row;
     gap: 20px;
-    position: absolute;
-    bottom: 20px;
-
-    @media screen and (min-width:1024px) and (max-width:1279px) {
-        bottom: 15px;
-    }
-
 }
 
 .location-address {
@@ -201,16 +195,14 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     gap: 10px;
     display: inline-flex;
     position: absolute;
-    top: 64px;
-    right: 15px;
+    top: 0px;
+    right: 0px;
     align-items: center;
     text-decoration: none;
     font-style: normal;
 
-    @media screen and (min-width:1024px) and (max-width:1279px) {
-        justify-content: flex-start;
-        position: relative;
-        top: -15px;
+    @media screen and (min-width:1024px) {
+        position: static
     }
 
     @media screen and (min-width:1280px) {
@@ -218,15 +210,22 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     }
 }
 
-.textbox {
-    padding-top: 181px;
+.hm_sociallink {
+    line-height: 0;
+}
+
+.hm__textbox {
+    margin-bottom: 113px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 335px;
     justify-content: center;
+
+    @media screen and (min-width:1024px) {
+        margin-bottom: 137px;
+    }
 }
 
 .div-hero-btn {
@@ -236,14 +235,13 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    bottom: 102px;
-    position: relative;
+    margin-bottom: 61px;
 
     @media screen and (min-width:1024px) and (max-width:1279px) {
         flex-direction: row;
         gap: 40px;
-        bottom: 64px;
-        justify-content: flex-end;
+        margin-right: 0;
+        margin-bottom: 25px;
 
     }
 
@@ -252,14 +250,20 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
         gap: 60px;
         position: static;
         margin: 0;
+        margin-right: 0;
     }
 }
 
 .hero_bottom {
+    @media screen and (min-width:1024px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
     @media screen and(min-width:1280px) {
         display: flex;
         flex-direction: row;
-        padding-bottom: 64px;
         align-items: flex-end;
         justify-content: space-between;
     }
