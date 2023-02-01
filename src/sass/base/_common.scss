@@ -19,8 +19,13 @@
 
 .shadow-big {
     background: getColor('bcg-img');
-    box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width: 1024px) {
+        background: getColor('bcg-img');
+        box-shadow: 5px 5px 70px 17px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
 }
 
 // Тінь маленьких картинок
