@@ -1,5 +1,6 @@
 
 .restaurant-details{
+    text-transform: uppercase;
     font-family: 'FilmP3';
     font-weight: 700;
     font-size: 40px;
@@ -10,12 +11,6 @@
     margin-bottom: 12px;
 }
 
-@media screen and (min-width: 1280px) {
-    .rest-detail-container{
-        padding-right: 50px;
-    }
-}
-
 @media screen and (min-width: 1024px) {
     .restaurant-details{
         font-size: 64px;
@@ -23,12 +18,18 @@
         margin-bottom: 16px;
     }
 }
+@media screen and (min-width: 1280px) {
+    .rest-detail-container{
+        padding-right: 50px;
+    }
+}
+
 .restaurant-details-title {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: calc(29 / 24);
+    font-size: 20px;
+    line-height: calc(24 / 20);
     letter-spacing: 0.02em;
     color: var(--white);
 
@@ -36,14 +37,15 @@
 }
 @media screen and (min-width: 1024px){
     .restaurant-details-title{
-        font-size: 29px;
+        font-size: 24px;
+        line-height: calc(29 / 24);
         margin-bottom: 8px;
     }
 }
 .section-restaurant-details {
     padding-top: 24px;
     padding-bottom: 40px;
-    max-height: 735px;
+    
 
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)),
     url(../images/main/hero-rest/hero-mobile.jpg) ;
@@ -56,8 +58,8 @@
     .section-restaurant-details{
         padding-top: 48px;
         padding-bottom: 40px;
-        max-height: 620;
         position: relative;
+        min-width: 620px
     }
 }
 
@@ -131,17 +133,15 @@
         margin-left: 253px;
     }
 }
-.restaurant-box{
-    overflow: hidden;
-}
+
 @media screen and (max-width: 1023px) {
     .restaurant-details-list {
         position: relative;
         overflow: hidden;
         flex-wrap: wrap;
         display: flex;
+        right: -15px;
 
-        left: 40px;
         margin-bottom: 32px;
 
     }
@@ -159,7 +159,7 @@
     border-radius: 2px;
     display: flex;
     gap: 20px;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 
 @media screen and (min-width: 1024px){
