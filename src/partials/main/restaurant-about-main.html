@@ -1,5 +1,106 @@
-<!-- About our hotel
-У секції немає видимого заголовка. Потрібно зробити прихований заголовок для краулерів.
-В секції представлені зображення готелю, які необхідно реалізувати як контентні.
-У секції представлений слайдер з контентними зображеннями*. -->
-<!-- 1 -->
+<section class="section restaurant-about">
+    <div class="container main-box">
+        <ul class="list rest-about-card left">
+            <li class="left-text-card">
+                <h2 class="visually-hidden">About restaurant</h2>
+                <p class="sub-title">Amet minim mollit non</p>
+                <!-- <a href="./index.html" class="link logo" lang="en">mimiho</a> -->
+                <p class="logo" lang="en">mimiho</p>
+                <p class="about-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                    officia
+                    consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </li>
+            <li class="right-img-card">
+                <picture>
+                    <source srcset="
+                        ./images/main/hero-rest/main/maindesktop.jpg 1x,
+                        ./images/main/hero-rest/main/maindesktop@2x.jpg 2x" media="(min-width: 1280px)">
+                    <source srcset="
+                        ./images/main/hero-rest/main/maintablet.jpg 1x,
+                        ./images/main/hero-rest/main/maintablet@2x.jpg 2x" media="(min-width: 1024px)">
+                    <source srcset="
+                        ./images/main/hero-rest/main/mainmobile.jpg 1x, 
+                        ./images/main/hero-rest/main/mainmobile@2x.jpg 2x" media="(max-width: 1023px)">
+                    <img src="./images/main/hero-rest/main/mainmobile.jpg" alt="Restaurant interior first foto"
+                        class="shadow-little rest-about-image1" />
+                </picture>
+            </li>
+        </ul>
+        <ul class="list rest-about-card right">
+            <li class="rest-card-left">
+                <picture>
+                    <source srcset="
+                        ./images/main/hero-rest/main/main2desktop.jpg 1x, 
+                        ./images/main/hero-rest/main/main2desktop@2x.jpg 2x" media="(min-width: 1280px)">
+                    <source srcset="
+                        ./images/main/hero-rest/main/main2tablet.jpg 1x, 
+                        ./images/main/hero-rest/main/main2tablet@2x.jpg 2x" media="(min-width: 1024px)">
+                    <source srcset="
+                        ./images/main/hero-rest/main/main2mobile.jpg 1x, 
+                        ./images/main/hero-rest/main/main2mobile@2x.jpg 2x" media="(max-width: 1023px)">
+                    <img src="./images/main/hero-rest/main/main2mobile.jpg" alt="Restaurant interior first foto"
+                        class="shadow-little rest-about-image2" />
+                </picture>
+            </li>
+            <li class="rest-card-right">
+                <p class="text-accent">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </li>
+        </ul>
+        <ul class="rest-about-card">
+
+        </ul>
+        <ul class="list rest section-slider">
+            <li class="slider-item">
+                <picture class="slider-image-item shadow-little">
+                    <source srcset="
+                        ./images/slider/slider-desktop/pexels-helena-lopes.jpg 1x, 
+                        ./images/slider/slider-desktop/pexels-helena-lopes@2x.jpg 2x" media="(min-width: 1280px)">
+                    <source srcset="
+                        ./images/slider/slider-tablet/pexels-helena-lopes-696218.jpg 1x, 
+                        ./images/slider/slider-tablet/pexels-helena-lopes-696218@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source srcset="
+                        ./images/slider/slider-mobile/pexels-helena-lopes-6962181.jpg 1x, 
+                        ./images/slider/slider-mobile/pexels-helena-lopes-6962181@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+                    <img src="./images/slider/slider-mobile/pexels-helena-lopes-6962181.jpg"
+                        alt="Restaurant slider foto" class="rest-about-slider" />
+                </picture>
+            </li>
+            <li class="slider-item">
+                <picture class="slider-image-item cutted-image shadow-little">
+                    <source srcset="
+                        ./images/slider/slider-desktop/pexels-mat-brown-1395967.jpg 1x, 
+                        ./images/slider/slider-desktop/pexels-mat-brown-1395967@2x.jpg 2x" media="(min-width: 1280px)">
+                    <source srcset="
+                        ./images/slider/slider-tablet/pexels-mat-brown-13959671.jpg 1x, 
+                        ./images/slider/slider-tablet/pexels-mat-brown-13959671@2x.jpg 2x" media="(min-width: 1024px)">
+                    <source srcset="
+                        ./images/slider/slider-mobile/pexels-mat-brown-13959671.jpg 1x, 
+                        ./images/slider/slider-mobile/pexels-mat-brown-13959671@2x.jpg 2x" media="(max-width: 1023px)">
+                    <img src="./images/slider/slider-mobile/pexels-mat-brown-13959671.jpg" alt="Restaurant slider foto"
+                        class="rest-about-slider" />
+                </picture>
+            </li>
+        </ul>
+        <ul class="list slider-controls">
+            <li class="slider-arrow">
+                <button class="slider-btn slider-btn-prev" type="button">
+                    <svg class="icon" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="slider-arrow">
+                <button class="slider-btn slider-btn-next" type="button">
+                    <svg class="icon" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
