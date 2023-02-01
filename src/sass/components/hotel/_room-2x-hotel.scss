@@ -59,22 +59,6 @@
     margin-bottom: 24px;}
 }
 
-.title-room {
-    text-transform: lowercase;
-    font-family: 'Times New Roman';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.05em;
-    color: getColor('black');
-@media screen and (min-width: 1024px) {
-    font-size: 30px;}
-@media screen and (min-width: 1280px) {
-    font-size: 36px;
-    line-height: 1.13;}
-}
-
 .link-room {
     display: block;
     width: 258px;
