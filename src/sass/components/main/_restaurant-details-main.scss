@@ -199,7 +199,8 @@
 
 .icon-arrow-left,
 .icon-arrow-right{
-    fill: var(--white);
+    fill: currentColor;
+    color: var(--white);
 }
 .icon-rest-arrow{
     gap: 32px;
@@ -226,7 +227,7 @@
 
 .icon-arrow-left:focus,
 .icon-arrow-left:hover {
-    fill: var(--akzent-yellow);
+    color: var(--akzent-yellow);
     border: none;
 }
 
