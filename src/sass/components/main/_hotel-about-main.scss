@@ -16,9 +16,6 @@
         padding-bottom: 50px;
         }
     }
-.hotel-abt-container {
-    position: relative;
-}
 .right-side {
     max-width: 258px;
     margin-left: auto;
@@ -96,9 +93,7 @@
     
     @media screen and (min-width: 1024px) {
         margin: 0;
-        position: absolute;
-        left: 112px;
-        top: -152px;
+        
         }
     
     @media screen and (min-width: 1280px) {
@@ -115,6 +110,8 @@
     
     @media screen and (min-width: 1024px) {
         max-width: 400px;
+        height: 524px;
+        margin-top: auto;
         }
     
     @media screen and (min-width: 1280px) {
@@ -127,7 +124,9 @@
     display: flex;
     align-items: center;
     margin-bottom: 32px;
-    
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 21px;
     @media screen and (min-width: 1024px) {
             margin-bottom: 154px;
         }
@@ -152,11 +151,11 @@
 }
 
 .text-left {
-    position: absolute;
-        width: 163px;
-        height: 120px;
-        left: 15px;
-        top: 634px;
+   width: 163px;
+   height: 120px;
+
+        
+        
 
     @media screen and (min-width: 1024px) {
         position: absolute;
@@ -172,35 +171,10 @@
 }
 
 
-.picture-right {
-    width: 100%;
-    min-width: 200px;
-    height: 278px;
-    left: -44px;
-    top: 0px;
-        @media screen and (min-width: 1024px) {
-            width: 100%;
-            max-width: 350px;
-            position: absolute;
-            top: -195px;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            width: 100%;
-            max-width: 460px;
-            top: -186px;
-        }
-}
-
 .hotel-hall-img {
-margin-left: auto;
 min-width: 200px;
 min-height:278px;  
-position: absolute;
-    width: 200px;
-    height: 278px;
-    left: 199px;
-    top: 564px;
+
 
 @media screen and (min-width:1024px) {
         position: absolute;
@@ -214,17 +188,15 @@ position: absolute;
 
 /* slider images */
 .slider-images {
-margin-top: 32px;
 margin-bottom: 20px;
-margin-right: auto;
 display: flex;
-column-gap: 24px;
-position: relative;
+gap: 24px;
+
 
         @media screen and (min-width: 1024px) {
             margin-top: 0;
             margin-bottom: 32px;
-            column-gap: 40px;
+            gap: 40px;
         }
     
         @media screen and (min-width: 1280px) {
@@ -249,8 +221,6 @@ position: relative;
     }
 
 .slider-img1 {
-    min-width: 245px;
-    min-height: 245px;
 
     @media screen and (min-width: 1024px) {
         width: 194px;
@@ -264,6 +234,7 @@ position: relative;
         width: 254px;
     }
 }
+
 .slider-picture1{
     width: 65px;
         display: block;
@@ -278,7 +249,7 @@ max-width: fit-content;
 min-width: 245px;
 min-height: 245px;
 @media screen and (min-width: 1024px) {
-    min-width: 194з
+    min-width: 194;
 }
 }
 
