@@ -196,26 +196,24 @@
 .restaurant-img:last-child{
     margin-right: 0;
 }
-.icon-arrow-left{
-    margin-right: 32px;
-}
 
 .icon-arrow-left,
 .icon-arrow-right{
     fill: var(--white);
 }
-
+.icon-rest-arrow{
+    gap: 32px;
+    display: flex;
+}
 @media screen and (min-width: 1024px){
     .icon-rest-arrow{
         margin-left: 265px;
-        display: flex;
     }
 }
 
 @media screen and (min-width: 1280px){
     .icon-rest-arrow{
         margin-left: 269px;
-        display: flex;
     }
 }
 .button-rest{
@@ -223,6 +221,19 @@
     border: none;
     padding: 0;
     line-height: 0;
+    cursor: pointer;
+}
+
+.icon-arrow-left:focus,
+.icon-arrow-left:hover {
+    fill: var(--akzent-yellow);
+    border: none;
+}
+
+.icon-arrow-right:focus,
+.icon-arrow-right:hover{
+    fill: var(--akzent-yellow);
+    border: none;
 }
 .btn-disabled {
     background: rgba(0, 0, 0, 0.4);
