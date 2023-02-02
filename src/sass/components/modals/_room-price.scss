@@ -1,0 +1,203 @@
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    transition: 0.3s all;
+}
+
+.price-room-mobile {
+    width: 100vw;
+    height: 100vh;
+    background: var(--fon-lemon);
+    border-radius: 2px;
+    padding: 60px 15px;
+    z-index: 30;
+}
+
+.modal.active,
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal__cross {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    fill: var(--black);
+    cursor: pointer;
+}
+
+.room-price-title {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-room {
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--input-string);
+    margin-bottom: 28px;
+    display: block;
+}
+
+.price-lable-first {
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+}
+
+.price-lable-second {
+    margin-bottom: 40px;
+    display: block;
+}
+
+.form-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--brown);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.price-room-input {
+    width: 100%;
+    height: 54px;
+    padding: 0 15px;
+    background-color: transparent;
+    outline: transparent;
+    border: 1px solid var(--brown);
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.05em;
+    color: var(--input-string);
+    margin-bottom: 8px;
+    appearance: none;
+}
+
+.price-btn {
+    background: var(--black);
+    border: 1px solid var(--akzent-yellow);
+    border-radius: 2px;
+    height: 64px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--white);
+    width: 100%;
+}
+
+.price-btn:hover,
+.price-btn:focus {
+    background: var(--akzent-yellow);
+    color: var(--black);
+}
+
+.form-text-lable {
+    padding-left: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--brown);
+}
+
+.model-box {
+    max-width: 414px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.model-icon-chek {
+    position: absolute;
+    top: 26px;
+    right: 31px;
+    opacity: 0;
+    fill: #C79002;
+}
+
+@media screen and (min-width: 1024px) {
+    .price-room-mobile {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 712px;
+        height: 489px;
+        border: 1px solid #F3C653;
+    }
+
+    .price-room-input {
+        padding: 0 12px;
+    }
+
+    .model-box {
+        max-width: 592px;
+    }
+
+    .price-room-input {
+        width: 288px;
+        height: 64px;
+    }
+
+    .flex-box {
+        display: flex;
+    }
+
+    .room-price-title {
+        font-size: 32px;
+        line-height: 1.12;
+    }
+
+    .price-btn {
+        font-size: 24px;
+    } 
+    
+    .model-icon-chek {
+        opacity: 1;
+    }
+}
