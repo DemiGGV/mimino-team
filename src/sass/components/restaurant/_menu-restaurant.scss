@@ -1,0 +1,204 @@
+.menu-section {
+    background-color: var(--fon-lemon);
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+    
+        background-color: var(--dark-lemon);
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {  
+        padding-bottom: 60px;
+    }
+}
+
+
+
+.menu-title {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.16;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 41px;
+    }
+
+
+    
+}
+
+td {
+    padding: 0;
+    
+}
+
+
+
+.title-table {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: #000000;
+    margin-bottom: 16px;
+    text-align: left;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 19px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 24px;
+            
+    }
+
+}
+
+.menu-table {
+    border-collapse: collapse;
+}
+
+.menu-table:not(:last-child) {
+    margin-bottom: 16px;
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 12px;
+    }
+}
+
+.name-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #000000;
+    width: 256px;
+    
+
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 290px;
+    }
+}
+
+
+
+
+.composition {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 4px; 
+    margin-bottom: 8px;
+    width: 225px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 8px;
+        line-height: 1.1;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 250px;
+    }
+}
+
+
+
+.dessert-drink {
+    padding-bottom: 8px;
+    
+}
+
+
+.weight {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding-right: 32px;
+
+    @media screen and (min-width: 1024px) {
+        padding-right: 47px;
+        padding-left: 50px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    
+}
+
+.price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.21;
+    letter-spacing: 0.02em;
+    color: #000000;
+    @media screen and (min-width: 1280px) {
+        font-size: 16px;
+    }
+}
+
+.menu-modal-btn {
+    
+   
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 0;
+        margin-top: 41px;
+        }
+    @media screen and (min-width: 1280px) {
+        margin-top: 24px;
+    }
+    
+}
+
+
+
+// TABLET____________
+
+@media screen and (min-width: 1024px) {
+
+
+.menu-tables {
+    column-count: 2;
+    column-gap: 88px;
+}
+
+table {
+    break-inside: avoid;
+}
+
+}
+
+// DESKTOP___________________
+
+
+@media screen and (min-width: 1280px) {
+    
+    .menu-tables {
+        column-count: 2;
+        column-gap: 140px;
+    }
+
+}
