@@ -117,3 +117,13 @@
     background: var(--akzent-yellow);
     border: 1px solid var(--akzent-yellow);
 }
+
+.btn-main,
+.btn-disabled,
+.btn-book,
+.every-arrow {
+    transition: 
+        color 250ms cubic-bezier(var(--cubic)),
+        background-color 250ms cubic-bezier(var(--cubic)),
+        border 250ms cubic-bezier(var(--cubic));
+}
