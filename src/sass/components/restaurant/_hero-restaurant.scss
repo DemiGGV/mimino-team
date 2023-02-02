@@ -1,6 +1,6 @@
 .hero-restaurant {
     position: relative;
-    width: 414px;
+    min-width: 1024px;
     height: 740px;
     padding-top: 14px;
     text-align: center;
@@ -20,7 +20,7 @@
 
     @media screen and (min-width:  414px) {
         
-            width: 1024px;
+            min-width: 1024px;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-tablet.jpg);
             
             @media (min-device-pixel-ratio: 2),
@@ -34,7 +34,7 @@
     }
 
     @media screen and (min-width: 1024px) {
-            width: 1280px;
+            min-width: 1280px;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(/src/images/restaurant/rest-desktop.jpg);
             background-repeat: no-repeat;
             background-size: cover;
