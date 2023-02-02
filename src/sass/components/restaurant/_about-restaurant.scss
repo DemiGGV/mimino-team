@@ -139,7 +139,7 @@
     column-gap: 20px;
 
     @media screen and (min-width: 1024px) {
-        margin-bottom: -25px;
+        margin-bottom: -28px;
         column-gap: 48px;
     }
 
@@ -156,10 +156,12 @@
     overflow: hidden;
     margin-left: 60px;
     margin-bottom: 20px;
+    column-gap: 24px;
 
     @media screen and (min-width: 1024px) {
         justify-content: flex-end;
         margin-bottom: 32px;
+        column-gap: 40px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -180,14 +182,6 @@
     }
 }
 
-.slider-restaurant-list {
-    column-gap: 24px;
-    @media screen and (min-width: 1024px) {
-        column-gap: 40px;
-        
-    }
-
-}
 
 
 .slider-arrow-list {
@@ -202,7 +196,15 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+    transition: color 250ms cubic-bezier(var(--cubic));
 }
+
+.slider-btn:hover,
+.slider-btn:focus {
+    fill: var(--akzent-yellow);
+}
+
+
 
 // tablet
 
