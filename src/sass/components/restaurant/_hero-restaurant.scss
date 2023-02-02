@@ -193,7 +193,7 @@
     text-align: start;
     padding-top: 8px;
     padding-bottom: 9px;
-    padding-left: 11px;
+    padding-left: 34px;
     padding-right: 3px;
 
     @media screen and (min-width:  414px) {
@@ -210,6 +210,7 @@
         padding-bottom: 8px;
         padding-top: 8px;
         margin-right: 101px;
+        padding-left: 44px;
     }
 
     @media screen and (min-width:  1024px) {
@@ -226,11 +227,18 @@
 }
 
 .address-icon {
-
+    width: 20px;
+    height: 20px;
     display: block;
     fill: #F3C653;
-    margin-right: 8px;
+    margin-left: -30px;
     text-align: center;
+
+    @media screen and (min-width:414px) {
+        width: 24px;
+        height: 24px;
+        
+    }
 }
 
 .footer-icon {
