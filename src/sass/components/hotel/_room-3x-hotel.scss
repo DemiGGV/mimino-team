@@ -29,7 +29,7 @@
     margin-bottom: 8px;
     text-align: right;
 
-    font-family: 'TimesNewRoman';
+    font-family: 'Times New Roman';
     font-style: normal;
     font-size: 20px;
     line-height: 1.15;
@@ -208,8 +208,7 @@
 
 // Список стрілок
 .list-svg-l-r {
-    position: relative;
-    left: 286px;
+    margin-left: auto;
     display: flex;
     gap: 32px;
 

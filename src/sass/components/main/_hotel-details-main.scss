@@ -240,21 +240,21 @@
     border: none;
     padding: 0;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .hdm__svgarrow {
-    fill: getColor('white');
+    color: getColor('white');
     width: 32px;
     height: 32px;
     background-color: transparent;
     border: none;
-    cursor: pointer;
     display: block;
 }
 
 .hdm__svgarrow:hover,
 .hdm__svgarrow:focus {
-    fill: getColor('yellow');
+    color: getColor('yellow');
 }
 
 .btn__mainbox {
