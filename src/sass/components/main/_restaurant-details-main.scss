@@ -236,29 +236,6 @@
     color: var(--akzent-yellow);
     border: none;
 }
-.btn-disabled {
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid getColor('white');
-    border-radius: 25px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: getColor('yellow');
-    width: 236px;
-    height: 48px;
-    text-align: center;
-}
-
-.btn-main:hover,
-.btn-main:focus,
-.btn-disabled:hover,
-.btn-disabled:focus {
-    background: getColor('white');
-    border: 2px solid getColor('yellow');
-}
 
 .btn-rest-main {
     padding: 14px 0px;
