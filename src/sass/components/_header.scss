@@ -1,4 +1,5 @@
 .header {
+    z-index: 1000;
     position: absolute;
     top: 0;
     left: 50%;
@@ -134,8 +135,15 @@
         gap: 8px;
         min-width: 150px;
 
-        border: 1px solid getColor('yellow');
+        border: 1px solid getColor('border-golden');
         border-radius: 2px;
+    }
+}
+
+.header__tel:hover,
+.header__tel:focus {
+    @media screen and (min-width:1024px) {
+        border: 1px solid getColor('yellow');
     }
 }
 
@@ -156,4 +164,11 @@
     width: 24px;
     height: 24px;
     fill: var(--akzent-yellow);
+}
+.header__social-link {
+    opacity: 0.6;
+}
+.header__social-link:hover,
+.header__social-link:focus {
+    opacity: 1;
 }
