@@ -248,16 +248,13 @@ position: relative;
         }
     }
 
-.slider-img:first-child {
-    margin-left: 0;
-    max-width: 74px;
+.slider-img1 {
+    min-width: 245px;
     min-height: 245px;
-    overflow: hidden;
 
     @media screen and (min-width: 1024px) {
         width: 194px;
         overflow: visible;
-        position: absolute;
             height: 194px;
             left: 47px;
             top: 948px;
@@ -267,8 +264,17 @@ position: relative;
         width: 254px;
     }
 }
+.slider-picture1{
+    width: 65px;
+        display: block;
+        overflow: hidden
+}
 
-.towel-img,.hotel-reg {
+.towel-img {
+max-width: fit-content;
+}
+
+.hotel-reg {
 min-width: 245px;
 min-height: 245px;
 @media screen and (min-width: 1024px) {
