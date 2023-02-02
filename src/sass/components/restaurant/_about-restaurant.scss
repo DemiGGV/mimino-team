@@ -39,17 +39,17 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color:var(--gray-room);
-    width: 258px;
+    max-width: 258px;
     margin-bottom: 28px;
 
     @media screen and (min-width: 1024px) {
         font-size: 16px;
-        width: 439px;
+        max-width: 439px;
         margin-bottom: 142px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 518px;
+        max-width: 518px;
         margin-bottom: 162px;
 
     }
@@ -84,20 +84,20 @@
 }
 
 .img1-restaurant-about-item {
-    display: flex;
+    // display: flex;
     margin-left: auto;
-    width: 244px;
+    max-width: 244px;
     margin-bottom: 32px;
 
     @media screen and (min-width: 1024px) {
         position: absolute;
-        width: 400px;
+        max-width: 400px;
         top: -152px;
         right: 112px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 460px;
+        max-width: 460px;
         top: -153px;
         right: 180px;
     }
