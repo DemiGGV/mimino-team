@@ -1,3 +1,15 @@
+.about-restaurant-section {
+    background-color: var(--fon-lemon);
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 120px;
+        padding-bottom: 32px;   
+    }
+
+}
+
 .sub-title {
     font-family: 'Times New Roman';
     font-weight: 400;
@@ -69,17 +81,6 @@
     
 }
 
-.about-restaurant-section {
-    background-color: var(--fon-lemon);
-    padding-top: 16px;
-    padding-bottom: 20px;
-
-    @media screen and (min-width: 1024px) {
-        padding-top: 120px;
-        padding-bottom: 32px;   
-    }
-
-}
 
 .img1-restaurant-about-item {
     margin-left: auto;
@@ -148,13 +149,12 @@
 
 .slider-restaurant-list {
     display: flex;
-    position: relative;
-    overflow: hidden;
-    margin-left: 60px;
+    margin-left: 70px;
     margin-bottom: 20px;
     column-gap: 24px;
-
+    
     @media screen and (min-width: 1024px) {
+        position: relative;
         justify-content: flex-end;
         margin-bottom: 32px;
         column-gap: 40px;
@@ -167,18 +167,30 @@
 }
 
 .img1-slider {
-    min-width: 245px;
-
+    width: 245px;
+    max-width: fit-content;
+    
     @media screen and (min-width: 1024px) {
+        width: auto;
         min-width: 194px;
     }
-
+    
     @media screen and (min-width: 1280px) {
         min-width: 254px;
     }
 }
 
+.picture-full {
+    display: block;
+}
 
+.picture-cutted {
+    display: block;
+    @media screen and (max-width: 1023px) {
+        width: 60px;
+        overflow: hidden;
+    }
+}
 
 .slider-arrow-list {
     display: flex;
