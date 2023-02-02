@@ -172,10 +172,9 @@
 }
 
 
-/*
 .picture-right {
     width: 100%;
-    width: 398px;
+    min-width: 200px;
     height: 278px;
     left: -44px;
     top: 0px;
@@ -192,7 +191,7 @@
             top: -186px;
         }
 }
-*/
+
 .hotel-hall-img {
 margin-left: auto;
 min-width: 200px;
@@ -217,9 +216,11 @@ position: absolute;
 .slider-images {
 margin-top: 32px;
 margin-bottom: 20px;
-list-style: none;
+margin-right: auto;
 display: flex;
 column-gap: 24px;
+position: relative;
+
         @media screen and (min-width: 1024px) {
             margin-top: 0;
             margin-bottom: 32px;
@@ -232,13 +233,14 @@ column-gap: 24px;
     }
 
 .slider-img {
-    min-width: 194px;
-    min-height: 194px;
-        margin-left: 15px;
-        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    min-width: 245px;
+    min-height: 245px;
+    margin-left: 15px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     
         @media screen and (min-width: 1024px) {
             margin-left: 40px;
+            justify-content: flex-start;
         }
     
         @media screen and (min-width: 1280px) {
@@ -265,20 +267,6 @@ column-gap: 24px;
         width: 254px;
     }
 }
-.slider-picture.towel {
-    display: block;
-    left: -120px;
-        position: relative;
-        width: 194px;
-    
-        @media screen and (min-width: 1024px) {
-            left: 0;
-        }
-    
-        @media screen and (min-width: 1280px) {
-            width: 254px;
-        }
-    }
 
 .towel-img,.hotel-reg {
 min-width: 245px;
@@ -287,6 +275,8 @@ min-height: 245px;
     min-width: 194з
 }
 }
+
+
 /*----- icons -----*/
 .icons-list {
 display: flex;
