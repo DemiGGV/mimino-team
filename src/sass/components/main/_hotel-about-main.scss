@@ -42,8 +42,10 @@
     color: getColor('gray1');
     
     @media screen and (min-width: 1024px) {
-        font-size: 32px;
-        margin-bottom: 6px;
+        width: 307px;
+        height: 37px;
+        left: 670px;
+        top: 120px;
         }
 }
 
@@ -59,8 +61,10 @@
     color: getColor('gray2');
         
     @media screen and (min-width: 1024px) {
-        font-size: 64px;
-        margin-bottom: 24px;
+        width: 204px;
+        height: 69px;
+        left: 773px;
+        top: 161px;
         }
 }
 
@@ -75,8 +79,10 @@
     color: getColor(gray3);
     
     @media screen and (min-width: 1024px) {
-        font-size: 16px;
-        margin-bottom: 0;
+            width: 419px;
+            height: 80px;
+            left: 558px;
+            top: 254px;
         }
     
     @media screen and (min-width: 1280px) {
@@ -123,7 +129,6 @@
     margin-bottom: 32px;
     
     @media screen and (min-width: 1024px) {
-            position: relative;
             margin-bottom: 154px;
         }
     
@@ -147,13 +152,18 @@
 }
 
 .text-left {
-    position: relative;
-    left: -170px;
-    margin-right: 20px;
+    position: absolute;
+        width: 163px;
+        height: 120px;
+        left: 15px;
+        top: 634px;
 
     @media screen and (min-width: 1024px) {
-        margin-right: 398px;
-        max-width: 312px;
+        position: absolute;
+            width: 312px;
+            height: 122px;
+            left: 267px;
+            top: 672px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -162,12 +172,13 @@
 }
 
 
-
+/*
 .picture-right {
     width: 100%;
-    min-width: 200px;
-    position: 
-    
+    width: 398px;
+    height: 278px;
+    left: -44px;
+    top: 0px;
         @media screen and (min-width: 1024px) {
             width: 100%;
             max-width: 350px;
@@ -181,24 +192,38 @@
             top: -186px;
         }
 }
+*/
 .hotel-hall-img {
+margin-left: auto;
+min-width: 200px;
+min-height:278px;  
+position: absolute;
+    width: 200px;
+    height: 278px;
+    left: 199px;
+    top: 564px;
 
-    margin-left: auto;
+@media screen and (min-width:1024px) {
+        position: absolute;
+        width: 350px;
+        height: 500px;
+        left: 627px;
+            top: 476px;
+       
+}
 }
 
 /* slider images */
 .slider-images {
 margin-top: 32px;
-    margin-bottom: 20px;
-    list-style: none;
-    display: flex;
-    position: relative;
-    left: -15px;
-    column-gap: 24px;
+margin-bottom: 20px;
+list-style: none;
+display: flex;
+column-gap: 24px;
         @media screen and (min-width: 1024px) {
             margin-top: 0;
-            left: 0;
             margin-bottom: 32px;
+            column-gap: 40px;
         }
     
         @media screen and (min-width: 1280px) {
@@ -207,7 +232,8 @@ margin-top: 32px;
     }
 
 .slider-img {
-    width: 194px;
+    min-width: 194px;
+    min-height: 194px;
         margin-left: 15px;
         box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     
@@ -229,6 +255,10 @@ margin-top: 32px;
     @media screen and (min-width: 1024px) {
         width: 194px;
         overflow: visible;
+        position: absolute;
+            height: 194px;
+            left: 47px;
+            top: 948px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -250,8 +280,13 @@ margin-top: 32px;
         }
     }
 
-
-
+.towel-img,.hotel-reg {
+min-width: 245px;
+min-height: 245px;
+@media screen and (min-width: 1024px) {
+    min-width: 194з
+}
+}
 /*----- icons -----*/
 .icons-list {
 display: flex;
@@ -276,12 +311,10 @@ padding: 0;
 line-height: 0;
 background-color: transparent;
 border: 0;
-cursor: pointer;
-color: getColor('black');
-    
+cursor: pointer;   
 }
 
-.slider-btn:hover,
-.slider-btn:focus {
-    color: getColor('akzent-yellow');
+.htl-icon:hover,
+.htl-icon:focus {
+    fill: getColor('yellow');
 }
