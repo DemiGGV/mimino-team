@@ -11,11 +11,11 @@
         <div class="flex-box-wrap">
             <div class="box">
                 <label class="booking-table-lable">
-                    <input class="booking-table-input" type="text" name="booking-name" placeholder="Ваше ім’я">
+                    <input class="booking-table-input" type="text" minlength="2" name="booking-name" placeholder="Ваше ім’я">
                     <span class="booking-table-text">На кого забронювати столик?</span>
                 </label>
                 <label class="booking-table-lable">
-                    <input class="booking-table-input" type="tel" name="booking-phone" placeholder="+38 (___) ___-__-__">
+                    <input class="booking-table-input" type="tel" pattern="[0-9]{12}" name="booking-phone" placeholder="+38 (___) ___-__-__">
                     <span class="booking-table-text">Номер телефону</span>
                 </label>
             </div>
@@ -24,14 +24,25 @@
                     <svg class="model-icon-svg" width="20" height="12">
                         <use href="./images/sprite.svg#icon-Vector-1"></use>
                     </svg>
-                    <input type="number" class="booking-table-input" name="guest" min="1" step="1" placeholder="2">
+                    <select class="booking-table-input" name="night">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="5">8</option>
+                        <option value="6">9</option>
+                        <option value="7">10</option>
+                    </select>
                     <span class="booking-table-text">Столик на яку кількість осіб?</span>
                 </label>
                 <label class="booking-table-lable last">
                     <svg class="model-icon-svg" width="20" height="12">
                         <use href="./images/sprite.svg#icon-Vector-1"></use>
                     </svg>
-                    <input class="booking-table-input" type="number" name="booking-date" placeholder="Сьогодні">
+                    <input class="booking-table-input" type="text" pattern="^[ 0-9]+$" name="booking-date" placeholder="Сьогодні">
                     <span class="booking-table-text">На яку дату бронювати?</span>
                 </label>
             </div>

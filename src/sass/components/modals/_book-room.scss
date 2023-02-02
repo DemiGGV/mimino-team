@@ -121,8 +121,8 @@
 
 .model-icon {
     position: absolute;
-    top: 26px;
-    right: 31px;    
+    top: 22px;
+    right: 25px;    
     fill: var(--brown);
 }
 
@@ -175,6 +175,10 @@
     .box {
         display: inline;
         width: 288px;
+    }
+
+    .model-icon {
+        top: 27px;
     }
 }
 

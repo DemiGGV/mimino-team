@@ -15,7 +15,7 @@
                 <span class="booking-text-lable">На кого забронювати номер?</span>
             </label>
             <label class="booking-lable">
-                <input class="booking-room-input" type="tel" name="phone" placeholder="+38 (___) ___-__-__">
+                <input class="booking-room-input" type="tel" name="phone" pattern="[0-9]{12}" placeholder="+38 (___) ___-__-__">
                 <span class="booking-text-lable">Номер телефону</span>
             </label>
             <div class="box"></div>
@@ -34,14 +34,14 @@
                 <svg class="model-icon" width="20" height="12">
                     <use href="./images/sprite.svg#icon-Vector-1"></use>
                 </svg>
-                <input class="booking-room-input" type="number" name="chek-in" placeholder="Сьогодні">
+                <input class="booking-room-input" type="text" name="chek-in" pattern="^[ 0-9]+$" placeholder="Сьогодні">
                 <span class="booking-text-lable">Дата заїзду</span>
             </label>
             <label class="booking-lable last">
                 <svg class="model-icon" width="20" height="12">
                     <use href="./images/sprite.svg#icon-Vector-1"></use>
                 </svg>
-                <input class="booking-room-input" type="number" name="chek-out" placeholder="Сьогодні">
+                <input class="booking-room-input" type="text" name="chek-out" pattern="^[ 0-9]+$" placeholder="Сьогодні">
                 <span class="booking-text-lable">Дата виїзду</span>
             </label>
         </div>
