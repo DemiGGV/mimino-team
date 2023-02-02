@@ -3,3 +3,65 @@
 У секції представлений слайдер з контентними зображеннями кімнат готелю*.
 Кнопка “Забронювати номер” має відкривати модальне вікно Book Room Modal window.
 Кнопка “Переглянути ціни” має бути реалізована як посилання, яке веде користувача на сторінку Hotel Page. -->
+
+<section class="hero-details-main">
+    <div class="container hdm__container">
+        <div class="hdm__textbox">
+            <span class="hdm__logo">mimiho</span>
+            <h2 class="hdm__phrase">Готель</h2>
+            <p class="hdm__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                consequat duis enim velit
+                mollit.</p>
+        </div>
+        <div class="hdm__sliderbutt">
+            <ul class="hdm__slider list">
+                <li>
+                    <ul class="list hdm_imgslider">
+                        <li class="hdm__fotopicture1">
+                            <picture>
+                                <source
+                                    srcset="./images/slider/main-hero-slider/slider2hotel.jpg 1x,./images/slider/main-hero-slider/slider2hotel@2x.jpg 2x">
+                                <img src="./images/slider/main-hero-slider/slider2hotel.jpg" alt="foto-hotel"
+                                    class="slider_foto-1" />
+                            </picture>
+                        </li>
+                        <li class="hdm__fotopicture2">
+                            <picture>
+                                <source
+                                    srcset="./images/slider/main-hero-slider/slider3hotel.jpg 1x,./images/slider/main-hero-slider/slider3hotel@2x.jpg 2x">
+                                <img src="./images/slider/main-hero-slider/slider3hotel.jpg" alt="foto-hotel"
+                                    class="slider_foto-2" />
+                            </picture>
+                        </li>
+                        <li class="hdm__fotopicture3">
+                            <picture>
+                                <source
+                                    srcset="./images/slider/main-hero-slider/slider1hotel.jpg 1x,./images/slider/main-hero-slider/slider1hotel@2x.jpg 2x">
+                                <img src="./images/slider/main-hero-slider/slider1hotel.jpg" alt="foto-hotel"
+                                    class="slider_foto-3" />
+                            </picture>
+                        </li>
+                    </ul>
+                </li>
+                <li class="hdm__btnslider list">
+                    <button type="button" class="every-arrow hdm__btn-svg">
+                        <svg class="hdm__svgarrow">
+                            <use href="./images/sprite.svg#icon-arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="every-arrow hdm__btn-svg">
+                        <svg class="hdm__svgarrow">
+                            <use href="./images/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <ul class="btn__mainbox">
+                <li><button type="button" class="btn-disabled оs-open-modal" data-modal="2">Забронювати номер</button>
+                </li>
+                <li><button type="button" class="btn-disabled">
+                        <a class="link btn__mainbox-link" href="./hotel.html">Переглянути ціни</a></button></li>
+            </ul>
+        </div>
+    </div>
+</section>

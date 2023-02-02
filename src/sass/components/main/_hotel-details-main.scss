@@ -1,0 +1,283 @@
+.hero-details-main {
+
+    background-color: getColor('black');
+    background-position: 0% 100%;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    overflow: hidden;
+    background-image: -webkit-gradient(linear,
+            left top,
+            left bottom,
+            from(getColor('bgc-opacity')),
+            to(getColor('bgc-opacity'))),
+        url(../images/main/hero-hotel/hero-mobile.jpg);
+    background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
+        url(../images/main/hero-hotel/hero-mobile.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
+            url(../images/main/hero-hotel/hero-mobile@2x.jpg);
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
+            url(../images/main/hero-hotel/hero-mobile@2x.jpg);
+    }
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 48px;
+
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
+            url(../images/main/hero-hotel/hero-tablet.jpg);
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
+            url(../images/main/hero-hotel/hero-tablet.jpg);
+    }
+
+    @media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1024px) and (min-resolution: 192dpi),
+    screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
+            url(../images/main/hero-hotel/hero-tablet@2x.jpg);
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
+            url(../images/main/hero-hotel/hero-tablet@2x.jpg);
+    }
+
+    @media screen and (min-width: 1280px) {
+
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
+            url(../images/main/hero-hotel/hero-desktop.jpg);
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
+            url(../images/main/hero-hotel/hero-desktop.jpg)
+    }
+
+    @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1280px) and (min-resolution: 192dpi),
+    screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+        background-image: -webkit-gradient(linear,
+                left top,
+                left bottom,
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
+            url(../images/main/hero-hotel/hero-dekstop@2x.jpg);
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
+            url(../images/main/hero-hotel/hero-dekstop@2x.jpg)
+    }
+}
+
+.hdm__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hdm__textbox {
+    align-items: flex-end;
+    flex-direction: column;
+    max-width: 243px;
+    display: flex;
+    margin-left: 17px;
+
+    @media screen and (min-width:1024px) {
+        margin-left: 150px;
+        max-width: 549px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-left: 262px;
+        max-width: 595px;
+    }
+}
+
+.hdm__logo {
+    font-family: 'FilmP3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.075;
+    letter-spacing: 0.3em;
+    color: getColor('white');
+    margin-bottom: 12px;
+    display: block;
+
+// font bugfix
+    position: relative;
+    right: calc(-64px * 0.3);
+
+    @media screen and (min-width:1024px) {
+        font-size: 64px;
+        line-height: 1.078;
+        margin-bottom: 16px;
+    }
+}
+
+.hdm__phrase {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: getColor('white');
+    margin-bottom: 20px;
+
+    @media screen and (min-width:1024px) {
+        font-size: 24px;
+        line-height: 1.21;
+        margin-bottom: 8px;
+    }
+}
+
+.hdm__text {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: getColor('gray5');
+    margin-bottom: 48px;
+
+    @media screen and (min-width:1024px) {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+}
+
+.hdm_imgslider {
+    display: flex;
+    right: 88px;
+    gap: 20px;
+    margin-bottom: 16px;
+    position: relative;
+
+    @media screen and (min-width:1024px) {
+        position: static;
+        margin-bottom: 24px;
+        gap: 34px;
+    }
+
+    @media screen and (min-width:1280px) {
+        flex-direction: row-reverse;
+    }
+
+}
+
+.slider_foto-1 {
+    display: none;
+
+    @media screen and (min-width:1024px) {
+        display: block;
+        min-height: 270px;
+        min-width: 270px;
+    }
+
+    @media scree and (min-width:1280px) {}
+}
+
+.slider_foto-2 {
+    min-width: 162px;
+    @media screen and (max-width:1023px) {
+        opacity: 0.6;
+    }
+}
+
+.slider_foto-3 {
+    min-width: 270px;
+}
+
+.hdm__sliderbutt {
+    @media screen and (min-width:1024px) {
+        display: flex;
+        position: relative;
+        right: 113px;
+    }
+
+    @media screen and (min-width:1280px) {
+        right: -68px;
+    }
+}
+
+
+.hdm__slider {
+    position: relative;
+    right: 40px;
+
+    @media screen and (min-width:1024px) {
+        position: static;
+        margin-right: 36px;
+    }
+}
+
+.hdm__btnslider {
+    gap: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: flex-end;
+
+    @media screen and (min-width:1024px) {
+        margin-bottom: 0;
+    }
+}
+
+.hdm__btn-svg {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.hdm__svgarrow {
+    fill: getColor('white');
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+.hdm__svgarrow:hover,
+.hdm__svgarrow:focus {
+    fill: getColor('yellow');
+}
+
+.btn__mainbox {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1024px) {
+        justify-content: end;
+        padding-bottom: 60px;
+    }
+}
+
+.black-btn {
+    display: block;
+    cursor: pointer;
+
+    @media screen and (min-width:1024px) and (max-width:1280px) {
+        background-color: getColor('black');
+    }
+}
+
+.btn__mainbox-link {
+    color: getColor('yellow');
+}

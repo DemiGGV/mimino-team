@@ -47,11 +47,7 @@
   gap: 60px;
   justify-content: flex-end;
 }
-.btn-big {
-  @media screen and (min-width: 1280px) {
-    width: 254px;
-  }
-}
+
 .adress-hotel {
   width: 285px;
   border: 1px solid rgba(243, 198, 83, 0.7);
@@ -65,6 +61,7 @@
   display: flex;
   bottom: 20px;
 }
+
 .adress-hotel-text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -74,6 +71,7 @@
   letter-spacing: 0.01em;
   color: #e5e5e5;
 }
+
 .hero-gps {
   width: 24px;
   height: 24px;

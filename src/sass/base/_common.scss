@@ -48,7 +48,7 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: getColor('yellow');
-    width: 236px;
+    width: 232px;
     height: 48px;
     text-align: center;
 }
@@ -74,13 +74,18 @@
     line-height: 1.25;
     letter-spacing: 0.02em;
     color: getColor('yellow');
-    width: 236px;
+    width: 232px;
     height: 48px;
     text-align: center;
+    cursor: pointer;
+}
+
+// Ліва кнопка, розміром 236 пікс
+.btn-big {
+    width: 236px;
 }
 
 // Кнопка бронювання кімнати
-
 .btn-book {
     background: getColor('black');
     border: 1px solid var(--akzent-yellow);
@@ -95,6 +100,7 @@
     width: 434px;
     height: 65px;
     text-align: center;
+    cursor: pointer;
 
     @media screen and (max-width: 1023px) {
         font-size: 20px;
@@ -110,4 +116,14 @@
     color: var(--black);
     background: var(--akzent-yellow);
     border: 1px solid var(--akzent-yellow);
+}
+
+.btn-main,
+.btn-disabled,
+.btn-book,
+.every-arrow {
+    transition: 
+        color 250ms cubic-bezier(var(--cubic)),
+        background-color 250ms cubic-bezier(var(--cubic)),
+        border 250ms cubic-bezier(var(--cubic));
 }
