@@ -1,5 +1,5 @@
 .footer {
-    min-width: 1024px;
+    width: 414px;
     height: 240px;
     background-color: getColor(footer-black);
     display: flex;
@@ -8,11 +8,11 @@
     margin: 0 auto;
 
     @media screen and (min-width:414px){
-        min-width: 1024px;
+        width: 1024px;
     }
 
     @media screen and (min-width:1024px){
-        min-width: 1280px;
+        width: 1280px;
     }
 }
 
