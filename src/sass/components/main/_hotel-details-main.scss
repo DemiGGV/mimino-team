@@ -11,10 +11,10 @@
     background-image: -webkit-gradient(linear,
             left top,
             left bottom,
-            from(getColor('bcg-opacity')),
-            to(getColor('bcg-opacity'))),
+            from(getColor('bgc-opacity')),
+            to(getColor('bgc-opacity'))),
         url(../images/main/hero-hotel/hero-mobile.jpg);
-    background-image: linear-gradient(getColor('bcg-opacity'), getColor('bcg-opacity')),
+    background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
         url(../images/main/hero-hotel/hero-mobile.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -24,10 +24,10 @@
         background-image: -webkit-gradient(linear,
                 left top,
                 left bottom,
-                from(getColor('bcg-opacity')),
-                to(getColor('bcg-opacity'))),
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
             url(../images/main/hero-hotel/hero-mobile@2x.jpg);
-        background-image: linear-gradient(getColor('bcg-opacity'), getColor('bcg-opacity')),
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
             url(../images/main/hero-hotel/hero-mobile@2x.jpg);
     }
 
@@ -37,10 +37,10 @@
         background-image: -webkit-gradient(linear,
                 left top,
                 left bottom,
-                from(getColor('bcg-opacity')),
-                to(getColor('bcg-opacity'))),
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
             url(../images/main/hero-hotel/hero-tablet.jpg);
-        background-image: linear-gradient(getColor('bcg-opacity'), getColor('bcg-opacity')),
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
             url(../images/main/hero-hotel/hero-tablet.jpg);
     }
 
@@ -51,10 +51,10 @@
         background-image: -webkit-gradient(linear,
                 left top,
                 left bottom,
-                from(getColor('bcg-opacity')),
-                to(getColor('bcg-opacity'))),
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
             url(../images/main/hero-hotel/hero-tablet@2x.jpg);
-        background-image: linear-gradient(getColor('bcg-opacity'), getColor('bcg-opacity')),
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
             url(../images/main/hero-hotel/hero-tablet@2x.jpg);
     }
 
@@ -63,10 +63,10 @@
         background-image: -webkit-gradient(linear,
                 left top,
                 left bottom,
-                from(getColor('bcg-opacity')),
-                to(getColor('bcg-opacity'))),
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
             url(../images/main/hero-hotel/hero-desktop.jpg);
-        background-image: linear-gradient(getColor('bcg-opacity'), getColor('bcg-opacity')),
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
             url(../images/main/hero-hotel/hero-desktop.jpg)
     }
 
@@ -77,10 +77,10 @@
         background-image: -webkit-gradient(linear,
                 left top,
                 left bottom,
-                from(getColor('bcg-opacity')),
-                to(getColor('bcg-opacity'))),
+                from(getColor('bgc-opacity')),
+                to(getColor('bgc-opacity'))),
             url(../images/main/hero-hotel/hero-dekstop@2x.jpg);
-        background-image: linear-gradient(getColor('bcg-opacity'), getColor('bcg-opacity')),
+        background-image: linear-gradient(getColor('bgc-opacity'), getColor('bgc-opacity')),
             url(../images/main/hero-hotel/hero-dekstop@2x.jpg)
     }
 }
