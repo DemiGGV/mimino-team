@@ -1,0 +1,226 @@
+.about-restaurant-section {
+    background-color: var(--fon-lemon);
+    padding-top: 16px;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 1024px) {
+        padding-top: 120px;
+        padding-bottom: 32px;   
+    }
+
+}
+
+.sub-title {
+    font-family: 'Times New Roman';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--gray1);
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 32px;
+        line-height: 1.15;
+        margin-bottom: 4px;
+    }
+}
+
+.logo-rest-about {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'FilmP3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.07;
+    letter-spacing: 0.3em;
+    color: var(--gray2);
+    margin-bottom: 12px;
+    
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        line-height: 1.07;
+        margin-bottom: 24px;
+    }
+}
+
+.text-about-restaurant {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color:var(--gray-room);
+    max-width: 258px;
+    margin-bottom: 28px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+        max-width: 439px;
+        margin-bottom: 142px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 518px;
+        margin-bottom: 162px;
+    }
+}
+
+.text-restaurant-accent {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: var(--brown);
+
+    @media screen and (min-width: 1024px) {
+        font-size: 16px;
+    }
+    
+}
+
+
+.img1-restaurant-about-item {
+    margin-left: auto;
+    max-width: 244px;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 1024px) {
+        position: absolute;
+        max-width: 400px;
+        top: -152px;
+        right: 112px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 460px;
+        top: -153px;
+        right: 180px;
+    }
+}
+
+.img2-restaurant-about-item {
+    width: 200px;
+
+    @media screen and (min-width: 1024px) {
+        width: 350px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 460px;
+    }
+
+}
+
+.text-rest-accent-item {
+    display: flex;
+    align-items: center;
+    width: 163px;
+
+    @media screen and (min-width: 1024px) {
+        width: 312px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        align-items: flex-start;
+        margin-top: 189px;
+        width: 312px;
+    }
+}
+
+.second-card {
+    display: flex;
+    margin-bottom: 32px;
+    column-gap: 20px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: -28px;
+        column-gap: 48px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: -150px;
+        column-gap: 32px;
+    }
+}
+
+
+.slider-restaurant-list {
+    display: flex;
+    margin-left: 70px;
+    margin-bottom: 20px;
+    column-gap: 24px;
+    
+    @media screen and (min-width: 1024px) {
+        position: relative;
+        justify-content: flex-end;
+        margin-bottom: 32px;
+        column-gap: 40px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 40px;
+    }
+
+}
+
+.img1-slider {
+    width: 245px;
+    max-width: fit-content;
+    
+    @media screen and (min-width: 1024px) {
+        width: auto;
+        min-width: 194px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        min-width: 254px;
+    }
+}
+
+.picture-full {
+    display: block;
+}
+
+.picture-cutted {
+    display: block;
+    @media screen and (max-width: 1023px) {
+        width: 60px;
+        overflow: hidden;
+    }
+}
+
+.slider-arrow-list {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 32px;
+}
+
+
+.slider-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(var(--cubic));
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+    fill: var(--akzent-yellow);
+}
+
+
+
+// tablet
+
+@media screen and (min-width: 1024px) {
+    .container-about-rest {
+        position: relative;
+    }
+
+}
+
+

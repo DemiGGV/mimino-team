@@ -1,4 +1,109 @@
-<!-- About our kitchen
-У секції немає видимого заголовка. Потрібно зробити прихований заголовок для краулерів.
-В секції представлені зображення приготування блюд, які необхідно реалізувати як контентні.
-У секції представлений слайдер з контентними зображеннями*. -->
+<!-- Restaurant about section -->
+
+<section class="section about-restaurant-section">
+    <div class="container container-about-rest">
+        <h2 class="section-title visually-hidden">About restaurant</h2>
+        <ul class="list first-card">
+            <li class="about-restaurant-item">
+                <p class="sub-title">Amet minim mollit non</p>
+                <p class="logo-rest-about link">mimiho</p>
+                <p class="text-about-restaurant">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis
+                    enim
+                    velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </li>
+            <li class="img1-restaurant-about-item">
+                <picture>
+                    <source srcset="./images/restaurant/main/rest.jpg 1x, ./images/restaurant/main/rest@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/restaurant/main/rest-tablet.jpg 1x, ./images/restaurant/main/rest-tablet@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/restaurant/main/rest-mobile.jpg 1x, ./images/restaurant/main/rest-mobile@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/restaurant/main/rest-mobile.jpg" loading="lazy" alt="Cooking process"
+                        class="shadow-big" />
+                </picture>
+            </li>
+        </ul>
+        <ul class="list second-card">
+            <li class="img2-restaurant-about-item">
+                <picture>
+                    <source srcset="./images/restaurant/main/rest2.jpg 1x, ./images/restaurant/main/rest2@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/restaurant/main/rest2-tablet.jpg 1x, ./images/restaurant/main/rest2-tablet@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/restaurant/main/rest2-mobile.jpg 1x, ./images/restaurant/main/rest2-mobile@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/restaurant/main/rest2-mobile.jpg" loading="lazy" alt="Meat" class="shadow-big" />
+                </picture>
+            </li>
+            <li class="text-rest-accent-item">
+                <p class="text-restaurant-accent">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+                    sint.
+                    Velit
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </li>
+        </ul>
+
+        <ul class="list slider-restaurant-list">
+            <li class="picture-full slider-restaurant-item">
+                <picture class="picture-full shadow-little">
+                    <source
+                        srcset="./images/slider/slider-desktop/pexels-helena-lopes-696218.jpg 1x, ./images/slider/slider-desktop/pexels-helena-lopes-696218@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/slider/slider-tablet/pexels-helena-lopes-6962182.jpg 1x, ./images/slider/slider-tablet/pexels-helena-lopes-6962182@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/slider/slider-mobile/pexels-helena-lopes-6962182.jpg 1x, ./images/slider/slider-mobile/pexels-helena-lopes-6962182@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/slider/slider-mobile/pexels-helena-lopes-6962182.jpg" loading="lazy" alt="Dough"
+                        class="img1-slider" />
+                </picture>
+            </li>
+            <li class="slider-restaurant-item">
+                <picture class="picture-cutted shadow-little">
+                    <source
+                        srcset="./images/slider/slider-tablet/pexels-mat-brown-13959672.jpg 1x, ./images/slider/slider-tablet/pexels-mat-brown-13959672@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/slider/slider-tablet/pexels-mat-brown-13959672.jpg 1x, ./images/slider/slider-tablet/pexels-mat-brown-13959672@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/slider/slider-mobile/pexels-mat-brown-13959672.jpg 1x, ./images/slider/slider-mobile/pexels-mat-brown-13959672@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+
+                    <img src="./images/slider/slider-mobile/pexels-mat-brown-13959672.jpg" loading="lazy" alt="Khinkali"
+                        class="img1-slider" />
+                </picture>
+            </li>
+        </ul>
+
+        <ul class="list rest slider-arrow-list">
+            <li class="slider-arrow-item">
+                <button class="every-arrow btn slider-btn disable" type="button">
+                    <svg class="slider-icon" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="slider-arrow-item">
+                <button class="every-arrow btn slider-btn" type="button">
+                    <svg class="slider-icon icon-restaurant" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+    </div>
+</section>
