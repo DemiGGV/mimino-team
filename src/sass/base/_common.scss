@@ -154,10 +154,11 @@
     transition: 0.3s all;
 }
 
-.overlay.active .modal,
+.modal.active,
 .overlay.active {
     opacity: 1;
     visibility: visible;
+    z-index: 10;
 }
 
 .modal__cross {
