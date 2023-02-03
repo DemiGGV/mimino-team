@@ -255,6 +255,12 @@ html {
     }
 }
 
+.btn-disabled.second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .hr_link__social {
     display: flex;
     gap: 20px;
