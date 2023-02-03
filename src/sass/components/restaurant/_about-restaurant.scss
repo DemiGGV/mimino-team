@@ -198,8 +198,12 @@
     column-gap: 32px;
 }
 
+.slider-icon {
+    fill: currentColor;
+}
 
 .slider-btn {
+    color: var(--black);
     padding: 0;
     border: none;
     background-color: transparent;
@@ -209,7 +213,7 @@
 
 .slider-btn:hover,
 .slider-btn:focus {
-    fill: var(--akzent-yellow);
+    color: var(--akzent-yellow);
 }
 
 
