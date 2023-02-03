@@ -193,6 +193,11 @@ width: 100%;
 }
 }
 .slider-images {
+    @media screen and (max-width: 1023px) {
+        position: relative;
+        right: 15px;
+    }
+
     display: flex;
     gap: 24px;
     margin-bottom: 20px;
@@ -262,9 +267,14 @@ display: flex;
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    color: var(--black);
 }
 
-.htl-icon:hover,
-.htl-icon:focus {
-    fill: getColor('yellow');
+.slider-btn:hover,
+.slider-btn:focus {
+    color: var(--akzent-yellow);
+}
+
+.htl-icon {
+    fill: currentColor;
 }
