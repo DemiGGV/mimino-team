@@ -256,9 +256,12 @@ html {
 }
 
 .btn-disabled.second {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .hr_link__social {
