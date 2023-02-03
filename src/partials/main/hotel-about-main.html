@@ -2,3 +2,113 @@
 У секції немає видимого заголовка. Потрібно зробити прихований заголовок для краулерів.
 В секції представлені зображення готелю, які необхідно реалізувати як контентні.
 У секції представлений слайдер з контентними зображеннями*. -->
+
+<section class="hotel-abt-section section">
+    <div class="container hotel-abt-container">
+        <ul class="sides list">
+            <li class="right-side">
+                <h2 class="visually-hidden">Hotel About Main</h2>
+                <p class="hotel-abt-text">
+                    Amet minim mollit non
+                </p>
+                <p class="mimino-text">
+                    mimiho
+                </p>
+                <p class="hotel-description">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat
+                    duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.
+                </p>
+            </li>
+            <li class="left-side">
+                <picture>
+                    <source
+                        srcset="./images/main/hero-hotel/main/main-dekstop.jpg 1x, ./images/main/hero-hotel/main/main-desktop@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/main/hero-hotel/main/main-tablet.jpg 1x, ./images/main/hero-hotel/main/main-tablet@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/main/hero-hotel/main/main-mobile.jpg 1x, ./images/main/hero-hotel/main/main-mobile@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+                    <img src="./images/main/hero-hotel/main/main-mobile.jpg" loading="lazy" alt="cute hotel room"
+                        class="hotel-room-img shadow-little">
+                </picture>
+            </li>
+        </ul>
+        <!-- next side-->
+        <ul class="card-2 list">
+            <li class="picture-right">
+                <picture>
+                    <source
+                        srcset="./images/main/hero-hotel/main/main-dekstop2.jpg 1x, ./images/main/hero-hotel/main/main-dekstop2@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/main/hero-hotel/main/main-tablet2.jpg 1x, ./images/main/hero-hotel/main/main-tablet2@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/main/hero-hotel/main/main-mobile2.jpg 1x, ./images/main/hero-hotel/main/main-mobile2@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+                    <img src="./images/main/hero-hotel/main/main-mobile2.jpg" loading="lazy" alt="hotel hall"
+                        class="hotel-hall-img shadow-little">
+                </picture>
+            </li>
+            <li class="text-left">
+                <p class="mimino-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+                    Velit officia
+                    consequat duis enim velit
+                    mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+            </li>
+        </ul>
+        <ul class="slider-images list">
+            <li class="slider-img ">
+                <picture class="slider-picture cutted shadow-little">
+                    <source
+                        srcset="./images/slider/slider-desktop/white-towel-bed-decoration-bedroom-interior.jpg 1x, ./images/slider/slider-desktop/white-towel-bed-decoration-bedroom-interior@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/slider/slider-tablet/white-towel-bed-decoration-bedroom-interior1.jpg 1x, ./images/slider/slider-tablet/white-towel-bed-decoration-bedroom-interior1@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/slider/slider-mobile/white-towel-bed-decoration-bedroom-interior.jpg 1x, ./images/slider/slider-mobile/white-towel-bed-decoration-bedroom-interior@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+                    <img src="./images/slider/slider-mobile/white-towel-bed-decoration-bedroom-interior.jpg"
+                        loading="lazy" alt="white towel" class="towel-img">
+                </picture>
+            </li>
+            <li class="slider-img">
+                <picture class="slider-picture shadow-little">
+                    <source
+                        srcset="./images/slider/slider-desktop/hotel-registration.jpg 1x, ./images/slider/slider-desktop/hotel-registration@2x.jpg 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="./images/slider/slider-tablet/hotel-registration.jpg 1x, ./images/slider/slider-tablet/hotel-registration@2x.jpg 2x"
+                        media="(min-width: 1024px)">
+                    <source
+                        srcset="./images/slider/slider-mobile/hotel-registration1.jpg 1x, ./images/slider/slider-mobile/hotel-registration1@2x.jpg 2x"
+                        media="(max-width: 1023px)">
+                    <img src="./images/slider/slider-mobile/hotel-registration1.jpg" loading="lazy" alt="hotel"
+                        class="hotel-reg">
+                </picture>
+            </li>
+        </ul>
+
+        <ul class="icons-list list">
+            <li class="arrow-item">
+                <button class="every-arrow slider-btn slider-btn-prev">
+                    <svg class="htl-icon" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+            </li>
+            <li class="arrow-item">
+                <button class="every-arrow slider-btn slider-btn-prev">
+                    <svg class="htl-icon" width="32" height="32">
+                        <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+
+            </li>
+        </ul>
+    </div>
+</section>

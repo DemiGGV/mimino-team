@@ -2,3 +2,75 @@
 “ДВОМІСНИЙ НОМЕР люкс” - заголовок сторінки.
 У секції представлений слайдер з контентними зображеннями*.
 Кнопка “Переглянути ціни” має відкривати модальне вікно Room Price Modal window. -->
+<section class="sec-tion room-hero">
+
+    <!-- ФОНОВА ТІНЬ -->
+    <div class="room-hero-shadow"></div>
+
+    <div class="container room-hero-position">
+
+        <!-- СТРІЛКИ ДЛЯ СЛАЙДЕРА -->
+        <ul class="list room-hero-controls">
+            <li class="hero-controls-arrows">
+                <button type="button" class="every-arrow room-slider-btn">
+                    <svg width="40px" height="40px">
+                        <use href="./images/sprite.svg#icon-arrow-left"></use>
+                    </svg>
+                </button>
+            </li>
+
+            <li class="hero-controls-arrows">
+                <button type="button" class="every-arrow room-slider-btn">
+                    <svg width="40px" height="40px">
+                        <use href="./images/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                </button>
+            </li>
+        </ul>
+
+        <!-- ПОСИЛАННЯ З АДРЕСОМ -->
+        <a href="https://goo.gl/maps/4saVJJSnYpd2zkgm9" class="room-loc-link">
+            <svg class="room-logo-location" width="20px" height="20px">
+                <use href="./images/sprite.svg#icon-location"></use>
+            </svg>
+            <span class="room-loc-descr">Україна, м. Полтава, вул. Маршала Бірюзова, 15</span>
+        </a>
+
+        <!-- ЗАГОЛОВОК З ОПИСОМ -->
+        <h1 class="room-hero-title"> <span>двомісний номер</span> люкс</h1>
+        <p class="room-hero-descr">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+            officia consequat duis enim velit
+            mollit. Exercitation veniam consequat sunt nostrud amet.
+        </p>
+
+        <!-- СПИСОК З ІКОНКАМИ СОЦІАОТНИХ МЕРЕЖ -->
+        <ul class="list room-icon-list">
+            <li>
+                <a href="https://www.instagram.com/" class="every-arrow room-icon-link">
+                    <svg width="24px" height="24px">
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://facebook.com/" class="every-arrow room-icon-link">
+                    <svg width="24px" height="24px">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="https://web.telegram.org/z/" class="every-arrow room-icon-link">
+                    <svg width="24px" height="24px">
+                        <use href="./images/sprite.svg#icon-telegram"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+
+        <!-- КНОПКА -->
+        <button type="button" class="btn-disabled room-hero-btn js-open-modal" data-modal="3">Переглянути ціни</button>
+
+    </div>
+
+</section>

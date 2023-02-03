@@ -1,0 +1,267 @@
+
+.restaurant-details{
+    text-transform: uppercase;
+    font-family: 'FilmP3';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    color: var(--white);
+
+    margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1024px) {
+    .restaurant-details{
+        font-size: 64px;
+        line-height: calc(69 / 64);
+        margin-bottom: 16px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .rest-detail-container{
+        padding-right: 50px;
+    }
+}
+
+.restaurant-details-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    color: var(--white);
+
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px){
+    .restaurant-details-title{
+        font-size: 24px;
+        line-height: calc(29 / 24);
+        margin-bottom: 8px;
+    }
+}
+.section-restaurant-details {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    
+
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)),
+    url(../images/main/hero-rest/hero-mobile.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (min-width: 1024px){
+    .section-restaurant-details{
+        padding-top: 48px;
+        padding-bottom: 40px;
+        position: relative;
+        min-width: 620px
+    }
+}
+
+@media screen and (min-width: 414px) and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen  and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){
+    .section-restaurant-details{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)),
+        url(../images/main/hero-rest/hero-mobile@2x.jpg) ;
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+    .section-restaurant-details{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(../images/main/hero-rest/hero-tablet.jpg);
+    }
+}
+
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen  and (min-width: 1024px) and (min-resolution: 192dpi), screen and  (min-width: 1024px) and (min-resolution: 2dppx){
+    .section-restaurant-details{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)),
+        url(../images/main/hero-rest/hero-tablet@2x.jpg) ;
+    }
+  }
+
+ @media screen and (min-width: 1280px) {
+    .section-restaurant-details{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)), url(../images/main/hero-rest/hero-desktop.jpg);
+    }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen  and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx){
+    .section-restaurant-details{
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65),  rgba(0, 0, 0, 0.65)),
+        url(../images/main/hero-rest/hero-desktop@2x.jpg);
+    }
+  }
+.restaurant-details-text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    letter-spacing: 0.02em;
+    color: var(--gray5);
+
+    max-width: 256px;
+}
+
+@media screen and (min-width: 1024px){
+    .restaurant-details-text{
+        font-size: 16px;
+        line-height: calc(20 / 16);
+        min-width: 610px;
+    }
+}
+.blok-aside{
+    margin-bottom: 48px; 
+    margin-left: 125px;
+
+}
+
+@media screen and (min-width: 1024px){
+    .blok-aside{
+        margin-bottom: 40px;
+        margin-left: 231px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .blok-aside{
+        margin-left: 253px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .restaurant-details-list {
+        position: relative;
+        overflow: hidden;
+        flex-wrap: wrap;
+        display: flex;
+        right: -15px;
+
+        margin-bottom: 32px;
+
+    }
+}  
+@media screen and (min-width: 1024px) {
+ .restaurant-details-list{
+    position: relative;
+    overflow: hidden;
+}
+ }
+
+
+
+.restaurant-details-item{
+    border-radius: 2px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px){
+    .restaurant-details-item{
+        gap: 34px;
+        left: 265px;
+        position: relative;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .restaurant-details-item{
+        gap: 87px;
+        left: 32px;
+        justify-content: flex-end;
+
+        margin-bottom: 24px;
+}
+    }
+
+.restaurant-img{
+    margin-right: 20px;
+    min-width: 274px;
+}
+
+@media screen and (min-width: 1024px){
+    .restaurant-img{
+    min-width: 270px;
+    }
+}
+.restaurant-imgs{
+    min-width: 162px;
+}
+.restaurant-img:last-child{
+    margin-right: 0;
+}
+
+.icon-arrow-left,
+.icon-arrow-right{
+    fill: currentColor;
+    color: var(--white);
+}
+.icon-rest-arrow{
+    gap: 32px;
+    display: flex;
+}
+@media screen and (min-width: 1024px){
+    .icon-rest-arrow{
+        margin-left: 265px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .icon-rest-arrow{
+        margin-left: 269px;
+    }
+}
+.button-rest{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.icon-arrow-left:focus,
+.icon-arrow-left:hover {
+    color: var(--akzent-yellow);
+    border: none;
+}
+
+.icon-arrow-right:focus,
+.icon-arrow-right:hover{
+    color: var(--akzent-yellow);
+    border: none;
+}
+
+.btn-rest-main {
+    padding: 14px 0px;
+    text-decoration: none;
+}
+
+.btn-restaurant-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 1024px){
+    .btn-restaurant-details{
+        align-items: flex-start;
+        position: absolute;
+        bottom: 14%;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .btn-restaurant-details{
+        bottom: 15%;
+    }
+}

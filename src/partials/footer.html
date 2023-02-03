@@ -1,20 +1,46 @@
-<footer>
-    <div class="footer">
-        <h1 class="footer-title">MIMIHO</h1>
-        <div class="footer-link">
-        <ul class="footer-nav">
-            <li><a href="" class="nav-item link">Головна</a></li>
-            <li><a href="" class="nav-item link">Ресторан</a></li>
-            <li><a href="" class="nav-item link">Готель</a></li>
-        </ul>
-        <ul class="footer-soc">
-            <li><a href="#" class="soc-item link"><p class="link-text">Instagram</p><svg class="footer-icon" width="22" height="22"><use href="/src/images/sprite.svg#icon-instagram">    
-            </use></svg></a></li>
-            <li><a href="#" class="soc-item link"><p class="link-text">Facebook</p><svg class="footer-icon" width="22" height="22"><use href="/src/images/sprite.svg#icon-facebook"> 
-            </use></svg></a></li>
-            <li><a href="#" class="soc-item link"><p class="link-text">Telegram</p><svg class="footer-icon" width="22" height="22"><use href="/src/images/sprite.svg#icon-telegram">
-            </use></svg></a></li>
-        </ul>
-       </div>
+
+<!-- Footer
+Логотип (назву) компанії реалізувати як посилання, яке повертає користувача на головну сторінку.
+Посилання зі списку елементів має вести на відповідну сторінку.
+Посилання на соц. мережу має відкривати сторонній ресурс в окремій вкладці. -->
+
+<footer class="sec-tion footer">
+    <div class="footer__container container">
+        <nav class="footer__body">
+            <a href="./index.html" class="footer__logo" lang="en">mimiho</a>
+            <div class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="./index.html" class="footer__link">Головна</a></li>
+                    <li class="footer__item"><a href="./restaurant.html" class="footer__link">Ресторан</a></li>
+                    <li class="footer__item"><a href="./hotel.html" class="footer__link">Готель</a></li>
+                </ul>
+                <ul class="footer__social">
+                    <li class="footer__social-item"><a href="https://www.instagram.com/" class="footer__social-link"
+                            target="_blank" rel="noopener">
+                            <p class="footer__social-text" lang="en">Instagram</p>
+                            <svg class="footer__social-icon">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item"><a href="https://www.facebook.com/" class="footer__social-link"
+                            target="_blank" rel="noopener">
+                            <p class="footer__social-text" lang="en">Facebook</p>
+                            <svg class="footer__social-icon">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__social-item"><a href="https://web.telegram.org/z/" class="footer__social-link"
+                            target="_blank" rel="noopener">
+                            <p class="footer__social-text" lang="en">Telegram</p>
+                            <svg class="footer__social-icon">
+                                <use href="./images/sprite.svg#icon-telegram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </footer>

@@ -47,7 +47,7 @@ address {
 
 .icon {
     fill: currentColor;
-    stroke: currentColor;
+    // stroke: currentColor;
 }
 
 .container {
@@ -68,4 +68,8 @@ address {
             padding-left: 85px;
             padding-right: 85px;
     }
+}
+
+.sec-tion {
+    // max-width: 1600px;
 }
