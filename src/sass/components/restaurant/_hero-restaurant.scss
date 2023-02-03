@@ -1,0 +1,273 @@
+.hero-restaurant {
+
+    padding-top: 64px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/restaurant/rest-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+
+        background-size: cover;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/restaurant/rest-mobile@2x.jpg);
+    }
+
+    @media screen and (min-width:1024px) {
+        padding-top: 100px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/restaurant/rest-tablet.jpg);
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-size: cover;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../images/restaurant/rest-tablet@2x.jpg);
+        }
+    }
+
+    @media screen and (min-width:1280px) {
+        padding-bottom: 64px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+            url(../images/restaurant/rest-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+
+            background-size: cover;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+                url(../images/restaurant/rest-dekstop@2x.jpg);
+        }
+    }
+}
+
+.hero-title {
+    font-family: 'FilmP3';
+    font-weight: 700;
+    font-size: 96px;
+    line-height: calc(103 / 96);
+    letter-spacing: 0.3em;
+    color: var(--white);
+    text-align: center;
+    margin-left: calc(96 * 0.3);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 128px;
+        line-height: calc(138 / 128);
+        margin-left: calc(128 * 0.3);
+        margin-bottom: 16px;
+        margin-top: 85px;
+    }
+
+    @media screen and (min-width:1280px) {
+        margin-bottom: 32px;
+        margin-top: 64px;
+    }
+
+}
+
+.hero-restaurant-title {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #FDFBEC;
+    margin-bottom: 44px;
+
+
+    @media screen and (min-width: 1024px) {
+        font-size: 20px;
+        line-height: 24px;
+
+        margin-bottom: 56px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 64px;
+    }
+}
+
+.hero-taste {
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37 / 32);
+    letter-spacing: 0.05em;
+    color: var(--color-life24);
+    margin-bottom: 113px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 36px;
+        line-height: calc(41 / 36);
+        letter-spacing: 0.05em;
+        margin-bottom: 137px;
+    }
+}
+
+.hero-btn-restaurant {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 58px;
+
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+        align-items: baseline;
+        margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin: 0px;
+        gap: 60px;
+    }
+}
+
+.mobile {
+    display: block;
+
+    @media screen and (min-width: 1024px) {
+        display: none;
+    }
+}
+
+.second {
+    display: none;
+    color: getColor('yellow');
+
+    @media screen and (min-width: 1024px) {
+        display: block;
+    }
+}
+
+.hr__btnbox {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    @media screen and (min-width:1024px) {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    @media screen and (min-width:1280px) {
+        gap: 60px;
+    }
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--white);
+    border-color: getColor('yellow');
+
+}
+
+.hr__textbox {
+    padding-top: 117px;
+
+    @media screen and (min-width:1024px) {
+        padding-top: 0;
+    }
+}
+
+.hero-address {
+    right: 15px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    position: absolute;
+    color: var(--map-link);
+    border: 1px solid getColor('border-golden');
+    border-radius: 2px;
+    justify-content: center;
+    text-align: start;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 6px;
+    gap: 8px;
+    padding-right: 3px;
+
+    @media screen and (min-width:1024px) {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        padding-bottom: 8px;
+        padding-top: 8px;
+        padding-left: 10px;
+        padding-right: 8px;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 0;
+    }
+}
+
+.hr_container {
+    position: relative;
+    overflow: hidden;
+}
+
+.address-map {
+    color: var(--white);
+}
+
+.address-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+    fill: getColor('yellow');
+
+    @media screen and (min-width:1024px) {
+        width: 24px;
+        height: 24px;
+
+    }
+}
+
+.hr_link__social {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (min-width:1280px) {
+        display: none;
+    }
+}
+
+.hr_sociallink {
+    line-height: 0;
+}
+
+.hr_link__socialsvg {
+    fill: getColor('yellow');
+    width: 24px;
+    height: 24px;
+
+}
