@@ -56,7 +56,7 @@
     font-family: 'FilmP3';
     font-weight: 700;
     font-size: 96px;
-    line-height: calc(103 / 96);
+    line-height: 1.07;
     letter-spacing: 0.3em;
     color: var(--white);
     text-align: center;
@@ -66,7 +66,6 @@
 
     @media screen and (min-width: 1024px) {
         font-size: 128px;
-        line-height: calc(138 / 128);
         margin-left: calc(128 * 0.3);
         margin-bottom: 16px;
         margin-top: 85px;
@@ -106,7 +105,7 @@
     font-family: 'Times New Roman';
     font-weight: 700;
     font-size: 32px;
-    line-height: calc(37 / 32);
+    line-height: 1.15;
     letter-spacing: 0.05em;
     color: var(--color-life24);
     margin-bottom: 113px;
@@ -115,7 +114,7 @@
 
     @media screen and (min-width: 1024px) {
         font-size: 36px;
-        line-height: calc(41 / 36);
+        line-height: 1.14;
         letter-spacing: 0.05em;
         margin-bottom: 137px;
     }
