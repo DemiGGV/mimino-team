@@ -128,29 +128,7 @@
         border 250ms cubic-bezier(var(--cubic)),
         opacity 250ms cubic-bezier(var(--cubic));
 }
-
 // Modal windows base
-.container-backdrop {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-.container-backdrop {
-    position: fixed;
-    z-index: 6;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    pointer-events: all;
-    background: rgba(46, 47, 66, 0.4);
-    backdrop-filter: blur(3px);
-    overflow-y: scroll;
-    opacity: 1;
-
-    transition: opacity 250ms cubic-bezier(var(--cubic));
-}
 
 .overlay {
     opacity: 0;
@@ -161,7 +139,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
-    z-index: 4;
+    z-index: 5;
     transition: .3s all;
     overflow-y: scroll;
     pointer-events: none;
