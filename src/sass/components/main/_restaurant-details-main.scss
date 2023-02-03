@@ -14,7 +14,7 @@
 @media screen and (min-width: 1024px) {
     .restaurant-details{
         font-size: 64px;
-        line-height: calc(69 / 64);
+        line-height: 1.08;
         margin-bottom: 16px;
     }
 }
@@ -38,7 +38,7 @@
 @media screen and (min-width: 1024px){
     .restaurant-details-title{
         font-size: 24px;
-        line-height: calc(29 / 24);
+        line-height: 1.2;
         margin-bottom: 8px;
     }
 }
