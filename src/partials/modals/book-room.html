@@ -1,51 +1,52 @@
-<!-- Book Room Modal window
-“ЗАБРОНЮВАТИ НОМЕР” - заголовок секції.
-Форма бронювання готельного номеру містить в собі такі елементи форми як <input> і <select>(яким необхідно додати
-    мінімальну валідацію даних для введення за допомогою атрибуту pattern) та кнопку “Оформити бронювання”.
-    Стрілки вниз/вгору для <select> реалізувати як псевдоелементи.
-        Кнопка “Оформити бронювання” типу submit закриває модальне вікно. -->
-
-<div class="modal booking-room-mobile" data-modal="2">
-    <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-    <form name="booking-room" class="booking-form model-box">
-        <strong class="booking-room-title">ЗАБРОНЮВАТИ НОМЕР</strong>
-        <div class="flex-box-wrap">
-            <label class="booking-lable">
-                <input class="booking-room-input" type="text" minlength="2" name="name" placeholder="Ваше ім’я">
-                <span class="booking-text-lable">На кого забронювати номер?</span>
-            </label>
-            <label class="booking-lable">
-                <input class="booking-room-input" type="tel" name="phone" pattern="[0-9]{12}" placeholder="+38 (___) ___-__-__">
-                <span class="booking-text-lable">Номер телефону</span>
-            </label>
-            <div class="box"></div>
-            <label class="booking-lable">
-                <svg class="model-icon" width="20" height="12">
-                    <use href="./images/sprite.svg#icon-Vector-1"></use>
-                </svg>
-                <select class="booking-room-input">
-                    <option value="1" selected>Двомісний люкс</option>
-                    <option value="2">Двомісний</option>
-                    <option value="3">Трьохмісний</option>
+<div class="overlay js-overlay-modal">
+    <div class="modal booking-room-mobile" data-modal="2">
+        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+                d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </svg>
+        <form name="booking-room" class="booking-form model-box">
+            <strong class="booking-room-title">ЗАБРОНЮВАТИ НОМЕР</strong>
+            <div class="flex-box-wrap">
+                <label class="booking-lable">
+                    <input class="booking-room-input" type="text" minlength="2" name="name" placeholder="Ваше ім’я">
+                    <span class="booking-text-lable">На кого забронювати номер?</span>
+                </label>
+                <label class="booking-lable">
+                    <input class="booking-room-input" type="tel" name="phone" pattern="[0-9]{12}"
+                        placeholder="+38 (___) ___-__-__">
+                    <span class="booking-text-lable">Номер телефону</span>
+                </label>
+                <div class="box"></div>
+                <label class="booking-lable">
+                    <svg class="model-icon" width="20" height="12">
+                        <use href="./images/sprite.svg#icon-Vector-1"></use>
+                    </svg>
+                    <select class="booking-room-input">
+                        <option value="1" selected>Двомісний люкс</option>
+                        <option value="2">Двомісний</option>
+                        <option value="3">Трьохмісний</option>
                     </select>
-                <span class="booking-text-lable">Категорія номеру</span>
-            </label>
-            <label class="booking-lable">
-                <svg class="model-icon" width="20" height="12">
-                    <use href="./images/sprite.svg#icon-Vector-1"></use>
-                </svg>
-                <input class="booking-room-input" type="text" name="chek-in" pattern="^[ 0-9]+$" placeholder="Сьогодні">
-                <span class="booking-text-lable">Дата заїзду</span>
-            </label>
-            <label class="booking-lable last">
-                <svg class="model-icon" width="20" height="12">
-                    <use href="./images/sprite.svg#icon-Vector-1"></use>
-                </svg>
-                <input class="booking-room-input" type="text" name="chek-out" pattern="^[ 0-9]+$" placeholder="Сьогодні">
-                <span class="booking-text-lable">Дата виїзду</span>
-            </label>
-        </div>
-        <button type="submit" class="booking-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
-    </form>   
+                    <span class="booking-text-lable">Категорія номеру</span>
+                </label>
+                <label class="booking-lable">
+                    <svg class="model-icon" width="20" height="12">
+                        <use href="./images/sprite.svg#icon-Vector-1"></use>
+                    </svg>
+                    <input class="booking-room-input" type="text" name="chek-in" pattern="^[ 0-9]+$"
+                        placeholder="Сьогодні">
+                    <span class="booking-text-lable">Дата заїзду</span>
+                </label>
+                <label class="booking-lable last">
+                    <svg class="model-icon" width="20" height="12">
+                        <use href="./images/sprite.svg#icon-Vector-1"></use>
+                    </svg>
+                    <input class="booking-room-input" type="text" name="chek-out" pattern="^[ 0-9]+$"
+                        placeholder="Сьогодні">
+                    <span class="booking-text-lable">Дата виїзду</span>
+                </label>
+            </div>
+            <button type="submit" class="booking-btn">ОФОРМИТИ БРОНЮВАННЯ</button>
+        </form>
+    </div>
+
 </div>
-<div class="overlay js-overlay-modal"></div>
