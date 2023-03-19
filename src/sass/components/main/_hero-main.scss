@@ -111,6 +111,11 @@ screen and (min-width: 1280px) and (min-resolution: 2dppx) {
     margin-left: calc(96 * 0.3);
     margin-top: 117px;
 
+    @media screen and (max-width: 413px) {
+        font-size: 70px;
+        margin-left: calc(70 * 0.3);
+    }
+
     @media screen and (min-width: 1024px) {
         font-size: 128px;
         line-height: 1.07;

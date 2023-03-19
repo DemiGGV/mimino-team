@@ -89,6 +89,9 @@
 
 .header__position-tel {
     padding-top: 28px;
+    @media screen and (max-width:413px) {
+        display: none;
+    }
 }
 
 .header__mob-number {

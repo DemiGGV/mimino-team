@@ -67,7 +67,11 @@ html {
     margin-left: calc(96 * 0.3);
     margin-bottom: 20px;
     text-transform: uppercase;
-
+    
+    @media screen and (max-width: 413px) {
+        font-size: 70px;
+        margin-left: calc(70 * 0.3);
+    }
     @media screen and (min-width: 1024px) {
         font-size: 128px;
         margin-left: calc(128 * 0.3);
